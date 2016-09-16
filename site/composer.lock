@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dfdffc2d888fee25366c9829b815aafb",
-    "content-hash": "a3beb48b1252469dfb7d7e2758a13c4e",
+    "hash": "20c549a07115219cf39e01290183c5bb",
+    "content-hash": "8fc32711f4a3d37e227d806224e8c340",
     "packages": [
         {
             "name": "composer/installers",
@@ -360,26 +360,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/autodescription/"
-        },
-        {
-            "name": "wpackagist-plugin/menu-social-icons",
-            "version": "1.3.10",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/menu-social-icons/",
-                "reference": "tags/1.3.10"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/menu-social-icons.1.3.10.zip",
-                "reference": "tags/1.3.10",
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/menu-social-icons/"
         }
     ],
     "packages-dev": [
