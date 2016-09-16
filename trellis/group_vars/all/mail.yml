@@ -1,0 +1,6 @@
+# Documentation: https://roots.io/trellis/docs/mail/
+mail_smtp_server: smtp.postmarkapp.com:587
+mail_admin: admin@pressbooks.org
+mail_hostname: pressbooks.org
+mail_user: "{{ vault_mail_password }}" # Define this variable in group_vars/all/vault.yml
+mail_password: "{{ vault_mail_password }}" # Define this variable in group_vars/all/vault.yml
