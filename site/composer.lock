@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "99d6baf211013f1346438f8058e20d2b",
-    "content-hash": "95fd010b8a5f39ee955d8d93ae06cdb7",
+    "hash": "5c54b7f6f76436ff2f99b5102bbd2786",
+    "content-hash": "4f602bafffd1975cecfdd4cda8b6c1d1",
     "packages": [
         {
             "name": "composer/installers",
@@ -372,7 +372,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wp-github-sync.1.7.1.zip",
-                "reference": null,
+                "reference": "tags/1.7.1",
                 "shasum": null
             },
             "require": {
@@ -380,6 +380,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-github-sync/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-markdown",
+            "version": "1.5.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-markdown/",
+                "reference": "tags/1.5.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-markdown.1.5.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-markdown/"
         }
     ],
     "packages-dev": [
