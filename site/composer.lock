@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5c54b7f6f76436ff2f99b5102bbd2786",
-    "content-hash": "4f602bafffd1975cecfdd4cda8b6c1d1",
+    "hash": "e68245ba76481f50c6a2f1c48832a782",
+    "content-hash": "170c9ab65261d5fb383c9cdd823ef4dc",
     "packages": [
         {
             "name": "composer/installers",
@@ -362,6 +362,26 @@
             "homepage": "https://wordpress.org/plugins/autodescription/"
         },
         {
+            "name": "wpackagist-plugin/endnotes",
+            "version": "1.0.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/endnotes/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/endnotes.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/endnotes/"
+        },
+        {
             "name": "wpackagist-plugin/wp-github-sync",
             "version": "1.7.1",
             "source": {
@@ -392,7 +412,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wp-markdown.1.5.1.zip",
-                "reference": null,
+                "reference": "tags/1.5.1",
                 "shasum": null
             },
             "require": {
