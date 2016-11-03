@@ -1,0 +1,4 @@
+@prod:
+  ssh: admin@pressbooks.org/srv/www/pressbooks.org/current/web/wp
+@dev:
+  ssh: vagrant@192.168.50.5/srv/www/pressbooks.org/current/web/wp
