@@ -42,7 +42,8 @@
     "wpackagist-plugin/autodescription": "^2.7",
     "wpackagist-plugin/wp-github-sync": "^1.7",
     "wpackagist-plugin/wp-markdown": "^1.5",
-    "wpackagist-plugin/endnotes": "^1.0"
+    "wpackagist-plugin/endnotes": "^1.0",
+    "wpackagist-plugin/redirection": "^2.4"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
