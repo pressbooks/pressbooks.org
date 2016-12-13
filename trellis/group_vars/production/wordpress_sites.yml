@@ -17,5 +17,6 @@ wordpress_sites:
     ssl:
       enabled: true
       provider: letsencrypt
+      hsts_include_subdomains: false
     cache:
       enabled: true
