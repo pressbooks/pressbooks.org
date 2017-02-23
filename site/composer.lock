@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "58cecca6ef4a61f65cef5c81b769223e",
+    "content-hash": "61920a2b4d8facf605a5f4c73b46dfd3",
     "packages": [
         {
             "name": "composer/installers",
@@ -291,6 +291,44 @@
             "time": "2016-03-01T16:27:06+00:00"
         },
         {
+            "name": "solarissmoke/disable-comments-mu",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/solarissmoke/disable-comments-mu.git",
+                "reference": "ad6c86ea25c95e1616357f27a631df987e36c41f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/solarissmoke/disable-comments-mu/zipball/ad6c86ea25c95e1616357f27a631df987e36c41f",
+                "reference": "ad6c86ea25c95e1616357f27a631df987e36c41f",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.2.4"
+            },
+            "type": "wordpress-muplugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Samir Shah",
+                    "email": "samir@rayofsolaris.net",
+                    "homepage": "https://github.com/solarissmoke"
+                }
+            ],
+            "description": "This is the must-use version of the Disable Comments WordPress plugin. Copy the contents of this directory into your mu-plugins directory in order to disable comments on the entire site/network, without any configuration. You should delete all existing comments from the WordPress database before activating this plugin. If you want to be able to configure the plugin's behaviour, then use the normal version.",
+            "homepage": "https://github.com/solarissmoke/disable-comments-mu",
+            "keywords": [
+                "comments",
+                "wordpress"
+            ],
+            "time": "2016-04-29T02:48:08+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v2.4.0",
             "source": {
@@ -351,7 +389,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/autodescription.2.8.2.zip",
-                "reference": null,
+                "reference": "tags/2.8.2",
                 "shasum": null
             },
             "require": {
@@ -391,7 +429,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/redirection.2.5.zip",
-                "reference": null,
+                "reference": "tags/2.5",
                 "shasum": null
             },
             "require": {
