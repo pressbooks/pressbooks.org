@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0da62d1f74a514ff39a4a8dac77528d7",
+    "content-hash": "9fec1a0d3e5f285a3082042724dca390",
     "packages": [
         {
             "name": "composer/installers",
@@ -482,7 +482,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/autodescription.2.9.3.zip",
-                "reference": null,
+                "reference": "tags/2.9.3",
                 "shasum": null
             },
             "require": {
@@ -522,7 +522,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/redirection.2.6.3.zip",
-                "reference": null,
+                "reference": "tags/2.6.3",
                 "shasum": null
             },
             "require": {
@@ -530,6 +530,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/redirection/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-github-sync",
+            "version": "2.0.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-github-sync/",
+                "reference": "tags/2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-github-sync.2.0.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-github-sync/"
         }
     ],
     "packages-dev": [
