@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f676ca30f49155c6551145422fdf4adf",
+    "content-hash": "9e50a0402918608767636314ea07b628",
     "packages": [
         {
             "name": "composer/installers",
@@ -485,6 +485,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/redirection/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-anchor-header",
+            "version": "0.2.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-anchor-header/",
+                "reference": "tags/0.2.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-anchor-header.0.2.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-anchor-header/"
         },
         {
             "name": "wpackagist-plugin/wp-github-sync",

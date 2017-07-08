@@ -44,7 +44,8 @@
     "johnpbloch/wordpress": "4.8",
     "soberwp/intervention": "^1.1",
     "wpackagist-plugin/wp-github-sync": "^2.0",
-    "wpackagist-plugin/wp-markdown": "^1.5"
+    "wpackagist-plugin/wp-markdown": "^1.5",
+    "wpackagist-plugin/wp-anchor-header": "^0.2.3"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
