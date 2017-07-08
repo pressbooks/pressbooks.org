@@ -8,17 +8,30 @@ wordpress_sites:
       - canonical: pressbooks.org
         redirects:
           - www.pressbooks.org
-      - canonical: docs.pressbooks.org
-    local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
+    local_path: ../pressbooks.org # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:pressbooks/pressbooks.org.git # replace with your Git repo URL
     repo_subtree_path: pressbooks.org # relative path to your Bedrock/WP directory in your repo
     branch: master
     multisite:
-      enabled: true
-      subdomains: true
+      enabled: false
     ssl:
       enabled: true
       provider: letsencrypt
       hsts_include_subdomains: false
+    cache:
+      enabled: true
+  docs.pressbooks.org:
+    site_hosts:
+      - canonical: docs.pressbooks.org
+    local_path: ../docs.pressbooks.org # path targeting local Bedrock site directory (relative to Ansible root)
+    repo: git@github.com:pressbooks/pressbooks.org.git # replace with your Git repo URL
+    repo_subtree_path: docs.pressbooks.org # relative path to your Bedrock/WP directory in your repo
+    branch: master
+    multisite:
+      enabled: false
+      hsts_include_subdomains: false
+    ssl:
+      enabled: true
+      provider: letsencrypt
     cache:
       enabled: true

@@ -1,7 +1,6 @@
 # Application
 web/app/plugins/*
 !web/app/plugins/.gitkeep
-!web/app/plugins/wp-migrate-db-*
 web/app/mu-plugins/*/
 !web/app/mu-plugins/latest-release/
 web/app/upgrade
