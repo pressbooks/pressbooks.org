@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c143c03969a9921bed2f309407bffed",
+    "content-hash": "7cdaf7a952a42760fca1d0494aaa281b",
     "packages": [
         {
             "name": "composer/installers",
@@ -512,6 +512,26 @@
             "homepage": "https://wordpress.org/plugins/endnotes/"
         },
         {
+            "name": "wpackagist-plugin/jetpack-markdown",
+            "version": "3.9.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/jetpack-markdown/",
+                "reference": "tags/3.9.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack-markdown.3.9.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/jetpack-markdown/"
+        },
+        {
             "name": "wpackagist-plugin/redirection",
             "version": "2.6.3",
             "source": {
@@ -562,7 +582,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wp-markdown.1.5.1.zip",
-                "reference": null,
+                "reference": "tags/1.5.1",
                 "shasum": null
             },
             "require": {
