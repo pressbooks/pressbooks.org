@@ -2,13 +2,14 @@
 Plugin Name: Latest Release
 Plugin URI: https://github.com/pressbooks/latest-release/
 Description: Adds a rewrite endpoint to download your latest GitHub Release.
-Version: 1.0.0
+Version: 1.1.0
 Author: Pressbooks
 Author URI: https://pressbooks.org
 Text Domain: latest-release
  */
 
 function latest_release_fetch( $repo ) {
+  delete_transient( 'latest_release_asset' );
   if ( false === ( $asset_url = get_transient( 'latest_release_asset' ) ) ) {
     $ch = curl_init();
     curl_setopt( $ch, CURLOPT_URL, "https://api.github.com/repos/pressbooks/pressbooks/releases/latest" );
@@ -20,7 +21,7 @@ function latest_release_fetch( $repo ) {
     $latest = json_decode( $json );
     if ( $latest->assets[0]->browser_download_url ) {
       $asset_url = $latest->assets[0]->browser_download_url;
-      set_transient( 'latest_release_asset', $asset_url );
+      set_transient( 'latest_release_asset', $asset_url, DAY_IN_SECONDS );
     } else {
       $asset_url = false;
     }
@@ -35,7 +36,7 @@ function latest_release_handle_download() {
 
   $repo = 'pressbooks/pressbooks';
 
-  if ( false != ( $url = latest_release_fetch( $repo ) ) ) {
+  if ( false !== ( $url = latest_release_fetch( $repo ) ) ) {
     wp_redirect( $url );
     exit;
   } else {
