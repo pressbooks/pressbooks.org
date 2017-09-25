@@ -13,3 +13,14 @@ if (function_exists('\Sober\Intervention\intervention')) {
     intervention('remove-emoji');
     intervention('remove-help-tabs');
 }
+
+function pbdotorg_setup() {
+    add_theme_support( 'custom-logo', array(
+		'height'      => 240,
+		'width'       => 240,
+		'flex-height' => true,
+        'flex-width'  => true,
+	) );
+}
+
+add_action( 'after_setup_theme', 'pbdotorg_setup' );
