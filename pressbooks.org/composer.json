@@ -46,6 +46,8 @@
     "wpackagist-plugin/endnotes": "^1.0",
     "wpackagist-plugin/redirection": "^2.4",
     "wpackagist-plugin/svg-support": "^2.3",
+    "wpackagist-plugin/syntaxhighlighter": "^3.2",
+    "wpackagist-plugin/syntaxhighlighter-evolved-yaml-brush": "^1.0",
     "wpackagist-plugin/tailor": "^1.8",
     "wpackagist-theme/twentysixteen": "^1.3"
   },
