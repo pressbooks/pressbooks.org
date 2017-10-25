@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c4c020669d12a84d59d3f51fa437bd0",
+    "content-hash": "8e0aa9d871b90c39a62597b2a41e36f7",
     "packages": [
         {
             "name": "composer/installers",
@@ -535,6 +535,26 @@
             "homepage": "https://wordpress.org/plugins/endnotes/"
         },
         {
+            "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
+            "version": "5.1.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/google-analytics-dashboard-for-wp/",
+                "reference": "tags/5.1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.5.1.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/google-analytics-dashboard-for-wp/"
+        },
+        {
             "name": "wpackagist-plugin/redirection",
             "version": "2.7.3",
             "source": {
@@ -605,7 +625,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/syntaxhighlighter-evolved-yaml-brush.1.0.3.zip",
-                "reference": null,
+                "reference": "tags/1.0.3",
                 "shasum": null
             },
             "require": {
