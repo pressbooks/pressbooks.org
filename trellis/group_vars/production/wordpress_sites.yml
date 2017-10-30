@@ -29,9 +29,24 @@ wordpress_sites:
     branch: master
     multisite:
       enabled: false
-      hsts_include_subdomains: false
     ssl:
       enabled: true
       provider: letsencrypt
+      hsts_include_subdomains: false
+    cache:
+      enabled: true
+  pressbooks.education:
+    site_hosts:
+      - canonical: pressbooks.education
+    local_path: ../pressbooks.education # path targeting local Bedrock site directory (relative to Ansible root)
+    repo: git@github.com:pressbooks/pressbooks.org.git # replace with your Git repo URL
+    repo_subtree_path: pressbooks.education # relative path to your Bedrock/WP directory in your repo
+    branch: master
+    multisite:
+      enabled: false
+    ssl:
+      enabled: true
+      provider: letsencrypt
+      hsts_include_subdomains: false
     cache:
       enabled: true
