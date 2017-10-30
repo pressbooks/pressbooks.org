@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d4592139662692c2b8c52282c8d7ce9",
+    "content-hash": "688b269cdd43c05e0b610e70ead2e21c",
     "packages": [
         {
             "name": "brain/hierarchy",
@@ -1719,26 +1719,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/google-analytics-dashboard-for-wp/"
-        },
-        {
-            "name": "wpackagist-plugin/minimal-coming-soon-maintenance-mode",
-            "version": "1.35",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/minimal-coming-soon-maintenance-mode/",
-                "reference": "tags/1.35"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/minimal-coming-soon-maintenance-mode.1.35.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/minimal-coming-soon-maintenance-mode/"
         }
     ],
     "packages-dev": [
