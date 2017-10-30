@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e0aa9d871b90c39a62597b2a41e36f7",
+    "content-hash": "09f4687d7e227a0de1a94bdabccff715",
     "packages": [
         {
             "name": "composer/installers",
@@ -515,6 +515,26 @@
             "homepage": "https://wordpress.org/plugins/blob-mimes/"
         },
         {
+            "name": "wpackagist-plugin/easy-pricing-tables",
+            "version": "2.3.10",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/easy-pricing-tables/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/easy-pricing-tables.zip?timestamp=1509015223",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/easy-pricing-tables/"
+        },
+        {
             "name": "wpackagist-plugin/endnotes",
             "version": "1.0.1",
             "source": {
@@ -545,7 +565,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.5.1.2.zip",
-                "reference": null,
+                "reference": "tags/5.1.2",
                 "shasum": null
             },
             "require": {
