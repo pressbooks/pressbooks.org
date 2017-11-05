@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "236dc28f94115579ab6ab20fedc95e7f",
+    "content-hash": "53009ed6a86b98bed028674894134181",
     "packages": [
         {
             "name": "composer/installers",
@@ -505,7 +505,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/blob-mimes.0.6.7.zip",
-                "reference": null,
+                "reference": "tags/0.6.7",
                 "shasum": null
             },
             "require": {
@@ -525,7 +525,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/easy-pricing-tables.zip?timestamp=1509015223",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -565,7 +565,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.5.1.2.2.zip",
-                "reference": null,
+                "reference": "tags/5.1.2.2",
                 "shasum": null
             },
             "require": {
@@ -575,16 +575,36 @@
             "homepage": "https://wordpress.org/plugins/google-analytics-dashboard-for-wp/"
         },
         {
-            "name": "wpackagist-plugin/redirection",
-            "version": "2.8.1",
+            "name": "wpackagist-plugin/html-forms",
+            "version": "1.0.2",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/2.8.1"
+                "url": "https://plugins.svn.wordpress.org/html-forms/",
+                "reference": "tags/1.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.2.8.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/html-forms.1.0.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/html-forms/"
+        },
+        {
+            "name": "wpackagist-plugin/redirection",
+            "version": "2.9.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/redirection/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/redirection.zip?timestamp=1509826609",
                 "reference": null,
                 "shasum": null
             },
