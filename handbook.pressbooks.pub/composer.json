@@ -49,6 +49,7 @@
     "pressbooks/pressbooks": "^4.4",
     "pressbooks/pressbooks-book": "^2.0.0-alpha1",
     "pressbooks/pressbooks-publisher": "^3.1",
+    "roots/multisite-url-fixer": "^1.1",
     "roots/wp-password-bcrypt": "1.0.0",
     "vlucas/phpdotenv": "^2.0.1"
   },
