@@ -55,7 +55,7 @@ wordpress_sites:
   handbook.pressbooks.pub:
     site_hosts:
       - canonical: handbook.pressbooks.pub
-      local_path: ../handbook.pressbooks.pub # path targeting local Bedrock site directory (relative to Ansible root)
+    local_path: ../handbook.pressbooks.pub # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:pressbooks/pressbooks.org.git # replace with your Git repo URL
     repo_subtree_path: handbook.pressbooks.pub # relative path to your Bedrock/WP directory in your repo
     branch: master
