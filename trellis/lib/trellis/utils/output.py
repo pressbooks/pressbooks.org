@@ -8,12 +8,7 @@ import re
 import textwrap
 
 from ansible import __version__
-
-# to_unicode will no longer be needed once Trellis requires Ansible >= 2.2
-try:
-    from ansible.module_utils._text import to_text
-except ImportError:
-    from ansible.utils.unicode import to_unicode as to_text
+from ansible.module_utils._text import to_text
 
 def system(vagrant_version=None):
     # Get most recent Trellis CHANGELOG entry
@@ -67,7 +62,7 @@ def display(obj, result):
     display = obj._display.display
     wrap_width = 77
     first = obj.first_host and obj.first_item
-    failed = 'failed' in result or 'unreachable' in result
+    failed = result.get('failed', False) or result.get('unreachable', False)
 
     # Only display msg if debug module or if failed (some modules have undesired 'msg' on 'ok')
     if 'msg' in result and (failed or obj.action == 'debug'):
