@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "37c8ea228fa190b33a2d807f96c2d7d6",
+    "content-hash": "8443228047ed94bb9a5296eb4a974e12",
     "packages": [
         {
             "name": "brain/hierarchy",
@@ -1704,6 +1704,26 @@
             "time": "2016-09-01T10:05:43+00:00"
         },
         {
+            "name": "wpackagist-plugin/easy-pricing-tables",
+            "version": "2.3.10",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/easy-pricing-tables/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/easy-pricing-tables.zip?timestamp=1510824119",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/easy-pricing-tables/"
+        },
+        {
             "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
             "version": "5.1.2.2",
             "source": {
@@ -1734,7 +1754,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/html-forms.1.0.5.zip",
-                "reference": null,
+                "reference": "tags/1.0.5",
                 "shasum": null
             },
             "require": {

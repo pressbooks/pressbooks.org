@@ -42,6 +42,7 @@
     "pressbooks/pressbooks-aldine": "^1.0@alpha",
     "roots/wp-password-bcrypt": "1.0.0",
     "vlucas/phpdotenv": "^2.0.1",
+    "wpackagist-plugin/easy-pricing-tables": "^2.3",
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "5.1.2.2",
     "wpackagist-plugin/html-forms": "^1.0"
   },
