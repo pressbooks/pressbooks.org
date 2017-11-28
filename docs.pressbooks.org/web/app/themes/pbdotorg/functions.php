@@ -17,6 +17,8 @@ add_action('wp_enqueue_scripts', function () {
     );
 });
 
+add_filter('parsedownparty_autoenable', '__return_true');
+
 if (function_exists('\Sober\Intervention\intervention')) {
     intervention('remove-dashboard-items', 'news', 'all');
     intervention('remove-emoji');
