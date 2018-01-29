@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "83d3118538e0e31d71127da9a8e16468",
+    "content-hash": "a3e40959bdb1d7aedef422e73e9ca251",
     "packages": [
         {
             "name": "composer/installers",
@@ -128,16 +128,16 @@
         },
         {
             "name": "connerbw/parsedownparty",
-            "version": "1.0.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/connerbw/parsedownparty.git",
-                "reference": "977e0f508d40f837c0151a9083a076eadc1b8088"
+                "reference": "c81611f5e0f817ec01226a5862bd5a7362c965f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/connerbw/parsedownparty/zipball/977e0f508d40f837c0151a9083a076eadc1b8088",
-                "reference": "977e0f508d40f837c0151a9083a076eadc1b8088",
+                "url": "https://api.github.com/repos/connerbw/parsedownparty/zipball/c81611f5e0f817ec01226a5862bd5a7362c965f7",
+                "reference": "c81611f5e0f817ec01226a5862bd5a7362c965f7",
                 "shasum": ""
             },
             "require": {
@@ -171,7 +171,7 @@
                 "parsedown",
                 "wordpress"
             ],
-            "time": "2018-01-05T13:57:55+00:00"
+            "time": "2018-01-05T14:27:58+00:00"
         },
         {
             "name": "discourse/wp-discourse",
@@ -831,6 +831,46 @@
             "homepage": "https://wordpress.org/plugins/syntaxhighlighter-evolved-yaml-brush/"
         },
         {
+            "name": "wpackagist-plugin/wp-anchor-header",
+            "version": "0.2.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-anchor-header/",
+                "reference": "tags/0.2.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-anchor-header.0.2.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-anchor-header/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-github-sync",
+            "version": "2.0.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-github-sync/",
+                "reference": "tags/2.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-github-sync.2.0.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-github-sync/"
+        },
+        {
             "name": "wpackagist-theme/twentysixteen",
             "version": "1.4",
             "source": {
@@ -933,7 +973,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "connerbw/parsedownparty": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
