@@ -15,11 +15,12 @@ wordpress_sites:
     repo_subtree_path: pressbooks.org # relative path to your Bedrock/WP directory in your repo
     branch: master
     multisite:
-      enabled: false
+      enabled: true
+      subdomains: true
     ssl:
       enabled: true
       provider: letsencrypt
-      hsts_include_subdomains: false
+      hsts_include_subdomains: true
     cache:
       enabled: true
   docs.pressbooks.org:
