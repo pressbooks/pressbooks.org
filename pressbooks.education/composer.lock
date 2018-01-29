@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "87d9ecf58a25f31dcbf5fabf2c400fb0",
+    "content-hash": "180c32a3c20df15f3b65c00caf98f8f1",
     "packages": [
         {
             "name": "composer/installers",
@@ -572,6 +572,26 @@
             "time": "2016-09-01T10:05:43+00:00"
         },
         {
+            "name": "wpackagist-plugin/autodescription",
+            "version": "3.0.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/autodescription/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/autodescription.zip?timestamp=1512599902",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/autodescription/"
+        },
+        {
             "name": "wpackagist-plugin/easy-pricing-tables",
             "version": "2.3.10",
             "source": {
@@ -630,26 +650,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/html-forms/"
-        },
-        {
-            "name": "wpackagist-theme/twentythirteen",
-            "version": "2.3",
-            "source": {
-                "type": "svn",
-                "url": "https://themes.svn.wordpress.org/twentythirteen/",
-                "reference": "2.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentythirteen.2.3.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-theme",
-            "homepage": "https://wordpress.org/themes/twentythirteen/"
         }
     ],
     "packages-dev": [

@@ -46,7 +46,7 @@
     "wpackagist-plugin/easy-pricing-tables": "^2.3",
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "5.1.2.2",
     "wpackagist-plugin/html-forms": "^1.0",
-    "wpackagist-theme/twentythirteen": "^2.3"
+    "wpackagist-plugin/autodescription": "^3.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2"
