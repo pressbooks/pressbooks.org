@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6da2b46c7b2d6bd2acdc51e11307ca6",
+    "content-hash": "bad73bc90d3dbfff0fae0974573bb148",
     "packages": [
         {
             "name": "brain/hierarchy",
@@ -1158,6 +1158,43 @@
                 "simple-cache"
             ],
             "time": "2017-01-02T13:31:39+00:00"
+        },
+        {
+            "name": "roots/multisite-url-fixer",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/roots/multisite-url-fixer.git",
+                "reference": "e664180d71b29ae8362261ae3bc772a28eac2308"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/roots/multisite-url-fixer/zipball/e664180d71b29ae8362261ae3bc772a28eac2308",
+                "reference": "e664180d71b29ae8362261ae3bc772a28eac2308",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^3.1"
+            },
+            "type": "wordpress-muplugin",
+            "autoload": {
+                "psr-4": {
+                    "Roots\\Bedrock\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Fixes WordPress issues with home and site URL on multisite when using Bedrock",
+            "homepage": "https://roots.io/bedrock/",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2017-10-17T21:07:50+00:00"
         },
         {
             "name": "roots/sage-lib",

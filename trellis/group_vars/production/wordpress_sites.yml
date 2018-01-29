@@ -31,7 +31,7 @@ wordpress_sites:
     repo_subtree_path: pressbooks.education # relative path to your Bedrock/WP directory in your repo
     branch: master
     multisite:
-      enabled: false
+      enabled: true
     ssl:
       enabled: true
       provider: letsencrypt
