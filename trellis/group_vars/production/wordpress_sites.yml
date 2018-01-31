@@ -38,19 +38,3 @@ wordpress_sites:
       hsts_include_subdomains: false
     cache:
       enabled: true
-  handbook.pressbooks.pub:
-    site_hosts:
-      - canonical: handbook.pressbooks.pub
-    local_path: ../handbook.pressbooks.pub # path targeting local Bedrock site directory (relative to Ansible root)
-    repo: git@github.com:pressbooks/pressbooks.org.git # replace with your Git repo URL
-    repo_subtree_path: handbook.pressbooks.pub # relative path to your Bedrock/WP directory in your repo
-    branch: master
-    multisite:
-      enabled: true
-      subdomains: false
-    ssl:
-      enabled: true
-      provider: letsencrypt
-      hsts_include_subdomains: false
-    cache:
-      enabled: true
