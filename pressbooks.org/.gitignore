@@ -1,5 +1,6 @@
 # Application
 web/app/plugins/*
+!web/app/plugins/pb-edit-on-github.php
 !web/app/plugins/.gitkeep
 !web/app/plugins/wp-migrate-db-pro*
 web/app/mu-plugins/*/
