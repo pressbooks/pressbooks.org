@@ -1,0 +1,26 @@
+{
+  "name": "pressbooks/sweet-release",
+  "description": "Painlessly add rewrite endpoints for GitHub release assets.",
+  "type": "wordpress-plugin",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Pressbooks (Book Oven Inc.)",
+      "email": "code@pressbooks.com"
+    }
+  ],
+  "require": {
+    "composer/installers": "^1.5"
+  },
+  "require-dev": {
+    "humanmade/coding-standards": "^0.3.0",
+    "wpreadme2markdown/wp2md": "^3.0"
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpunit --configuration phpunit.xml --coverage-clover coverage.xml",
+      "@standards"
+    ],
+    "standards": ["vendor/bin/phpcs --standard=phpcs.ruleset.xml *.php inc/"]
+  }
+}

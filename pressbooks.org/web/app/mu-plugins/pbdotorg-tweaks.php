@@ -14,6 +14,16 @@ if (function_exists('\Sober\Intervention\intervention')) {
     intervention('remove-help-tabs');
 }
 
+add_filter(
+	'sweet_release_projects', function( $projects ) {
+		return [
+			'pressbooks' => 'pressbooks/pressbooks',
+			'aldine' => 'pressbooks/pressbooks-aldine',
+			'mcluhan' => 'pressbooks/pressbooks-book',
+		];
+	}
+);
+
 function pbdotorg_setup() {
     add_theme_support( 'custom-logo', array(
 		'height'      => 240,
