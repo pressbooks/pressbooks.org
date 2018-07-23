@@ -37,16 +37,16 @@
   "require": {
     "php": ">=5.6",
     "composer/installers": "^1.4",
-    "johnpbloch/wordpress": "4.9.1",
+    "johnpbloch/wordpress": "4.9.7",
     "oscarotero/env": "^1.1.0",
-    "pressbooks/pressbooks-aldine": "^1.0@beta",
+    "pressbooks/pressbooks-aldine": "^1.0",
     "roots/multisite-url-fixer": "^1.1",
     "roots/wp-password-bcrypt": "1.0.0",
     "vlucas/phpdotenv": "^2.0.1",
+    "wpackagist-plugin/autodescription": "^3.0",
     "wpackagist-plugin/easy-pricing-tables": "^2.3",
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "5.1.2.2",
-    "wpackagist-plugin/html-forms": "^1.0",
-    "wpackagist-plugin/autodescription": "^3.0"
+    "wpackagist-plugin/html-forms": "^1.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2"
