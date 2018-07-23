@@ -1,1 +1,4 @@
 path: web/wp
+
+@prod:
+  ssh: web@pressbooks.education/srv/www/pressbooks.education/current

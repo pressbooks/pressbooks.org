@@ -44,7 +44,7 @@
     "composer/installers": "~1.5",
     "connerbw/parsedownparty": "dev-master",
     "discourse/wp-discourse": "^1.3",
-    "johnpbloch/wordpress": "^4.9",
+    "johnpbloch/wordpress": "4.9.7",
     "oscarotero/env": "^1.0",
     "roots/multisite-url-fixer": "^1.1",
     "roots/wp-password-bcrypt": "1.0.0",

@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "21d2fee3f3108e793978c9239895c9e8",
+    "content-hash": "0f2a1215c1b2e10a17a87e79dd70e732",
     "packages": [
         {
             "name": "composer/installers",
@@ -132,24 +132,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/connerbw/parsedownparty.git",
-                "reference": "c81611f5e0f817ec01226a5862bd5a7362c965f7"
+                "reference": "cc6e626e3aa003aacd7c98c2549e35d6976a0861"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/connerbw/parsedownparty/zipball/c81611f5e0f817ec01226a5862bd5a7362c965f7",
-                "reference": "c81611f5e0f817ec01226a5862bd5a7362c965f7",
+                "url": "https://api.github.com/repos/connerbw/parsedownparty/zipball/cc6e626e3aa003aacd7c98c2549e35d6976a0861",
+                "reference": "cc6e626e3aa003aacd7c98c2549e35d6976a0861",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "^1.4",
                 "erusev/parsedown-extra": "^0.7.1",
+                "league/html-to-markdown": "^4.7",
                 "php": ">=5.6"
             },
             "require-dev": {
-                "doctrine/instantiator": "1.0.*",
-                "humanmade/coding-standards": "^0.2",
-                "phpdocumentor/reflection-docblock": "3.3.*",
-                "phpunit/php-token-stream": "1.4.*",
+                "humanmade/coding-standards": "^0.3.0",
                 "phpunit/phpunit": "^5.7",
                 "wpreadme2markdown/wp2md": "^3.0"
             },
@@ -171,20 +169,20 @@
                 "parsedown",
                 "wordpress"
             ],
-            "time": "2018-01-05T14:27:58+00:00"
+            "time": "2018-07-12T17:10:58+00:00"
         },
         {
             "name": "discourse/wp-discourse",
-            "version": "1.5.8",
+            "version": "1.6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/discourse/wp-discourse.git",
-                "reference": "a4a36db4e8008daf3860fe4abcc18d58eda898a5"
+                "reference": "2295cc869b157e9cc86870fc42b0e89de836c1f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/discourse/wp-discourse/zipball/a4a36db4e8008daf3860fe4abcc18d58eda898a5",
-                "reference": "a4a36db4e8008daf3860fe4abcc18d58eda898a5",
+                "url": "https://api.github.com/repos/discourse/wp-discourse/zipball/2295cc869b157e9cc86870fc42b0e89de836c1f9",
+                "reference": "2295cc869b157e9cc86870fc42b0e89de836c1f9",
                 "shasum": ""
             },
             "require": {
@@ -216,7 +214,7 @@
                 "discourse",
                 "wordpress"
             ],
-            "time": "2018-03-14T00:06:39+00:00"
+            "time": "2018-07-09T23:15:54+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -310,20 +308,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.9.4",
+            "version": "4.9.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "5394373d26a8e304eb293c2a9359701a7ab03131"
+                "reference": "6697a15cdfd60cfdf9f4bf04a4e7637a8d2a5afa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/5394373d26a8e304eb293c2a9359701a7ab03131",
-                "reference": "5394373d26a8e304eb293c2a9359701a7ab03131",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/6697a15cdfd60cfdf9f4bf04a4e7637a8d2a5afa",
+                "reference": "6697a15cdfd60cfdf9f4bf04a4e7637a8d2a5afa",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "4.9.4",
+                "johnpbloch/wordpress-core": "4.9.7",
                 "johnpbloch/wordpress-core-installer": "^1.0",
                 "php": ">=5.3.2"
             },
@@ -345,27 +343,27 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-02-06T16:42:18+00:00"
+            "time": "2018-07-05T18:12:19+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "4.9.4",
+            "version": "4.9.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "eef672cdb4ae9e846c464d4d03684b43d4108eda"
+                "reference": "1116e10f71f8fb811856df212af652c427bc6bd1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/eef672cdb4ae9e846c464d4d03684b43d4108eda",
-                "reference": "eef672cdb4ae9e846c464d4d03684b43d4108eda",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/1116e10f71f8fb811856df212af652c427bc6bd1",
+                "reference": "1116e10f71f8fb811856df212af652c427bc6bd1",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
             "provide": {
-                "wordpress/core-implementation": "4.9.4"
+                "wordpress/core-implementation": "4.9.7"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -385,7 +383,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-02-06T16:42:13+00:00"
+            "time": "2018-07-05T18:12:13+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -435,6 +433,70 @@
                 "wordpress"
             ],
             "time": "2018-01-29T14:49:29+00:00"
+        },
+        {
+            "name": "league/html-to-markdown",
+            "version": "4.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/html-to-markdown.git",
+                "reference": "76c076483cef89860d32a3fd25312f5a42848a8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/html-to-markdown/zipball/76c076483cef89860d32a3fd25312f5a42848a8c",
+                "reference": "76c076483cef89860d32a3fd25312f5a42848a8c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-xml": "*",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "mikehaertl/php-shellcommand": "~1.1.0",
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1"
+            },
+            "bin": [
+                "bin/html-to-markdown"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\HTMLToMarkdown\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Colin O'Dell",
+                    "email": "colinodell@gmail.com",
+                    "homepage": "http://www.colinodell.com",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Nick Cernis",
+                    "email": "nick@cern.is",
+                    "homepage": "http://modernnerd.net",
+                    "role": "Original Author"
+                }
+            ],
+            "description": "An HTML-to-markdown conversion helper for PHP",
+            "homepage": "https://github.com/thephpleague/html-to-markdown",
+            "keywords": [
+                "html",
+                "markdown"
+            ],
+            "time": "2018-05-19T23:47:12+00:00"
         },
         {
             "name": "oscarotero/env",
@@ -620,28 +682,28 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.4.0",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c"
+                "reference": "6ae3e2e6494bb5e58c2decadafc3de7f1453f70a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
-                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/6ae3e2e6494bb5e58c2decadafc3de7f1453f70a",
+                "reference": "6ae3e2e6494bb5e58c2decadafc3de7f1453f70a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.9"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8 || ^5.0"
+                "phpunit/phpunit": "^4.8.35 || ^5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
@@ -651,7 +713,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD-3-Clause-Attribution"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -666,7 +728,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2016-09-01T10:05:43+00:00"
+            "time": "2018-07-01T10:25:50+00:00"
         },
         {
             "name": "wpackagist-plugin/autodescription",
@@ -679,7 +741,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/autodescription.2.9.4.zip",
-                "reference": "tags/2.9.4",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -699,7 +761,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/blob-mimes.0.6.7.zip",
-                "reference": "tags/0.6.7",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -718,8 +780,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/easy-pricing-tables.zip?timestamp=1509015223",
-                "reference": "trunk",
+                "url": "https://downloads.wordpress.org/plugin/easy-pricing-tables.zip?timestamp=1510824119",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -738,8 +800,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/endnotes.zip",
-                "reference": "trunk",
+                "url": "https://downloads.wordpress.org/plugin/endnotes.zip?timestamp=1462201852",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -750,15 +812,15 @@
         },
         {
             "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
-            "version": "5.3.2",
+            "version": "5.3.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/google-analytics-dashboard-for-wp/",
-                "reference": "tags/5.3.2"
+                "reference": "tags/5.3.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.5.3.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.5.3.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -770,15 +832,15 @@
         },
         {
             "name": "wpackagist-plugin/html-forms",
-            "version": "1.1.4",
+            "version": "1.3.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/html-forms/",
-                "reference": "tags/1.1.4"
+                "reference": "tags/1.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/html-forms.1.1.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/html-forms.1.3.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -799,7 +861,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/redirection.2.10.1.zip",
-                "reference": "tags/2.10.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -810,16 +872,16 @@
         },
         {
             "name": "wpackagist-plugin/svg-support",
-            "version": "2.3.11",
+            "version": "2.3.15",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/svg-support/",
-                "reference": "tags/2.3.11"
+                "reference": "tags/2.3.15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/svg-support.2.3.11.zip",
-                "reference": "tags/2.3.11",
+                "url": "https://downloads.wordpress.org/plugin/svg-support.2.3.15.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -839,7 +901,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/syntaxhighlighter.3.2.1.zip",
-                "reference": "tags/3.2.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -859,7 +921,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/syntaxhighlighter-evolved-yaml-brush.1.0.3.zip",
-                "reference": "tags/1.0.3",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -910,16 +972,16 @@
         },
         {
             "name": "wpackagist-theme/twentysixteen",
-            "version": "1.4",
+            "version": "1.5",
             "source": {
                 "type": "svn",
                 "url": "https://themes.svn.wordpress.org/twentysixteen/",
-                "reference": "1.4"
+                "reference": "1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentysixteen.1.4.zip",
-                "reference": "1.4",
+                "url": "https://downloads.wordpress.org/theme/twentysixteen.1.5.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {

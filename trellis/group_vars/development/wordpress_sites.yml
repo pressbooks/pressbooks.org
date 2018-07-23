@@ -5,9 +5,9 @@
 wordpress_sites:
   pressbooks.org:
     site_hosts:
-      - canonical: pressbooksorg.dev
+      - canonical: pressbooksorg.test
         redirects:
-          - www.pressbooksorg.dev
+          - www.pressbooksorg.test
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     admin_email: ned@bight.ca
     multisite:
