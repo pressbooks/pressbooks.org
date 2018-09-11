@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f2a1215c1b2e10a17a87e79dd70e732",
+    "content-hash": "7ad36098aebdfda9eb8f5e5a6c1c0e80",
     "packages": [
         {
             "name": "composer/installers",
@@ -173,16 +173,16 @@
         },
         {
             "name": "discourse/wp-discourse",
-            "version": "1.6.8",
+            "version": "1.7.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/discourse/wp-discourse.git",
-                "reference": "2295cc869b157e9cc86870fc42b0e89de836c1f9"
+                "reference": "fa960f1b574fb26867fa233f4eaeab11e45bdd1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/discourse/wp-discourse/zipball/2295cc869b157e9cc86870fc42b0e89de836c1f9",
-                "reference": "2295cc869b157e9cc86870fc42b0e89de836c1f9",
+                "url": "https://api.github.com/repos/discourse/wp-discourse/zipball/fa960f1b574fb26867fa233f4eaeab11e45bdd1e",
+                "reference": "fa960f1b574fb26867fa233f4eaeab11e45bdd1e",
                 "shasum": ""
             },
             "require": {
@@ -214,7 +214,7 @@
                 "discourse",
                 "wordpress"
             ],
-            "time": "2018-07-09T23:15:54+00:00"
+            "time": "2018-09-08T00:42:44+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -308,20 +308,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.9.7",
+            "version": "4.9.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "6697a15cdfd60cfdf9f4bf04a4e7637a8d2a5afa"
+                "reference": "de02cd79a41e06f36558040724414197cb7f6246"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/6697a15cdfd60cfdf9f4bf04a4e7637a8d2a5afa",
-                "reference": "6697a15cdfd60cfdf9f4bf04a4e7637a8d2a5afa",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/de02cd79a41e06f36558040724414197cb7f6246",
+                "reference": "de02cd79a41e06f36558040724414197cb7f6246",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "4.9.7",
+                "johnpbloch/wordpress-core": "4.9.8",
                 "johnpbloch/wordpress-core-installer": "^1.0",
                 "php": ">=5.3.2"
             },
@@ -343,27 +343,27 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-07-05T18:12:19+00:00"
+            "time": "2018-08-02T21:48:39+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "4.9.7",
+            "version": "4.9.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "1116e10f71f8fb811856df212af652c427bc6bd1"
+                "reference": "50323f9b91d7689d615b4af02caf9d80584b1cfc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/1116e10f71f8fb811856df212af652c427bc6bd1",
-                "reference": "1116e10f71f8fb811856df212af652c427bc6bd1",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/50323f9b91d7689d615b4af02caf9d80584b1cfc",
+                "reference": "50323f9b91d7689d615b4af02caf9d80584b1cfc",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
             "provide": {
-                "wordpress/core-implementation": "4.9.7"
+                "wordpress/core-implementation": "4.9.8"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -383,7 +383,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-07-05T18:12:13+00:00"
+            "time": "2018-08-02T21:48:32+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -682,16 +682,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.5.0",
+            "version": "v2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "6ae3e2e6494bb5e58c2decadafc3de7f1453f70a"
+                "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/6ae3e2e6494bb5e58c2decadafc3de7f1453f70a",
-                "reference": "6ae3e2e6494bb5e58c2decadafc3de7f1453f70a",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
+                "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
                 "shasum": ""
             },
             "require": {
@@ -728,7 +728,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2018-07-01T10:25:50+00:00"
+            "time": "2018-07-29T20:33:41+00:00"
         },
         {
             "name": "wpackagist-plugin/autodescription",
@@ -771,8 +771,48 @@
             "homepage": "https://wordpress.org/plugins/blob-mimes/"
         },
         {
+            "name": "wpackagist-plugin/classic-editor",
+            "version": "0.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/classic-editor/",
+                "reference": "tags/0.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/classic-editor.0.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/classic-editor/"
+        },
+        {
+            "name": "wpackagist-plugin/classic-editor-addon",
+            "version": "2.1.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/classic-editor-addon/",
+                "reference": "tags/2.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/classic-editor-addon.2.1.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/classic-editor-addon/"
+        },
+        {
             "name": "wpackagist-plugin/easy-pricing-tables",
-            "version": "2.3.10",
+            "version": "2.3.11",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/easy-pricing-tables/",
@@ -780,7 +820,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/easy-pricing-tables.zip?timestamp=1510824119",
+                "url": "https://downloads.wordpress.org/plugin/easy-pricing-tables.zip?timestamp=1532925236",
                 "reference": null,
                 "shasum": null
             },
@@ -832,15 +872,15 @@
         },
         {
             "name": "wpackagist-plugin/html-forms",
-            "version": "1.3.1",
+            "version": "1.3.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/html-forms/",
-                "reference": "tags/1.3.1"
+                "reference": "tags/1.3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/html-forms.1.3.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/html-forms.1.3.2.zip",
                 "reference": null,
                 "shasum": null
             },
