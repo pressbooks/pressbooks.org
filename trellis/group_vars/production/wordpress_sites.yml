@@ -11,6 +11,7 @@ wordpress_sites:
           - pressbooks.pub
           - www.pressbooks.pub
       - canonical: docs.pressbooks.org
+      - canonical: discourse.pressbooks.org
     local_path: ../pressbooks.org # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:pressbooks/pressbooks.org.git # replace with your Git repo URL
     repo_subtree_path: pressbooks.org # relative path to your Bedrock/WP directory in your repo
