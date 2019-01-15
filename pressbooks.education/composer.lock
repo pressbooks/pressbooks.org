@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3fae1e6932ae58c107b0c5f475a84b11",
+    "content-hash": "aa9ddd5ce9bdac6c94ed9218cb0b99d1",
     "packages": [
         {
             "name": "composer/installers",
@@ -604,6 +604,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/autodescription/"
+        },
+        {
+            "name": "wpackagist-plugin/classic-editor",
+            "version": "1.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/classic-editor/",
+                "reference": "tags/1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/classic-editor/"
         },
         {
             "name": "wpackagist-plugin/easy-pricing-tables",
