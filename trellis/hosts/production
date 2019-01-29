@@ -2,7 +2,7 @@
 # List each machine only once per [group], even if it will host multiple sites.
 
 [production]
-pressbooks.org
+68.183.200.41
 
 [web]
-pressbooks.org
+68.183.200.41
