@@ -1,3 +1,115 @@
+### 1.11.1: 2019-01-09
+
+* Update to WordPress 5.0.3 ([#408](https://github.com/roots/bedrock/pull/408))
+
+### 1.11.0: 2018-12-19
+
+* Bump PHP requirement to >= 7.1 ([#405](https://github.com/roots/bedrock/pull/405))
+
+### 1.10.2: 2018-12-19
+
+* Update to WordPress 5.0.2 ([#406](https://github.com/roots/bedrock/pull/406))
+
+### 1.10.1: 2018-12-12
+
+* Update to WordPress 5.0.1 ([#403](https://github.com/roots/bedrock/pull/403))
+
+### 1.10.0: 2018-12-09
+
+* Update to WordPress 5.0, switch from `johnpbloch/wordpress` to `roots/wordpress` package ([#395](https://github.com/roots/bedrock/pull/395))
+
+### 1.9.0: 2018-09-17
+
+* Fix error display in development environments ([c457082](https://github.com/roots/bedrock/commit/c457082cf4b153400d3e34f4f68a30eea4cc7c38))
+* --prefer-dist on roave/security-advisories ([#381](https://github.com/roots/bedrock/pull/381))
+* New Bedrock Configuration Model ([#380](https://github.com/roots/bedrock/pull/380))
+* Remove vendor/.gitkeep ([#379](https://github.com/roots/bedrock/pull/379))
+* Composer 1.7.0 lockfile ([#378](https://github.com/roots/bedrock/pull/378))
+* Adds roave/security-advisories to composer dev deps ([#376](https://github.com/roots/bedrock/pull/376))
+
+### 1.8.12: 2018-08-03
+
+* Update to WordPress 4.9.8
+
+### 1.8.11: 2018-07-09
+
+* Update to WordPress 4.9.7
+
+### 1.8.10: 2018-05-18
+
+* Update to WordPress 4.9.6
+
+### 1.8.9: 2018-04-04
+
+* Update to WordPress 4.9.5
+
+### 1.8.8: 2018-02-06
+
+* Update to WordPress 4.9.4
+
+### 1.8.7: 2018-02-05
+
+* Update to WordPress 4.9.3
+
+### 1.8.6: 2018-01-16
+
+* Update to WordPress 4.9.2
+
+### 1.8.5: 2017-11-29
+
+* Update to WordPress 4.9.1
+
+### 1.8.4: 2017-11-16
+
+* Update to WordPress 4.9.0
+
+### 1.8.3: 2017-10-31
+
+* Update to WordPress 4.8.3
+
+### 1.8.2: 2017-09-19
+
+* Update to WordPress 4.8.2
+
+### 1.8.1: 2017-08-02
+
+* Update to WordPress 4.8.1
+
+### 1.8.0: 2017-06-08
+
+* Update to WordPress 4.8.0
+
+### 1.7.9: 2017-05-16
+
+* Update to WordPress 4.7.5
+
+### 1.7.8: 2017-05-03
+
+* Update `johnpbloch/wordpress` to 4.7.4.1 (see https://github.com/johnpbloch/wordpress/issues/32)
+
+### 1.7.7: 2017-04-20
+
+* Update to WordPress 4.7.4
+
+### 1.7.6: 2017-03-06
+
+* Update to WordPress 4.7.3
+
+### 1.7.5: 2017-01-26
+
+* Update to WordPress 4.7.2
+
+### 1.7.4: 2017-01-11
+
+* Update to WordPress 4.7.1
+* Add Optional variables to `.env.example`
+* Remove unnecessary gitignore rules ([#286](https://github.com/roots/bedrock/pull/286))
+
+### 1.7.3: 2016-12-06
+
+* Update to WordPress 4.7
+* Default `WP_ENV` to `production` instead of `development` ([#277](https://github.com/roots/bedrock/pull/277))
+
 ### 1.7.2: 2016-09-07
 
 * Update to WordPress 4.6.1
