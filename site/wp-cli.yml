@@ -1,0 +1,4 @@
+path: web/wp
+
+@production:
+  ssh: web@pressbooks.org/srv/www/pressbooks.org/current

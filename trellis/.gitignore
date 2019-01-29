@@ -1,5 +1,6 @@
 .vault_pass
 .vagrant
+ssl
 vendor/roles
 *.py[co]
 *.retry
