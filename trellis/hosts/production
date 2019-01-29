@@ -2,7 +2,7 @@
 # List each machine only once per [group], even if it will host multiple sites.
 
 [production]
-68.183.200.41
+pressbooks.org
 
 [web]
-68.183.200.41
+pressbooks.org
