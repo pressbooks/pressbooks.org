@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "14ccf40eba4c066afe63389255958bf9",
+    "content-hash": "155c2100fbb35f3f87ae6b29d9495b6a",
     "packages": [
         {
             "name": "composer/installers",
@@ -878,26 +878,6 @@
             "homepage": "https://wordpress.org/plugins/classic-editor/"
         },
         {
-            "name": "wpackagist-plugin/classic-editor-addon",
-            "version": "2.4.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/classic-editor-addon/",
-                "reference": "tags/2.4.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/classic-editor-addon.2.4.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/classic-editor-addon/"
-        },
-        {
             "name": "wpackagist-plugin/easy-pricing-tables",
             "version": "2.4.0",
             "source": {
@@ -936,26 +916,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/endnotes/"
-        },
-        {
-            "name": "wpackagist-plugin/give",
-            "version": "2.4.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/give/",
-                "reference": "tags/2.4.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/give.2.4.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/give/"
         },
         {
             "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
@@ -1076,26 +1036,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/syntaxhighlighter-evolved-yaml-brush/"
-        },
-        {
-            "name": "wpackagist-plugin/transients-manager",
-            "version": "1.7.5",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/transients-manager/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/transients-manager.zip?timestamp=1532486424",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/transients-manager/"
         },
         {
             "name": "wpackagist-plugin/wp-anchor-header",
