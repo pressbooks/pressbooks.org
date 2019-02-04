@@ -4,8 +4,7 @@ jobs:
       - image: circleci/php:7.2-node-browsers
     steps:
       - checkout
-      - run: cd site && composer install
-      - run: vendor/bin/security-checker security:check composer.lock
+      - run: cd site && composer install && vendor/bin/security-checker security:check composer.lock
   deploy_production:
     docker:
       - image: benword/ubuntu18.04-ansible2.7.5-nvm-yarn:0.0.1
