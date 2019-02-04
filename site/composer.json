@@ -45,7 +45,7 @@
     "discourse/wp-discourse": "^1.8",
     "soberwp/intervention": "1.2.0",
     "wpackagist-plugin/autodescription": "^3.0",
-    "wpackagist-plugin/blob-mimes": "^0.6",
+    "wpackagist-plugin/blob-mimes": "^0.8",
     "wpackagist-plugin/classic-editor": "^1.0",
     "wpackagist-plugin/classic-editor-addon": "^2.1",
     "wpackagist-plugin/easy-pricing-tables": "^2.3",
