@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "150e2732d6da6a67266ebb15027df2de",
+    "content-hash": "72e51137c1eebd8e782a508c4517f858",
     "packages": [
         {
             "name": "composer/installers",
@@ -819,15 +819,15 @@
         },
         {
             "name": "wpackagist-plugin/blob-mimes",
-            "version": "0.6.7",
+            "version": "0.8.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/blob-mimes/",
-                "reference": "tags/0.6.7"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/blob-mimes.0.6.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/blob-mimes.zip?timestamp=1547831191",
                 "reference": null,
                 "shasum": null
             },
