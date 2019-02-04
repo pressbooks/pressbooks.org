@@ -21,8 +21,6 @@ wordpress_sites:
       subdomains: true
     ssl:
       enabled: true
-      provider: manual
-      cert: ../../ssl/pressbooks.org.crt
-      key: ../../ssl/pressbooks.org.key
+      provider: letsencrypt
     cache:
       enabled: true

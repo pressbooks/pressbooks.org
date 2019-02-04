@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "72e51137c1eebd8e782a508c4517f858",
+    "content-hash": "b74d958e5d5f0945fbdeba5c3fcff018",
     "packages": [
         {
             "name": "composer/installers",
@@ -460,7 +460,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.0.3",
-                "reference": null,
+                "reference": "5.0.3",
                 "shasum": null
             },
             "require": {
@@ -916,6 +916,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/endnotes/"
+        },
+        {
+            "name": "wpackagist-plugin/give",
+            "version": "2.4.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/give/",
+                "reference": "tags/2.4.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/give.2.4.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/give/"
         },
         {
             "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
