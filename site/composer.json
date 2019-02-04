@@ -44,6 +44,7 @@
     "roots/wp-password-bcrypt": "^1.0",
     "soberwp/intervention": "1.2.0",
     "vlucas/phpdotenv": "^2.0",
+    "wpackagist-plugin/akismet": "^4.1",
     "wpackagist-plugin/autodescription": "^3.0",
     "wpackagist-plugin/blob-mimes": "^0.8",
     "wpackagist-plugin/classic-editor": "^1.0",
