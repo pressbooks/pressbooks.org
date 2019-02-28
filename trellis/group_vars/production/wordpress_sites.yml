@@ -10,6 +10,8 @@ wordpress_sites:
           - www.pressbooks.org
           - pressbooks.pub
           - www.pressbooks.pub
+          - pressbooks.dev
+          - www.pressbooks.dev
       - canonical: docs.pressbooks.org
       - canonical: discourse.pressbooks.org
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
@@ -19,6 +21,7 @@ wordpress_sites:
     multisite:
       enabled: true
       subdomains: true
+      cron: true
     ssl:
       enabled: true
       provider: letsencrypt
