@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "096769d772b0a7f0cfda3abcb3537d3e",
+    "content-hash": "67ae4c72350bd1dd0f9f95e47e920615",
     "packages": [
         {
             "name": "composer/installers",
@@ -732,7 +732,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "BackEndTea@gmail.com"
+                    "email": "backendtea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -834,15 +834,15 @@
         },
         {
             "name": "wpackagist-plugin/blob-mimes",
-            "version": "0.8.9",
+            "version": "0.9.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/blob-mimes/",
-                "reference": "trunk"
+                "reference": "tags/0.9.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/blob-mimes.zip?timestamp=1550814191"
+                "url": "https://downloads.wordpress.org/plugin/blob-mimes.0.9.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
