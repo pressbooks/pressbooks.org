@@ -39,7 +39,7 @@
     "discourse/wp-discourse": "^1.8",
     "oscarotero/env": "^1.0",
     "roots/multisite-url-fixer": "^1.1",
-    "roots/wordpress": "5.1",
+    "roots/wordpress": "5.1.1",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "^1.0",
     "soberwp/intervention": "1.2.0",
