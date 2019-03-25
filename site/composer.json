@@ -29,7 +29,6 @@
       "php": "7.1.27"
     }
   },
-  "minimum-stability": "dev",
   "repositories": [
     {
       "type": "composer",
@@ -61,7 +60,7 @@
     "wpackagist-plugin/syntaxhighlighter-evolved-yaml-brush": "^1.0",
     "wpackagist-plugin/wp-anchor-header": "^0.2",
     "wpackagist-plugin/wp-github-sync": "^2.0",
-    "connerbw/parsedown-party": "^1.2.0"
+    "wpackagist-plugin/parsedown-party": "^1.2.0"
   },
   "require-dev": {
     "roave/security-advisories": "dev-master",
