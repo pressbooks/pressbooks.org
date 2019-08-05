@@ -128,16 +128,16 @@
         },
         {
             "name": "discourse/wp-discourse",
-            "version": "1.9.1",
+            "version": "1.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/discourse/wp-discourse.git",
-                "reference": "a290f898b79684b3905468b5f7d5ad98f0eaaf86"
+                "reference": "d183e3afbb7979de69e35fb6052cd72dd569de08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/discourse/wp-discourse/zipball/a290f898b79684b3905468b5f7d5ad98f0eaaf86",
-                "reference": "a290f898b79684b3905468b5f7d5ad98f0eaaf86",
+                "url": "https://api.github.com/repos/discourse/wp-discourse/zipball/d183e3afbb7979de69e35fb6052cd72dd569de08",
+                "reference": "d183e3afbb7979de69e35fb6052cd72dd569de08",
                 "shasum": ""
             },
             "require": {
@@ -146,7 +146,7 @@
             },
             "require-dev": {
                 "10up/wp_mock": "dev-master",
-                "squizlabs/php_codesniffer": ">=2.7"
+                "squizlabs/php_codesniffer": "3.*"
             },
             "type": "wordpress-plugin",
             "notification-url": "https://packagist.org/downloads/",
@@ -169,7 +169,7 @@
                 "discourse",
                 "wordpress"
             ],
-            "time": "2019-06-07T22:31:31+00:00"
+            "time": "2019-08-02T00:22:57+00:00"
         },
         {
             "name": "oscarotero/env",
@@ -202,9 +202,9 @@
             "authors": [
                 {
                     "name": "Oscar Otero",
+                    "role": "Developer",
                     "email": "oom@oscarotero.com",
-                    "homepage": "http://oscarotero.com",
-                    "role": "Developer"
+                    "homepage": "http://oscarotero.com"
                 }
             ],
             "description": "Simple library to consume environment variables",
