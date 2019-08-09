@@ -27,3 +27,6 @@ wordpress_sites:
       provider: letsencrypt
     cache:
       enabled: true
+    env:
+      wp_memory_limit: 96M
+      wp_max_memory_limit: "{{ php_memory_limit }}"
