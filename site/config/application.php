@@ -94,6 +94,12 @@ Config::define('DISALLOW_FILE_EDIT', true);
 Config::define('DISALLOW_FILE_MODS', true);
 
 /**
+ * Pressbooks Settings
+ */
+define('WP_MEMORY_LIMIT', env('WP_MEMORY_LIMIT') ?: '96M'); // Everywhere
+define('WP_MAX_MEMORY_LIMIT', env('WP_MAX_MEMORY_LIMIT') ?: '256M'); // In the admin
+
+/**
  * Debugging Settings
  */
 Config::define('WP_DEBUG_DISPLAY', false);
