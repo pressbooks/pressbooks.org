@@ -637,15 +637,15 @@
         },
         {
             "name": "wpackagist-plugin/blob-mimes",
-            "version": "0.9.4",
+            "version": "0.9.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/blob-mimes/",
-                "reference": "tags/0.9.4"
+                "reference": "tags/0.9.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/blob-mimes.0.9.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/blob-mimes.0.9.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
