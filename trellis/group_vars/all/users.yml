@@ -7,17 +7,13 @@ users:
     groups:
       - "{{ web_group }}"
     keys:
-      - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
       - "{{ lookup('file', 'keys/circleci.pub') }}"
-      - https://github.com/greatislander.keys
       - https://github.com/fullyint.keys
       - https://github.com/connerbw.keys
   - name: "{{ admin_user }}"
     groups:
       - sudo
     keys:
-      - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
-      - https://github.com/greatislander.keys
       - https://github.com/fullyint.keys
       - https://github.com/connerbw.keys
 
