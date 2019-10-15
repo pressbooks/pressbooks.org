@@ -799,15 +799,15 @@
         },
         {
             "name": "wpackagist-plugin/syntaxhighlighter",
-            "version": "3.5.0",
+            "version": "3.5.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/syntaxhighlighter/",
-                "reference": "trunk"
+                "reference": "tags/3.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/syntaxhighlighter.zip?timestamp=1546300697"
+                "url": "https://downloads.wordpress.org/plugin/syntaxhighlighter.3.5.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
