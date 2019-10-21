@@ -130,16 +130,16 @@
         },
         {
             "name": "discourse/wp-discourse",
-            "version": "1.9.4",
+            "version": "1.9.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/discourse/wp-discourse.git",
-                "reference": "af93990b2c73e1afb8fea67447524d7daf0aebd6"
+                "reference": "09c91bc52d292149c1dc81bd7b49e75b8598a949"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/discourse/wp-discourse/zipball/af93990b2c73e1afb8fea67447524d7daf0aebd6",
-                "reference": "af93990b2c73e1afb8fea67447524d7daf0aebd6",
+                "url": "https://api.github.com/repos/discourse/wp-discourse/zipball/09c91bc52d292149c1dc81bd7b49e75b8598a949",
+                "reference": "09c91bc52d292149c1dc81bd7b49e75b8598a949",
                 "shasum": ""
             },
             "require": {
@@ -171,7 +171,7 @@
                 "discourse",
                 "wordpress"
             ],
-            "time": "2019-09-06T01:02:44+00:00"
+            "time": "2019-10-16T19:15:33+00:00"
         },
         {
             "name": "oscarotero/env",
