@@ -45,7 +45,7 @@
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "^1.0",
     "soberwp/intervention": "1.2.0",
-    "vlucas/phpdotenv": "^2.0",
+    "vlucas/phpdotenv": "^4.1",
     "wpackagist-plugin/akismet": "^4.1",
     "wpackagist-plugin/autodescription": "^4.0",
     "wpackagist-plugin/blob-mimes": "^0.9",
