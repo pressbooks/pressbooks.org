@@ -48,7 +48,7 @@
     "vlucas/phpdotenv": "^2.0",
     "wpackagist-plugin/akismet": "^4.1",
     "wpackagist-plugin/autodescription": "^4.0",
-    "wpackagist-plugin/blob-mimes": "^0.9",
+    "wpackagist-plugin/blob-mimes": "^1.0",
     "wpackagist-plugin/classic-editor": "^1.0",
     "wpackagist-plugin/easy-pricing-tables": "^2.3",
     "wpackagist-plugin/endnotes": "^1.0",
