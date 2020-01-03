@@ -673,7 +673,7 @@
         },
         {
             "name": "wpackagist-plugin/easy-pricing-tables",
-            "version": "2.4.0",
+            "version": "2.4.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/easy-pricing-tables/",
@@ -681,7 +681,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/easy-pricing-tables.zip?timestamp=1556611056"
+                "url": "https://downloads.wordpress.org/plugin/easy-pricing-tables.zip?timestamp=1576033013"
             },
             "require": {
                 "composer/installers": "~1.0"
