@@ -8,14 +8,16 @@ users:
       - "{{ web_group }}"
     keys:
       - "{{ lookup('file', 'keys/circleci.pub') }}"
+      - https://github.com/cagp-dev-mtl.keys
+      - https://github.com/ho-man-chan.keys
       - https://github.com/fullyint.keys
-      - https://github.com/connerbw.keys
   - name: "{{ admin_user }}"
     groups:
       - sudo
     keys:
+      - https://github.com/cagp-dev-mtl.keys
+      - https://github.com/ho-man-chan.keys
       - https://github.com/fullyint.keys
-      - https://github.com/connerbw.keys
 
 web_user: web
 web_group: www-data
