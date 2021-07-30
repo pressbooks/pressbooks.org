@@ -10,12 +10,14 @@ users:
       - "{{ lookup('file', 'keys/circleci.pub') }}"
       - https://github.com/ho-man-chan.keys
       - https://github.com/steelwagstaff.keys
+      - https://github.com/greatislander.keys
   - name: "{{ admin_user }}"
     groups:
       - sudo
     keys:
       - https://github.com/ho-man-chan.keys
       - https://github.com/steelwagstaff.keys
+      - https://github.com/greatislander.keys
 
 web_user: web
 web_group: www-data
