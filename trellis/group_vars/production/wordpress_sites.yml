@@ -24,7 +24,9 @@ wordpress_sites:
       cron: true
     ssl:
       enabled: true
-      provider: letsencrypt
+      provider: manual
+      cert: certs/fullchain.pem
+      key: certs/privkey.pem
     cache:
       enabled: true
     env:

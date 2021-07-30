@@ -4,3 +4,4 @@ ssl
 vendor/roles
 *.py[co]
 *.retry
+certs
