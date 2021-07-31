@@ -1,0 +1,41 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <article>
+    <div class="[ post ] [ flow wrapper ]">
+      <h1>{{ title }}</h1>
+      <p class="author vcard"><span class="visually-hidden">Posted by </span><span class="fn n">{{ author if author else "Pressbooks Team" }}</span></p>
+      <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
+      {% if tags %}
+        <ul class="tags-list" aria-label="Tags">
+          {% for tag in tags %}
+            <li>
+              <a href="/tag/{{ tag | slug }}/">{{ tag | replace(' ', '') | capitalize }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {{ content | safe }}
+    </div>
+    {% set nextPost = collections.blog | getPreviousCollectionItem(page) %}
+    {% set previousPost = collections.blog | getNextCollectionItem(page) %}
+    {% if previousPost or nextPost %}
+    <footer class="pagination">
+      <div class="wrapper">
+        <nav class="pagination__inner" aria-label="Pagination links">
+          {% if previousPost %}
+            <a href="{{ previousPost.url }}{{ paginationAnchor }}" data-direction="backwards">
+              <span>{{ paginationPrevText if paginationPrevText else 'Previous' }}</span>
+            </a>
+          {% endif %}
+          {% if nextPost %}
+            <a href="{{ nextPost.url }}{{ paginationAnchor }}" data-direction="forwards">
+              <span>{{ paginationNextText if paginationNextText else 'Next' }}</span>
+            </a>
+          {% endif %}
+        </nav>
+      </div>
+    </footer>
+  {% endif %}
+  </article>
+{% endblock %}
