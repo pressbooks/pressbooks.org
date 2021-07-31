@@ -1,7 +1,8 @@
 ---
-title: "Open Source Call 10/07"
-date: "2019-10-05"
-tags: 
+title: 'Open Source Call 10/07'
+date: '2019-10-05'
+author: Steel Wagstaff
+tags:
   - Development
 ---
 
