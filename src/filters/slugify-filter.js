@@ -1,11 +1,11 @@
-const slugify = require("@sindresorhus/slugify");
+const slugify = require('@sindresorhus/slugify');
 
 module.exports = function (str, options = {}) {
   return slugify(
-    "" + str,
+    '' + str,
     Object.assign(
       {
-        decamelize: false,
+        decamelize: false
       },
       options
     )

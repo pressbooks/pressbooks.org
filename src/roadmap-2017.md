@@ -1,20 +1,30 @@
 ---
-title: "Roadmap 2017"
+title: 'Roadmap 2017'
 layout: 'layouts/page.njk'
 permalink: /roadmap/roadmap-2017/
 ---
 
-Pressbooks is an open source web-based content management system and export platform, built specifically for books.
+Pressbooks is an open source web-based content management system and export platform,
+built specifically for books.
 
-This document outlines a development roadmap for Pressbooks, in an effort to clarify its direction, and foster more engagement from the community of Pressbooks users and developers.
+This document outlines a development roadmap for Pressbooks, in an effort to clarify its
+direction, and foster more engagement from the community of Pressbooks users and
+developers.
 
 ## Pressbooks Usecase: Education
 
-While Pressbooks has been used in a broad range of applications, from self-published novels, to corporate white papers, the area where Pressbooks has made the most impact is in education, where Pressbooks has been used to produce textbooks, course packs, monographs, syllabi, among other things.
+While Pressbooks has been used in a broad range of applications, from self-published
+novels, to corporate white papers, the area where Pressbooks has made the most impact is
+in education, where Pressbooks has been used to produce textbooks, course packs,
+monographs, syllabi, among other things.
 
-In particular, the Open Textbook movement has embraced Pressbooks, and Pressbooks has been used by such well-known Open Textbooks projects as: [BCcampus](https://open.bccampus.ca/), [The University of Minnesota Open Textbook Library](https://open.umn.edu/opentextbooks/), and [OpenSUNY](http://navigator.suny.edu/).
+In particular, the Open Textbook movement has embraced Pressbooks, and Pressbooks has been
+used by such well-known Open Textbooks projects as: [BCcampus](https://open.bccampus.ca/),
+[The University of Minnesota Open Textbook Library](https://open.umn.edu/opentextbooks/),
+and [OpenSUNY](http://navigator.suny.edu/).
 
-The focus of Pressbooks development over the next year will be on features supporting the needs of Open Textbooks, and educational applications more broadly.
+The focus of Pressbooks development over the next year will be on features supporting the
+needs of Open Textbooks, and educational applications more broadly.
 
 ## Broad Areas of Development Focus
 
@@ -22,26 +32,36 @@ To this end we have identified several broad areas of development focus:
 
 #### 1\. Improvements to Development and Deployment Processes
 
-**Objective:** As Pressbooks is used more broadly in more robust applications, the underlying development and management processes for Pressbooks systems should be modernized and made robust.
+**Objective:** As Pressbooks is used more broadly in more robust applications, the
+underlying development and management processes for Pressbooks systems should be
+modernized and made robust.
 
 Specific features include:
 
 - Dependency management ([Composer](https://getcomposer.org))
-- Build tools for asset handling (currently [Bower](https://bower.io) and [Gulp](http://gulpjs.com))
-- Expanded unit testing ([PHPUnit](https://phpunit.de) and [QUnit](https://qunitjs.com)) \*
-- Clarified [contribution guidelines](https://github.com/pressbooks/pressbooks/blob/dev/.github/CONTRIBUTING.md)
+- Build tools for asset handling (currently [Bower](https://bower.io) and
+  [Gulp](http://gulpjs.com))
+- Expanded unit testing ([PHPUnit](https://phpunit.de) and
+  [QUnit](https://qunitjs.com)) \*
+- Clarified
+  [contribution guidelines](https://github.com/pressbooks/pressbooks/blob/dev/.github/CONTRIBUTING.md)
 - Intuitive implementation of plugins to enhance core functionality
-- Better management of Pressbooks development, staging and production environments (using [Vagrant](https://vagrantup.com) for local development and [Ansible](https://ansible.com) for provisioning)
+- Better management of Pressbooks development, staging and production environments (using
+  [Vagrant](https://vagrantup.com) for local development and
+  [Ansible](https://ansible.com) for provisioning)
 
 #### 2\. Metadata
 
-**Objective:** Increase discoverability of Pressbooks books, and to provide standardized data so that libraries, aggregators, stores and others can easily incorporate Pressbooks books in their catalogs.
+**Objective:** Increase discoverability of Pressbooks books, and to provide standardized
+data so that libraries, aggregators, stores and others can easily incorporate Pressbooks
+books in their catalogs.
 
 Specific features include:
 
 - Build a system for:
-    - Extending current metadata inputs
-    - Taking a coherent approach to multiple metadata output feeds which meet various standards
+  - Extending current metadata inputs
+  - Taking a coherent approach to multiple metadata output feeds which meet various
+    standards
 - Make metadata outputs available at book and network level
 - enhance book-level metadata to capture more metadata, standards \*
 - support for component level license information (e.g. media) \*
@@ -49,13 +69,17 @@ Specific features include:
 
 #### 3\. APIs
 
-**Objective:** Increase the ability of other networked systems to plug in to Pressbooks book content, and the editing interface, for instance to add tools for better collaboration.
+**Objective:** Increase the ability of other networked systems to plug in to Pressbooks
+book content, and the editing interface, for instance to add tools for better
+collaboration.
 
 Specific features/tasks include:
 
-- Migrate the existing PB API to use the [WordPress REST API](https://v2.wp-api.org) as a foundation
+- Migrate the existing PB API to use the [WordPress REST API](https://v2.wp-api.org) as a
+  foundation
 - Expose metadata (above) through a clearly defined API
-- Clearly identify (and build out, where real use cases exist) other hooks/functions where other services can plug into Pressbooks
+- Clearly identify (and build out, where real use cases exist) other hooks/functions where
+  other services can plug into Pressbooks
 
 #### 4\. Sharing and Cloning of Pressbooks Content
 
@@ -63,8 +87,11 @@ Specific features/tasks include:
 
 Specific features/tasks include:
 
-- Make it easy to clone any Pressbooks book, within a Pressbooks instance, or to another Pressbooks instance, bringing license info and attribution with it
-- Make it easy to pull any Pressbooks chapter into another Pressbooks book (within an instance, or to another Pressbooks instance, bringing license info and attribution with it
+- Make it easy to clone any Pressbooks book, within a Pressbooks instance, or to another
+  Pressbooks instance, bringing license info and attribution with it
+- Make it easy to pull any Pressbooks chapter into another Pressbooks book (within an
+  instance, or to another Pressbooks instance, bringing license info and attribution with
+  it
 
 #### 5\. Editing and Content Features
 
@@ -91,12 +118,14 @@ Specific features/tasks include:
 
 #### 7\. Version Control/Edition management
 
-**Objective:** As cloned and modified versions of Open Textbooks proliferate, we need a sensible versioning system.
+**Objective:** As cloned and modified versions of Open Textbooks proliferate, we need a
+sensible versioning system.
 
 Specific features/tasks include:
 
 - Research and assess various version control approaches
-- Build a mechanism to track & trace different versions of a Pressbooks book, and diffs (see Git model)
+- Build a mechanism to track & trace different versions of a Pressbooks book, and diffs
+  (see Git model)
 
 #### 8\. Export Format Improvements
 
@@ -115,7 +144,8 @@ Specific features/tasks include:
 
 Specific features/tasks might include:
 
-- Investigate lightweight mechanisms to integrate more collaboration tools (e.g. [Slack](http://www.wpbeginner.com/plugins/how-to-integrate-slack-with-wordpress/))
+- Investigate lightweight mechanisms to integrate more collaboration tools (e.g.
+  [Slack](http://www.wpbeginner.com/plugins/how-to-integrate-slack-with-wordpress/))
 
 #### 10\. Accessibility & Inclusivity
 
