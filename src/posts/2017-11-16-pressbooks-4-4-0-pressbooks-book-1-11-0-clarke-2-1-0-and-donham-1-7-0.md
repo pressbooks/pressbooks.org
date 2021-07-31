@@ -2,7 +2,7 @@
 title: "Pressbooks 4.4.0, Pressbooks Book 1.11.0, Clarke 2.1.0, and Donham 1.7.0"
 date: "2017-11-16"
 tags: 
-  - "changelog"
+  - Changelog
 ---
 
 We tagged [Pressbooks 4.4.0](https://github.com/pressbooks/pressbooks/releases/tag/4.4.0), [Pressbooks Book 1.11.0](https://github.com/pressbooks/pressbooks-book/releases/tag/1.11.0), [Clarke 2.1.0](https://github.com/pressbooks/pressbooks-clarke/releases/tag/2.1.0) and [Donham 1.7.0](https://github.com/pressbooks/pressbooks-donham/releases/tag/1.7.0) on GitHub today and deployed them across our hosted networks. Here's what's changed:

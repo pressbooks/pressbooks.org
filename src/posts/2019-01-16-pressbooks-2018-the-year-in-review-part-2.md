@@ -2,7 +2,7 @@
 title: "Pressbooks 2018: The Year in Review, part 2"
 date: "2019-01-16"
 tags: 
-  - "pressbooks-news"
+  - "Pressbooks News"
 ---
 
 In a [previous post](https://pressbooks.education/news/2019/01/pressbooks-2018-the-year-in-review-part-1/), I took a look at the year in review for the Pressbooks community (the people who make and use our software). In this post, I’ll take a closer look as Pressbooks as a product, covering some of the exciting changes and developments to our software made in 2018 by our hard-working developers and generous contributors.

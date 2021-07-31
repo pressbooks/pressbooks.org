@@ -2,7 +2,7 @@
 title: "Introducing pressbooks/ideas 💡"
 date: "2018-03-02"
 tags: 
-  - "development"
+  - Development
 ---
 
 I'm always looking for better ways to keep track of feature suggestions from members of the Pressbooks Open Source community, which within our small and very active team can often get lost in the shuffle. Messages in [Slack](https://pressbooks.org/get-involved/#monthly-slack-call) can fly by before we make note of them, and often threads in the [forum](https://discourse.pressbooks.org/) include a number of ideas which should be evaluated as standalone feature suggestions but get lost in a broader discussion.

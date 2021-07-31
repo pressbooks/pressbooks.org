@@ -2,7 +2,7 @@
 title: "Sprint Preview: January 28–February 8"
 date: "2019-01-28"
 tags: 
-  - "development"
+  - Development
 ---
 
 This sprint we're continuing work towards our next release, [Pressbooks 5.7](https://github.com/pressbooks/pressbooks/projects/38). We'll be focusing on the following projects:

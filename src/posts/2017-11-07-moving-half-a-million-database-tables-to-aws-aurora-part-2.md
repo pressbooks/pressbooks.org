@@ -60,9 +60,9 @@ Much quicker! (around 7 minutes)
 Scripts from [Part 1 (read it already!)](https://pressbooks.org/blog/2017/10/19/moving-half-a-million-database-tables-to-aws-aurora-part-1/) were modified to include [Slack](https://slack.com/) notifications:
 
 ```
-notify() { read -d '' payLoad << EOF { "channel": "#operations", "username": "Pressbot", "icon\_emoji": ":closed\_book:", "text": "Slice \\\`${1}\\\` has been imported on AWS." } EOF
+notify() { read -d '' payLoad << EOF { "channel": "#operations", "username": "Pressbot", "icon_emoji": ":closed_book:", "text": "Slice \\`${1}\\` has been imported on AWS." } EOF
 
-curl \\ --write-out %{http\_code} \\ --silent \\ --output /dev/null \\ -X POST \\ -H 'Content-type: application/json' \\ --data "${payLoad}" "https://hooks.slack.com/services/<SLACK\_WEBHOOK\_ID>" }
+curl \\ --write-out %{http_code} \\ --silent \\ --output /dev/null \\ -X POST \\ -H 'Content-type: application/json' \\ --data "${payLoad}" "https://hooks.slack.com/services/<SLACK_WEBHOOK_ID>" }
 
 \# Usage
 
@@ -79,11 +79,11 @@ notify $slice
 
 In an effort to reduce downtime we imported slices as soon as they were transferred. Dumping was faster than imports.
 
-[caption id="attachment\_604" align="alignnone" width="375"]![Pressbot](/images/pressbot2.png) Still slacking![/caption]
+[caption id="attachment_604" align="alignnone" width="375"]![Pressbot](/images/pressbot2.png) Still slacking![/caption]
 
 [Ned](https://pressbooks.org/blog/author/ned/) working hard:
 
-[caption id="attachment\_606" align="alignnone" width="225"]![Ned](/images/ned-again-225x300.jpg) screen -r, control+a control+d, repeat[/caption]
+[caption id="attachment_606" align="alignnone" width="225"]![Ned](/images/ned-again-225x300.jpg) screen -r, control+a control+d, repeat[/caption]
 
 All while coding sprint tasks in between.
 

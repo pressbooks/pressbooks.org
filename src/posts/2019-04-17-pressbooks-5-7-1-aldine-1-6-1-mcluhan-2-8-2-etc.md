@@ -2,7 +2,7 @@
 title: "Pressbooks 5.7.1, Aldine 1.6.1, McLuhan 2.8.2, Etc"
 date: "2019-04-17"
 tags: 
-  - "changelog"
+  - Changelog
 ---
 
 We released patches for our plugins and themes, and have deployed them to all our hosted networks. Highlights include fixes for users of Microsoft Edge and translations.

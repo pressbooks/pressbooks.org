@@ -2,7 +2,7 @@
 title: "Sprint Preview: April 30–May 11"
 date: "2018-05-01"
 tags: 
-  - "development"
+  - Development
 ---
 
 Here's what we're working on this sprint:

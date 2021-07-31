@@ -2,7 +2,7 @@
 title: "Pressbooks 5.1.0, McLuhan 2.1.0, Aldine 1.1.0, and Publisher 3.1.4"
 date: "2018-03-13"
 tags: 
-  - "changelog"
+  - Changelog
 ---
 
 Minor releases of Pressbooks, McLuhan, Aldine, and Pressbooks Publisher are now available. Among other improvements, Pressbooks 5.1.0 and McLuhan 2.1.0 improve support for interactive content in ebook and PDF exports, and Aldine 1.1.0 adds buttons to the editor to insert formatted content (page sections and calls to action).

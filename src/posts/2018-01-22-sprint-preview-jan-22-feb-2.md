@@ -2,7 +2,7 @@
 title: "Sprint Preview: Jan 22–Feb 2"
 date: "2018-01-22"
 tags: 
-  - "development"
+  - Development
 ---
 
 This year will be a busy one for the Pressbooks team, so we’ve decided to share publicly what we’re working towards in our two-week sprints. We hope this will give you a better sense of what’s going behind the scenes, and help you plan your own development schedule!

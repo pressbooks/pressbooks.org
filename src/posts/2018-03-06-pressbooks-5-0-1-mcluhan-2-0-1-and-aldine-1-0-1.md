@@ -2,7 +2,7 @@
 title: "Pressbooks 5.0.1, McLuhan 2.0.1, and Aldine 1.0.1"
 date: "2018-03-06"
 tags: 
-  - "changelog"
+  - Changelog
 ---
 
 Bug fix releases of Pressbooks, McLuhan (Book 2.0), and Aldine are now available. Before you upgrade, please be sure to consult the [upgrade instructions](https://docs.pressbooks.org/upgrading/#upgrading-to-pressbooks-5-x).

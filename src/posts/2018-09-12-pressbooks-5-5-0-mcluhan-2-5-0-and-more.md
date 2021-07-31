@@ -2,7 +2,7 @@
 title: "Pressbooks 5.5.0, McLuhan 2.5.0, and more!"
 date: "2018-09-12"
 tags: 
-  - "changelog"
+  - Changelog
 ---
 
 [Pressbooks 5.5.0][pb-5-5-0], [McLuhan 2.5.0][mcluhan-2-5-0], [Pressbooks LTI Provider 1.1.0][lti-1-1-0], [Pressbooks CAS SSO 1.1.0][cas-1-1-0], and [Pressbooks Stats 1.5.0][stats-1-5-0] have been released. These updates include a wide range of [new features, enhancements, and bugfixes](https://github.com/orgs/pressbooks/projects/8). Of note:

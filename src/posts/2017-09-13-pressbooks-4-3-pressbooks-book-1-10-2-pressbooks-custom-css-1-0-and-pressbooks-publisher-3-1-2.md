@@ -2,7 +2,7 @@
 title: "Pressbooks 4.3, Pressbooks Book 1.10.2, Pressbooks Custom CSS 1.0, and Pressbooks Publisher 3.1.2"
 date: "2017-09-13"
 tags: 
-  - "changelog"
+  - Changelog
 ---
 
 We tagged [Pressbooks 4.3.0](https://github.com/pressbooks/pressbooks/releases/tag/4.3.0), [Pressbooks Book 1.10.2](https://github.com/pressbooks/pressbooks-book/releases/tag/1.10.2), [Pressbooks Custom CSS 1.0.0](https://github.com/pressbooks/pressbooks-custom-css/releases/tag/1.0.0), and [Pressbooks Publisher 3.1.2](https://github.com/pressbooks/pressbooks-publisher/releases/tag/3.1.2) on GitHub yesterday, and we're deploying them across our hosted networks today. Here's what's changed:

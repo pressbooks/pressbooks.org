@@ -2,7 +2,7 @@
 title: "Sprint Preview: August 6 to 17"
 date: "2018-08-02"
 tags: 
-  - "development"
+  - Development
 ---
 
 Here are some of the things we'll be working on this sprint:

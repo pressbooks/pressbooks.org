@@ -35,7 +35,7 @@ Some colleagues recommended [AWS DMS](https://aws.amazon.com/dms/). It did not w
 
 - [The `AUTO_INCREMENT` attribute is not migrated.](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.MySQL.html#CHAP_Source.MySQL.Limitations)
 - WP Multisite tables are prefixed `wp_1_, wp_2_, wp_3_, ...` MySQL considers the underscore a [one character wildcard](https://stackoverflow.com/questions/8236818/why-does-underscore-match-hyphen) when used in LIKE queries, DMS provided no way to escape it for table filters.
-- Unexplained crashing on anything less than a `c4.large` _(failed last Error The task stopped abnormally Stop Reason RECOVERABLE\_ERROR Error Level RECOVERABLE)_
+- Unexplained crashing on anything less than a `c4.large` _(failed last Error The task stopped abnormally Stop Reason RECOVERABLE_ERROR Error Level RECOVERABLE)_
 - Mostly, the fastest migration we could get going, running 4 tasks in parallel, was an ETA of 10 days
 
 We asked for help. [Ned](https://pressbooks.org/blog/author/ned/) had a conference call with a reputable consulting firm and they gave us a quote: $34K USD + travel & on-site expenses.
@@ -63,7 +63,7 @@ Our tests conclude that mydumper finishes in hours instead of days.
 
 ## Plan
 
-It is our opinion that this kind of problem is better suited for a [document-oriented database](https://en.wikipedia.org/wiki/Document-oriented_database). Given that this is the database design we inherited, there's not much we can do about it, so we'll try our best with what we've got. ¯\\\_(ツ)\_/¯
+It is our opinion that this kind of problem is better suited for a [document-oriented database](https://en.wikipedia.org/wiki/Document-oriented_database). Given that this is the database design we inherited, there's not much we can do about it, so we'll try our best with what we've got. ¯\\_(ツ)_/¯
 
 At a billion tables, Automattic has already established its own internal best practices with plugins like [HypderDB](https://github.com/Automattic/hyperdb). Unfortunately HyperDB doesn't have [Composer](https://getcomposer.org/) support and doesn't look maintained. [LudicrousDB](https://github.com/stuttter/ludicrousdb), a Composer compatible drop-in that works with our [existing tech stack](https://github.com/roots/bedrock/), to the rescue.
 
@@ -79,7 +79,7 @@ _For informational purposes only. Read the snippets and reason about them. Copy/
 
 ## LudicrousDB  Callback
 
-[php] /\*\* \* Slices \* \* We can predict what slice a blog is in by looking \* at the last two digits of the id. Examples: \* \* + blog\_id: 9, in db09 \* + blog\_id: 74, in db74 \* + blog\_id: 999989, in db89 \* + blog\_id: 9200, in db00 \* \* @param $query \* @param \\LudicrousDB $wpdb \* \* @return string \*/ function pb\_db\_callback( $query, $wpdb ) { if ( preg\_match( "/^{$wpdb->base\_prefix}\\d+\_/i", $wpdb->table ) ) { $last\_two\_digits = (int) substr( $wpdb->blogid, -2 ); $db = sprintf( 'db%02d', $last\_two\_digits ); // db00, db01, db02, ..., db99 return $db; } else { return 'global'; } } $wpdb->add\_callback( 'pb\_db\_callback' ); [/php]
+[php] /\*\* \* Slices \* \* We can predict what slice a blog is in by looking \* at the last two digits of the id. Examples: \* \* + blog_id: 9, in db09 \* + blog_id: 74, in db74 \* + blog_id: 999989, in db89 \* + blog_id: 9200, in db00 \* \* @param $query \* @param \\LudicrousDB $wpdb \* \* @return string \*/ function pb_db_callback( $query, $wpdb ) { if ( preg_match( "/^{$wpdb->base_prefix}\\d+_/i", $wpdb->table ) ) { $last_two_digits = (int) substr( $wpdb->blogid, -2 ); $db = sprintf( 'db%02d', $last_two_digits ); // db00, db01, db02, ..., db99 return $db; } else { return 'global'; } } $wpdb->add_callback( 'pb_db_callback' ); [/php]
 
 ### Export DB Into 101 Slices:
 
@@ -87,9 +87,9 @@ _For informational purposes only. Read the snippets and reason about them. Copy/
 
 \# This script will CREATE 101 directories in current # working directory, you have been warned!
 
-db='old\_database\_name'
+db='old_database_name'
 
-sudo mydumper --regex="^${db}\\.wp\_[a-zA-Z]+.\*" --database="${db}" --outputdir="core" --build-empty-files for ((i=0; i<=99; i++)); do ii=\`printf %02d $i\` sudo mydumper --regex="^${db}\\.(wp\_${i}\_|wp\_\\d+${ii}\_).\*" --database="${db}" --outputdir="${ii}" --build-empty-files done [/bash]
+sudo mydumper --regex="^${db}\\.wp_[a-zA-Z]+.\*" --database="${db}" --outputdir="core" --build-empty-files for ((i=0; i<=99; i++)); do ii=`printf %02d $i` sudo mydumper --regex="^${db}\\.(wp_${i}_|wp_\\d+${ii}_).\*" --database="${db}" --outputdir="${ii}" --build-empty-files done [/bash]
 
 ### Import 101 Slices:
 
@@ -97,9 +97,9 @@ sudo mydumper --regex="^${db}\\.wp\_[a-zA-Z]+.\*" --database="${db}" --outputdir
 
 \# This script will READ 101 directories in current # working directory
 
-db='new\_database\_name'
+db='new_database_name'
 
-sudo myloader --directory="core" --database="${db}" --overwrite-tables for ((i=0; i<=99; i++)); do ii=\`printf %02d $i\` sudo myloader --directory="${ii}" --database="${db}\_${ii}" --overwrite-tables done [/bash]
+sudo myloader --directory="core" --database="${db}" --overwrite-tables for ((i=0; i<=99; i++)); do ii=`printf %02d $i` sudo myloader --directory="${ii}" --database="${db}_${ii}" --overwrite-tables done [/bash]
 
 ## Did it work?
 

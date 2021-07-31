@@ -2,7 +2,7 @@
 title: "Why We Removed Pressbooks from the WordPress Plugin Repository"
 date: "2016-10-15"
 tags: 
-  - "pressbooks-news"
+  - "Pressbooks News"
   - "plugin"
   - "pressbooks-open-source"
 ---

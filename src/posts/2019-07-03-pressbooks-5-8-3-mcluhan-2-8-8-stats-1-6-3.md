@@ -2,7 +2,7 @@
 title: "Pressbooks 5.8.3, McLuhan 2.8.8, Stats 1.6.3"
 date: "2019-07-03"
 tags: 
-  - "changelog"
+  - Changelog
 ---
 
 We released patches for our plugins and themes, and have deployed them to all our hosted networks.

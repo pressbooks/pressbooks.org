@@ -2,7 +2,7 @@
 title: "Sprint Preview: November 19-30"
 date: "2018-11-19"
 tags: 
-  - "development"
+  - Development
 ---
 
 This sprint we're wrapping up development and testing for [Pressbooks 5.6.0](https://github.com/pressbooks/pressbooks/milestone/53) and [McLuhan 2.6.0](https://github.com/pressbooks/pressbooks-book/milestone/19) (which includes [Buckram 1.2.0](https://github.com/pressbooks/pressbooks-book/milestone/22)). We plan to release these updates on [Wednesday, November 28th](https://github.com/orgs/pressbooks/projects/17).

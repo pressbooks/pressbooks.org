@@ -2,7 +2,7 @@
 title: "Sprint Preview: April 2–13"
 date: "2018-04-01"
 tags: 
-  - "development"
+  - Development
 ---
 
 Here's what we will be focusing on for our first sprint of Q2:

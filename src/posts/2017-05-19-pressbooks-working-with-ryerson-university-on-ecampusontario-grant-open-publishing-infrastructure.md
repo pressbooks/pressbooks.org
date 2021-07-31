@@ -2,7 +2,7 @@
 title: "Pressbooks working with Ryerson University on eCampusOntario grant: \"Open Publishing Infrastructure\""
 date: "2017-05-19"
 tags: 
-  - "pressbooks-news"
+  - "Pressbooks News"
 ---
 
 We are very very excited to announce that we’re working with [eCampusOntario and Ryerson University](https://www.ecampusontario.ca/news/ecampusontario-ryerson-university-to-create-open-publishing-infrastructure-for-ontario-post-secondary-educators-learners) to improve Pressbooks as an Open Textbook authoring tool, under the just-announced eCampusOntario project: "Open Publishing Infrastructure for Ontario Post-Secondary Educators, Learners."

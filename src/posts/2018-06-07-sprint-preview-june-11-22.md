@@ -2,7 +2,7 @@
 title: "Sprint Preview: June 11–22"
 date: "2018-06-07"
 tags: 
-  - "development"
+  - Development
 ---
 
 This sprint, we'll be working on:

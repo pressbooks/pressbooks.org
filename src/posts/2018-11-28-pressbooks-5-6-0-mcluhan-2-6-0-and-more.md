@@ -2,7 +2,7 @@
 title: "Pressbooks 5.6.0, Mcluhan 2.6.0, and More"
 date: "2018-11-28"
 tags: 
-  - "changelog"
+  - Changelog
 ---
 
 We've just released [Pressbooks 5.6.0][pressbooks] and [McLuhan 2.6.0][mcluhan]. These releases include many new features and improvements, notably a tool for managing [glossaries][glossary-tool]. The initial implementation of the new glossary tool was an open source contribution from [Alex Paredes](https://github.com/alex-418) and [Brad Payne](https://github.com/bdolor) at [BCcampus](https://bccampus.ca) -- many thanks to them! There are also improvements to content licensing, webbook navigation and table of contents display, dashboard user experience, export customization, and performance as well as many bug fixes. We've also released [Clarke 2.3.1][clarke] and [Jacobs 1.2.0][jacobs]. You can read the full changelogs for all of these updates on our [documentation site](https://docs.pressbooks.org/changelog).

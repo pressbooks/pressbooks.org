@@ -2,7 +2,7 @@
 title: "Can you “clone” a Pressbooks book? You can now*!"
 date: "2017-08-31"
 tags: 
-  - "pressbooks-news"
+  - "Pressbooks News"
 ---
 
 Here at Pressbooks HQ we’ve been doing a whole lot more development work for the Open Textbook world, in our opinion the most exciting space in the world of publishing. For the uninitiated, an Open Textbook is an openly licensed (i.e. free) book that supports the “5Rs,” [defined by David Wiley](http://www.opencontent.org/definition/) as the rights to: **remix, revise, reuse, retain, and redistribute**.

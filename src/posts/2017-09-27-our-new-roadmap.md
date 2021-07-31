@@ -2,7 +2,7 @@
 title: "Our new roadmap"
 date: "2017-09-27"
 tags: 
-  - "pressbooks-news"
+  - "Pressbooks News"
 ---
 
 At the start of 2017, we established a [development roadmap](https://pressbooks.org/roadmap/roadmap-2017/) for Pressbooks to guide our work through the coming year. This past week we had the opportunity to review and reflect on that roadmap during our retreat at Pressbooks HQ, and you can see our [new roadmap here](https://pressbooks.org/roadmap/).

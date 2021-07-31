@@ -2,7 +2,7 @@
 title: "Pressbooks 5.4.1, McLuhan 2.4.1, and Luther 1.8.3"
 date: "2018-07-17"
 tags: 
-  - "changelog"
+  - Changelog
 ---
 
 [Pressbooks 5.4.1](https://github.com/pressbooks/pressbooks/releases/tag/5.4.1), [McLuhan 2.4.0](https://github.com/pressbooks/pressbooks-book/releases/tag/2.4.1), and [Luther 1.8.3](https://github.com/pressbooks/pressbooks-luther/releases/tag/1.8.3) are now available! These releases contain bug fixes, including:

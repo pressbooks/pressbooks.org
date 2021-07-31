@@ -1,9 +1,10 @@
 ---
 title: "Planned Deprecation Notice: MOBI exports"
 date: "2021-07-14"
+author: Steel Wagstaff
 tags: 
-  - "development"
-  - "pressbooks-news"
+  - Development
+  - "Pressbooks News"
 ---
 
 Last year, Amazon announced that they were [discontinuing their KindleGen command line tool](https://goodereader.com/blog/kindle/amazon-discontinues-kindlegen) that Pressbooks uses to generate MOBI files, and Amazon [recommended](https://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000765211) that users use EPUB format for publishing new reflowable titles and updating previously published titles in the Kindle ecosystem.

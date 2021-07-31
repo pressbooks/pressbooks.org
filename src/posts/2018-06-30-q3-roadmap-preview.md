@@ -2,7 +2,7 @@
 title: "Q3 Roadmap Preview"
 date: "2018-06-30"
 tags: 
-  - "development"
+  - Development
 ---
 
 Q2 is drawing to a close, and we managed to get a couple of big-ticket items out the door:

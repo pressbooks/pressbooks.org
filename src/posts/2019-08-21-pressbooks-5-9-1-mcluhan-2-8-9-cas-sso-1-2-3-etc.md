@@ -2,7 +2,7 @@
 title: "Pressbooks 5.9.1, McLuhan 2.8.9, CAS-SSO 1.2.3, Etc."
 date: "2019-08-21"
 tags: 
-  - "changelog"
+  - Changelog
 ---
 
 We released patches for our plugins and themes, and have deployed them to all our hosted networks.

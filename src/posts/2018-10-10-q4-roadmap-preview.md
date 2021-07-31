@@ -2,7 +2,7 @@
 title: "Q4 Roadmap Preview"
 date: "2018-10-10"
 tags: 
-  - "development"
+  - Development
 ---
 
 In Q3, we added a couple new and exciting features to Pressbooks:

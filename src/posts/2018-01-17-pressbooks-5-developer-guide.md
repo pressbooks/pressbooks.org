@@ -26,9 +26,9 @@ In terms of the user interface, we're changing this:
 
 To this:
 
-[caption id="attachment\_707" width="280"]![A mockup of the Status & Visibility panel for a new chapter in Pressbooks 5.](https://pressbooks.org/app/uploads/2018/01/status-visibility-new.svg)The panel for a new chapter.[/caption]
+[caption id="attachment_707" width="280"]![A mockup of the Status & Visibility panel for a new chapter in Pressbooks 5.](https://pressbooks.org/app/uploads/2018/01/status-visibility-new.svg)The panel for a new chapter.[/caption]
 
-[caption id="attachment\_705" width="280"]![A mockup of the "Status & Visibility" panel for an existing chapter in Pressbooks 5.](https://pressbooks.org/app/uploads/2018/01/status-visibility.svg)The panel for a new chapter.[/caption]
+[caption id="attachment_705" width="280"]![A mockup of the "Status & Visibility" panel for an existing chapter in Pressbooks 5.](https://pressbooks.org/app/uploads/2018/01/status-visibility.svg)The panel for a new chapter.[/caption]
 
 Note that we're changing the primary action button from "Publish" for new content and "Update" for existing content to "Create" and "Save", respectively.
 
@@ -54,7 +54,7 @@ The values saved in Book Information are the [slugs](https://codex.wordpress.org
 
 You’ll be able to edit the display names of these contributors in one place — the new Contributors page, which is a standard WordPress taxonomy management page — and you’ll be able to quickly and easily select from your list of contributors to add assign authors throughout your book (if you have a book that consists of chapters with different authors, and you also want to include credits for all the authors in your Book Information, this will make maintaining that information much easier). In future releases of Pressbooks, we will be able to add metadata to contributors, including profile pictures, author websites, and more, for display on your webbook cover page or individual front matter, back matter, and chapters.
 
-We're also adding a [new class](https://github.com/pressbooks/pressbooks/blob/dev/inc/class-contributors.php), `\Pressbooks\Contributors\`, and [some other related functions](https://github.com/pressbooks/pressbooks/blob/dev/inc/utility/namespace.php#L1263-L1284) to retrieve arrays or formatted lists of contributors.
+We're also adding a [new class](https://github.com/pressbooks/pressbooks/blob/dev/inc/class-contributors.php), `\Pressbooks\Contributors`, and [some other related functions](https://github.com/pressbooks/pressbooks/blob/dev/inc/utility/namespace.php#L1263-L1284) to retrieve arrays or formatted lists of contributors.
 
 The migration of your book’s contributor data will happen automatically when you visit your book after updating to Pressbooks 5.
 

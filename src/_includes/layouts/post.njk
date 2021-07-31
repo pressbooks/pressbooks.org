@@ -10,7 +10,7 @@
         <ul class="tags-list" aria-label="Tags">
           {% for tag in tags %}
             <li>
-              <a href="/tag/{{ tag | slug }}/">{{ tag | replace(' ', '') | capitalize }}</a>
+              <a href="/tag/{{ tag | slugify }}/">{{ tag }}</a>
             </li>
           {% endfor %}
         </ul>

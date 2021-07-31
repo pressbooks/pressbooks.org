@@ -1,9 +1,10 @@
 ---
 title: "Planned deprecation notice: Pressbooks LTI Provider plugin"
 date: "2021-07-14"
+author: Steel Wagstaff
 tags: 
-  - "development"
-  - "pressbooks-news"
+  - Development
+  - "Pressbooks News"
 ---
 
 IMS Global [recently announced](http://www.imsglobal.org/lti-security-announcement-and-deprecation-schedule) that they will no longer certify legacy versions of LTI after June 30, 2021. They also announced that all support for pre-LTI 1.3 versions will end on June 30, 2022.

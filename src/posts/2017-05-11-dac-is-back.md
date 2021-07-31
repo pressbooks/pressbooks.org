@@ -2,7 +2,7 @@
 title: "Dac is back!"
 date: "2017-05-11"
 tags: 
-  - "pressbooks-news"
+  - "Pressbooks News"
 ---
 
 Good news for Pressbooks, Dac is back! From the Pressbooks.com blog:

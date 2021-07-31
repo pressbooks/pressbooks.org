@@ -2,7 +2,7 @@
 title: "Seeking: Junior Front-end Designer/Developer for 2 month+ contract"
 date: "2017-10-19"
 tags: 
-  - "pressbooks-news"
+  - "Pressbooks News"
 ---
 
 We’re looking for a **junior front-end web designer/developer** for a 2 **month contract (in Montreal)** that could lead into a full-time job with for [Pressbooks](https://pressbooks.org), an open source web-based book publishing platform.

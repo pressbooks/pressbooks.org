@@ -2,7 +2,7 @@
 title: "Pressbooks 5.2.1 and McLuhan 2.2.1"
 date: "2018-04-03"
 tags: 
-  - "changelog"
+  - Changelog
 ---
 
 We released minor bug fixes for Pressbooks and McLuhan today. You can check out the changelogs here:

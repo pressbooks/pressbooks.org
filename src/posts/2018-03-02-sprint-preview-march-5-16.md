@@ -2,7 +2,7 @@
 title: "Sprint Preview: March 5-16"
 date: "2018-03-02"
 tags: 
-  - "development"
+  - Development
 ---
 
 Our sprint running March 5-16 will focus on:

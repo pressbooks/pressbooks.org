@@ -2,7 +2,7 @@
 title: "Sprint Preview: March 19–30"
 date: "2018-03-15"
 tags: 
-  - "development"
+  - Development
 ---
 
 Our last sprint of Q1, running March 19–30, will focus on:

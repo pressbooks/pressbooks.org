@@ -2,7 +2,7 @@
 title: "Q2 Roadmap Preview"
 date: "2018-03-14"
 tags: 
-  - "development"
+  - Development
 ---
 
 We're drawing near the end of Q1 at Pressbooks! And we've crossed off a lot of the items on our [2018 Roadmap](https://pressbooks.org/roadmap/):

@@ -2,7 +2,7 @@
 title: "Sprint Preview: October 22–November 2"
 date: "2018-10-22"
 tags: 
-  - "development"
+  - Development
 ---
 
 Here's what we'll be working on this sprint:

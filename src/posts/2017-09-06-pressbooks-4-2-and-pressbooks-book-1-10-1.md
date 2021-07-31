@@ -2,7 +2,7 @@
 title: "Pressbooks 4.2 and Pressbooks Book 1.10.1"
 date: "2017-09-06"
 tags: 
-  - "changelog"
+  - Changelog
 ---
 
 We tagged [Pressbooks 4.2.0](https://github.com/pressbooks/pressbooks/releases/tag/4.2.0) and [Pressbooks Book 1.10.1](https://github.com/pressbooks/pressbooks-book/releases/tag/1.10.1) on GitHub today and we're deploying them across our hosted networks tomorrow. Here's what's changed:

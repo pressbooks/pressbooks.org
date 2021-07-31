@@ -2,7 +2,7 @@
 title: "Pressbooks 4.5.0, Pressbooks Book 1.12.0, and Clarke 2.1.1"
 date: "2017-12-07"
 tags: 
-  - "changelog"
+  - Changelog
 ---
 
 We tagged [Pressbooks 4.5.0](https://github.com/pressbooks/pressbooks/releases/tag/4.5.0), [Pressbooks Book 1.12.0](https://github.com/pressbooks/pressbooks-book/releases/tag/1.12.0), and [Clarke 2.1.1](https://github.com/pressbooks/pressbooks-clarke/releases/tag/2.1.1) on GitHub yesterday and deployed them across our hosted networks. Here's what's changed:

@@ -2,7 +2,7 @@
 title: "Pressbooks 4.3.3, Pressbooks Publisher 3.1.3 and DocRaptor for Pressbooks 2.1.0"
 date: "2017-10-04"
 tags: 
-  - "changelog"
+  - Changelog
 ---
 
 We tagged [Pressbooks 4.3.3](https://github.com/pressbooks/pressbooks/releases/tag/4.3.3), [Pressbooks Publisher 3.1.3](https://github.com/pressbooks/pressbooks-publisher/releases/tag/3.1.3), and [DocRaptor for Pressbooks 2.1.0](https://github.com/pressbooks/pressbooks-docraptor/releases/tag/2.1.0) and deployed them across our hosted networks today. Here's what's changed:

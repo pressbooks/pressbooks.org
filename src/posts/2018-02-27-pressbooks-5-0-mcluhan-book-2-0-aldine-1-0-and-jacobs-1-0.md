@@ -2,7 +2,7 @@
 title: "Pressbooks 5.0, McLuhan (Book 2.0), Aldine 1.0, and Jacobs 1.0"
 date: "2018-02-27"
 tags: 
-  - "changelog"
+  - Changelog
 ---
 
 Production releases of Pressbooks 5.0, McLuhan (Book 2.0), Aldine 1.0, and Jacobs 1.0 are now available! Before you upgrade, please be sure to consult the [upgrade instructions](https://docs.pressbooks.org/upgrading/#upgrading-to-pressbooks-5-x).

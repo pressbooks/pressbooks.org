@@ -2,7 +2,7 @@
 title: "Pressbooks 5.2.0, McLuhan 2.2.0, and Aldine 1.2.0"
 date: "2018-03-28"
 tags: 
-  - "changelog"
+  - Changelog
 ---
 
 Minor releases of Pressbooks, McLuhan, and Aldine, are now available. These releases add a few small but oft-requested features and fix a variety of minor bugs. Please note that Pressbooks 5.2.0 and McLuhan 2.2.0 are inderdependent and must be updated together.

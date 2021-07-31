@@ -2,7 +2,7 @@
 title: "Pressbooks 4.0.0 \"Slate\""
 date: "2017-07-14"
 tags: 
-  - "changelog"
+  - Changelog
 ---
 
 We released [Pressbooks 4.0.0](https://github.com/pressbooks/pressbooks/releases/tag/4.0.0) on GitHub earlier this week and finished deploying it across our hosted networks on Wednesday. Here’s what changed:

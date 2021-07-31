@@ -2,7 +2,7 @@
 title: "Pressbooks 5.6.3, Mcluhan 2.6.1, and Wordpress 5.0"
 date: "2018-12-12"
 tags: 
-  - "development"
+  - Development
 ---
 
 We just finished our last releases of 2018, [Pressbooks 5.6.3](https://github.com/pressbooks/pressbooks/releases/5.6.3) and [McLuhan 2.6.1](https://github.com/pressbooks/pressbooks-book/releases/2.6.1). We'll be deploying them to all hosted networks at the start of next week. These are minor bug fix releases which improve shortcodes, a focus style regression in McLuhan, and a bug with Hypothesis highlights which was introduced in McLuhan 2.6.0.

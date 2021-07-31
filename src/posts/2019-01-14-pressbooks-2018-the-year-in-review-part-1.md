@@ -2,7 +2,7 @@
 title: "Pressbooks 2018: The Year in Review, part 1"
 date: "2019-01-14"
 tags: 
-  - "pressbooks-news"
+  - "Pressbooks News"
 ---
 
 When others ask me what Pressbooks is, I often say that it’s two things: 1) terrific open-source book publishing software and 2) the people who make, use, and care about that software. If there’s still time and interest, I go on to explain that Pressbooks is a collection of open-source software components, largely built on top of the WordPress Content Management System, that gives authors, teachers, publishers, and educational institutions a powerful and relatively easy-to-use book publishing system. Pressbooks is also the small team of employees that makes and supports Pressbooks software and a larger global community of contributors, users, and backers who collectively give our software life.

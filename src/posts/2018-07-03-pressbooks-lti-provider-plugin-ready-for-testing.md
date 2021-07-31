@@ -2,7 +2,7 @@
 title: "Pressbooks LTI Provider plugin ready for testing!"
 date: "2018-07-03"
 tags: 
-  - "development"
+  - Development
 ---
 
 Good news for everyone using Pressbooks in the education sphere: Over the last couple of months, we have been working on developing our own [LTI Provider plugin](https://github.com/pressbooks/pressbooks-lti-provider/releases), which is now almost release-ready!
