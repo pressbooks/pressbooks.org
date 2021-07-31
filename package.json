@@ -4,8 +4,8 @@
   "private": true,
   "description": "Homepage for the Pressbooks Open Source Project.",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
+    "dev": "vuepress dev",
+    "build": "vuepress build",
     "start": "npm run dev",
     "prepare": "husky install"
   },
