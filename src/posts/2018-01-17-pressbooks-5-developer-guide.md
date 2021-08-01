@@ -1,6 +1,7 @@
 ---
 title: 'Pressbooks 5: Developer Guide'
-date: '2018-01-17'
+date: '2018-01-17T12:00'
+author: Ned Zimmerman
 ---
 
 Pressbooks 5 will introduce some significant changes to the ways we store and retrieve
@@ -39,13 +40,19 @@ In terms of the user interface, we're changing this:
 
 To this:
 
-[caption id="attachment_707"
-width="280"]![A mockup of the Status & Visibility panel for a new chapter in Pressbooks 5.](https://pressbooks.org/app/uploads/2018/01/status-visibility-new.svg)The
-panel for a new chapter.[/caption]
+<figure>
 
-[caption id="attachment_705"
-width="280"]![A mockup of the "Status & Visibility" panel for an existing chapter in Pressbooks 5.](https://pressbooks.org/app/uploads/2018/01/status-visibility.svg)The
-panel for a new chapter.[/caption]
+![A mockup of the Status & Visibility panel for a new chapter in Pressbooks 5.](https://pressbooks.org/app/uploads/2018/01/status-visibility-new.svg)
+
+<figcaption>The panel for a new chapter.</figcaption>
+</figure>
+
+<figure>
+
+![A mockup of the "Status & Visibility" panel for an existing chapter in Pressbooks 5.](https://pressbooks.org/app/uploads/2018/01/status-visibility.svg)
+
+<figcaption>The panel for an existing chapter.</figcaption>
+</figure>
 
 Note that we're changing the primary action button from "Publish" for new content and
 "Update" for existing content to "Create" and "Save", respectively.
@@ -132,62 +139,37 @@ themes that use our SCSS component library,
 [Buckram](https://github.com/pressbooks/buckram). In Pressbooks 4.x, chapter subtitle and
 author elements are not wrapped in the same container as the chapter number and title:
 
-[code lang="html"]
-
+```html
 <div class="chapter standard" id="chapter-1">
-
-<div class="chapter-title-wrap">
-
-<h3 class="chapter-number">1</h3>
-
-<h2 class="chapter-title">Loomings</h2>
-
+  <div class="chapter-title-wrap">
+    <h3 class="chapter-number">1</h3>
+    <h2 class="chapter-title">Loomings</h2>
+  </div>
+  <div class="ugc chapter-ugc">
+    <h2 class="chapter-author">Herman Melville</h2>
+    <h2 class="chapter-subtitle">The First Chapter</h2>
+    <p>Call me Ishmael.</p>
+  </div>
 </div>
-
-<div class="ugc chapter-ugc">
-
-<h2 class="chapter-author">Herman Melville</h2>
-
-<h2 class="chapter-subtitle">The First Chapter</h2>
-
-<p>Call me Ishmael.</p>
-
-</div>
-
-</div>
-
-[/code]
+```
 
 This makes it very difficult to reliably style the first page of front matter, back
 matter, and chapters.
 
 In Pressbooks 5, books that use Buckram-based themes will now have the following markup:
 
-[code lang="html"]
-
+```html
 <div class="chapter standard" id="chapter-1">
-
-<div class="chapter-title-wrap">
-
-<h3 class="chapter-number">1</h3>
-
-<h2 class="chapter-title">Loomings</h2>
-
-<h2 class="chapter-author">Herman Melville</h2>
-
-<h2 class="chapter-subtitle">The First Chapter</h2>
-
+  <div class="chapter-title-wrap">
+    <h2 class="chapter-title">Loomings</h2>
+    <h2 class="chapter-author">Herman Melville</h2>
+    <h2 class="chapter-subtitle">The First Chapter</h2>
+  </div>
+  <div class="ugc chapter-ugc">
+    <p>Call me Ishmael.</p>
+  </div>
 </div>
-
-<div class="ugc chapter-ugc">
-
-<p>Call me Ishmael.</p>
-
-</div>
-
-</div>
-
-[/code]
+```
 
 This change will only impact themes using Buckram, which include our open source
 [Clarke](https://github.com/pressbooks/pressbooks-clarke) theme and the premium Asimov
