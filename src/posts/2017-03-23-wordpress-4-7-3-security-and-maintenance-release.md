@@ -1,8 +1,9 @@
 ---
 title: 'WordPress 4.7.3 Security and Maintenance Release'
-date: '2017-03-23'
+date: '2017-03-23T12:00'
+author: Ned Zimmerman
 tags:
-  - 'upgrades'
+  - 'Upgrades'
 ---
 
 [WordPress 4.7.3 Security and Maintenance Release](https://wordpress.org/news/2017/03/wordpress-4-7-3-security-and-maintenance-release/) came

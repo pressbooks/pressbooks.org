@@ -1,6 +1,7 @@
 ---
 title: 'Pressbooks 4.5.0, Pressbooks Book 1.12.0, and Clarke 2.1.1'
-date: '2017-12-07'
+date: '2017-12-07T12:00'
+author: Ned Zimmerman
 tags:
   - Changelog
 ---

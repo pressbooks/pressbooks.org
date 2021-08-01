@@ -20,7 +20,7 @@ body {
 }
 
 a:not([class]) {
-  color: currentColor;
+  color: get-color('primary');
 }
 
 :focus {

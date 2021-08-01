@@ -2,7 +2,8 @@
 title:
   'Pressbooks working with Ryerson University on eCampusOntario grant: "Open Publishing
   Infrastructure"'
-date: '2017-05-19'
+date: '2017-05-19T12:00'
+author: Hugh McGuire
 tags:
   - 'Pressbooks News'
 ---

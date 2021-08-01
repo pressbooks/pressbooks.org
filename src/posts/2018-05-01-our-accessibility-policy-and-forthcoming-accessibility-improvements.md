@@ -2,7 +2,7 @@
 title: 'Our Accessibility Policy and Forthcoming Accessibility Improvements'
 date: '2018-05-01'
 tags:
-  - 'accessibility'
+  - 'Accessibility'
 ---
 
 We're pleased to share Pressbooks' new

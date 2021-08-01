@@ -1,6 +1,7 @@
 ---
 title: 'Seeking: Junior Front-end Designer/Developer for 2 month+ contract'
-date: '2017-10-19'
+date: '2017-10-19T12:00'
+author: Hugh McGuire
 tags:
   - 'Pressbooks News'
 ---

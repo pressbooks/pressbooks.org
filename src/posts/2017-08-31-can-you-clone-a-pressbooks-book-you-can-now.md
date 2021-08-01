@@ -1,6 +1,7 @@
 ---
 title: 'Can you “clone” a Pressbooks book? You can now*!'
-date: '2017-08-31'
+date: '2017-08-31T12:00'
+author: Hugh McGuire
 tags:
   - 'Pressbooks News'
 ---

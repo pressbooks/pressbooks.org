@@ -1,8 +1,9 @@
 ---
 title: 'Rethinking Book Themes'
-date: '2016-05-16'
+date: '2016-05-16T12:00'
+author: Ned Zimmerman
 tags:
-  - 'core'
+  - 'Core'
 ---
 
 Pressbooks has built book themes the same way for quite a while, with the only significant
@@ -10,7 +11,7 @@ change being the switch from CSS to SCSS in Pressbooks 3.0. Shown below is the s
 for one of our open-source themes, [Clarke](http://pressbooks.com/themes/clarke) (with a
 couple of omissions that aren’t relevant to this post).
 
-```
+```treeview
 ├── export
 │   ├── epub
 │   │   ├── images
@@ -35,7 +36,7 @@ couple of omissions that aren’t relevant to this post).
 We’re in the midst of a significant re-think of how we build themes, and here’s what it
 looks like so far.
 
-```
+```treeview
 ├── assets
 │   ├── images
 │   │   ├── em-dash.png
@@ -87,7 +88,7 @@ file(s) and a variables file for the relevant item(s) from the Pressbooks
 plugin’s `assets/book/styles/` directory (which is loaded by our SCSS compiler). For
 example, `assets/styles/components/_elements.scss` might contain the following:
 
-```
+```scss
 // Elements
 
 $orphans: 3 !default;
@@ -115,7 +116,7 @@ overhaul our [theme options](https://github.com/pressbooks/pressbooks/issues/10
 All of these component files are imported into the EPUB, PDF and web `style.scss` files,
 like so:
 
-```
+```scss
 $type: 'prince';
 
 @import 'fonts';

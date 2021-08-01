@@ -1,6 +1,7 @@
 ---
 title: 'Pressbooks 4.3.3, Pressbooks Publisher 3.1.3 and DocRaptor for Pressbooks 2.1.0'
-date: '2017-10-04'
+date: '2017-10-04T12:00'
+author: Ned Zimmerman
 tags:
   - Changelog
 ---

@@ -1,8 +1,9 @@
 ---
 title: 'Notes from the Pressbooks Accessibility Group'
-date: '2016-09-28'
+date: '2016-09-28T12:00'
+author: Ned Zimmerman
 tags:
-  - 'accessibility'
+  - 'Accessibility'
 ---
 
 Pressbooks’ first meeting on accessibility with our Open Source partners took place today.

@@ -1,8 +1,9 @@
 ---
 title: 'WordPress 4.7.2 Security Release'
-date: '2017-02-01'
+date: '2017-02-01T12:00'
+author: Ned Zimmerman
 tags:
-  - 'upgrades'
+  - 'Upgrades'
 ---
 
 [WordPress 4.7.2 Security Release](https://wordpress.org/news/2017/01/wordpress-4-7-2-security-release/) came

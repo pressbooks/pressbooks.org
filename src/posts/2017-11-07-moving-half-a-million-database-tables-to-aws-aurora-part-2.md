@@ -1,8 +1,9 @@
 ---
 title: 'Moving Half a Million Database Tables to AWS Aurora (Part 2)'
-date: '2017-11-07'
+date: '2017-11-07T12:00'
+author: Dac Chartrand
 tags:
-  - 'core'
+  - 'Core'
 ---
 
 [Quick recap](https://pressbooks.org/blog/2017/10/19/moving-half-a-million-database-tables-to-aws-aurora-part-1/):
@@ -54,8 +55,9 @@ Each book has media library files *(GIF, PNG, JPG, EPUB, PDF, etc)*. A few days
 migration, we copied all files from the production server's `uploads/` directory using
 `rsync`:
 
-[shell]rsync -avz -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
-someuser@oldpressbooksdotcom:/path/to/uploads/ /path/to/uploads/ --progress[/shell]
+```bash
+rsync -avz -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" someuser@oldpressbooksdotcom:/path/to/uploads/ /path/to/uploads/ --progress
+```
 
 This process took about 10 hours.
 
@@ -78,12 +80,27 @@ Scripts from
 [Part 1 (read it already!)](https://pressbooks.org/blog/2017/10/19/moving-half-a-million-database-tables-to-aws-aurora-part-1/)
 were modified to include [Slack](https://slack.com/) notifications:
 
-```
-notify() { read -d '' payLoad << EOF { "channel": "#operations", "username": "Pressbot", "icon_emoji": ":closed_book:", "text": "Slice \\`${1}\\` has been imported on AWS." } EOF
+```bash
+notify() {
+  read -d '' payLoad << EOF
+  {
+    "channel": "#operations",
+    "username": "Pressbot",
+    "icon_emoji": ":closed_book:",
+    "text": "Slice \`${1}\` has been imported on AWS."
+  }
+EOF
 
-curl \\ --write-out %{http_code} \\ --silent \\ --output /dev/null \\ -X POST \\ -H 'Content-type: application/json' \\ --data "${payLoad}" "https://hooks.slack.com/services/<SLACK_WEBHOOK_ID>" }
+  curl \
+    --write-out %{http_code} \
+    --silent \
+    --output /dev/null \
+    -X POST \
+    -H 'Content-type: application/json' \
+    --data "${payLoad}" "https://hooks.slack.com/services/<SLACK_WEBHOOK_ID>"
+}
 
-\# Usage
+# Usage
 
 notify $slice
 ```
@@ -99,14 +116,23 @@ notify $slice
 In an effort to reduce downtime we imported slices as soon as they were transferred.
 Dumping was faster than imports.
 
-[caption id="attachment_604" align="alignnone"
-width="375"]![Pressbot](/images/pressbot2.png) Still slacking![/caption]
+<figure>
 
-[Ned](https://pressbooks.org/blog/author/ned/) working hard:
+![Pressbot](/images/pressbot2.png)
 
-[caption id="attachment_606" align="alignnone"
-width="225"]![Ned](/images/ned-again-225x300.jpg) screen -r, control+a control+d,
-repeat[/caption]
+<figcaption>Still slacking!</figcaption>
+
+</figure>
+
+Ned working hard:
+
+<figure>
+
+![Ned](/images/ned-again-225x300.jpg)
+
+<figcaption>screen -r, control+a control+d,
+repeat</figcaption>
+</figure>
 
 All while coding sprint tasks in between.
 

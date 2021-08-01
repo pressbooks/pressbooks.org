@@ -1,6 +1,7 @@
 ---
 title: 'Pressbooks 4.2 and Pressbooks Book 1.10.1'
-date: '2017-09-06'
+date: '2017-09-06T12:00'
+author: Ned Zimmerman
 tags:
   - Changelog
 ---

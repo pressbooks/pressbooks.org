@@ -1,6 +1,7 @@
 ---
 title: 'Dac is back!'
-date: '2017-05-11'
+date: '2017-05-11T12:00'
+author: Hugh McGuire
 tags:
   - 'Pressbooks News'
 ---

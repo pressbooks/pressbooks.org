@@ -1,13 +1,12 @@
 ---
 title: 'Why We Removed Pressbooks from the WordPress Plugin Repository'
-date: '2016-10-15'
+date: '2016-10-15T12:00'
+author: Ned Zimmerman
 tags:
   - 'Pressbooks News'
-  - 'plugin'
-  - 'pressbooks-open-source'
+  - 'Plugins'
+  - 'Pressbooks Open Source'
 ---
-
-Why We Removed Pressbooks from the WordPress Plugin Repository
 
 A couple weeks ago, we removed Pressbooks from the WordPress Plugin Repository. We want to
 offer an explanation for this decision to our users, and give some insight into our plans

@@ -1,8 +1,9 @@
 ---
 title: 'WordPress 4.7.5 Security and Maintenance Release'
-date: '2017-05-17'
+date: '2017-05-17T12:00'
+author: Ned Zimmerman
 tags:
-  - 'upgrades'
+  - 'Upgrades'
 ---
 
 [WordPress 4.7.5 Security and Maintenance Release](https://wordpress.org/news/2017/05/wordpress-4-7-5/) came

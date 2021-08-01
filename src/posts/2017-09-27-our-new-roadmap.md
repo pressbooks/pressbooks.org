@@ -1,6 +1,7 @@
 ---
 title: 'Our new roadmap'
-date: '2017-09-27'
+date: '2017-09-27T12:00'
+author: Ned Zimmerman
 tags:
   - 'Pressbooks News'
 ---

@@ -2,7 +2,8 @@
 title:
   'Pressbooks 4.3, Pressbooks Book 1.10.2, Pressbooks Custom CSS 1.0, and Pressbooks
   Publisher 3.1.2'
-date: '2017-09-13'
+date: '2017-09-13T12:00'
+author: Ned Zimmerman
 tags:
   - Changelog
 ---

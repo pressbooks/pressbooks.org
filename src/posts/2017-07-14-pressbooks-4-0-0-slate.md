@@ -1,6 +1,7 @@
 ---
 title: 'Pressbooks 4.0.0 "Slate"'
-date: '2017-07-14'
+date: '2017-07-14T12:00'
+author: Ned Zimmerman
 tags:
   - Changelog
 ---

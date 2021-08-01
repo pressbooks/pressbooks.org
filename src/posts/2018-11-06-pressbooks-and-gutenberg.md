@@ -2,7 +2,7 @@
 title: 'Pressbooks and Gutenberg'
 date: '2018-11-06'
 tags:
-  - 'core'
+  - 'Core'
   - Development
 ---
 
