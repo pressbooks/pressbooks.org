@@ -1,6 +1,6 @@
 ---
 title: 'Book Themes, Part 1: Frames and Pictures'
-date: '2018-04-09'
+date: '2018-04-09T12:00'
 tags:
   - Development
 ---

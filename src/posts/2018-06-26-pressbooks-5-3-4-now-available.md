@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks 5.3.4 Now Available'
-date: '2018-06-26'
+date: '2018-06-26T12:00'
 tags:
   - Changelog
 ---

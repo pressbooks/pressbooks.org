@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks LTI Provider plugin ready for testing!'
-date: '2018-07-03'
+date: '2018-07-03T12:00'
 tags:
   - Development
 ---

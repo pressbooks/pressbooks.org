@@ -1,6 +1,6 @@
 ---
 title: 'Sprint Preview: Jan 22–Feb 2'
-date: '2018-01-22'
+date: '2018-01-22T12:00'
 tags:
   - Development
 ---

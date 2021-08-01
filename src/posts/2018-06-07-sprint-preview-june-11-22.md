@@ -1,6 +1,6 @@
 ---
 title: 'Sprint Preview: June 11–22'
-date: '2018-06-07'
+date: '2018-06-07T12:00'
 tags:
   - Development
 ---

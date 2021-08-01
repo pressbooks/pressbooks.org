@@ -1,6 +1,6 @@
 ---
 title: 'No Open Source Call in September'
-date: '2019-08-30'
+date: '2019-08-30T12:00'
 author: Steel Wagstaff
 tags:
   - Development

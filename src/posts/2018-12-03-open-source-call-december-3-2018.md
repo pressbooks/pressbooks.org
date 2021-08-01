@@ -1,6 +1,6 @@
 ---
 title: 'Open Source Call: December 3, 2018'
-date: '2018-12-03'
+date: '2018-12-03T12:00'
 tags:
   - Development
 ---

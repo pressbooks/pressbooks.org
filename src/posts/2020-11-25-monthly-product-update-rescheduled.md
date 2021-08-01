@@ -1,6 +1,6 @@
 ---
 title: 'Monthly Product Update Rescheduled'
-date: '2020-11-25'
+date: '2020-11-25T12:00'
 author: Steel Wagstaff
 tags:
   - Development

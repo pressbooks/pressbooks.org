@@ -1,6 +1,6 @@
 ---
 title: 'Book Themes, Part 2: What’s Buckram?'
-date: '2018-07-03'
+date: '2018-07-03T12:00'
 tags:
   - Development
 ---

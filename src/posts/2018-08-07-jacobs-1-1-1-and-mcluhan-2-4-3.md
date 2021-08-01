@@ -1,6 +1,6 @@
 ---
 title: 'Jacobs 1.1.1 and McLuhan 2.4.3'
-date: '2018-08-07'
+date: '2018-08-07T12:00'
 tags:
   - Changelog
 ---

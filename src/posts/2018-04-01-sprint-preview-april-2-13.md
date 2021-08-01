@@ -1,6 +1,6 @@
 ---
 title: 'Sprint Preview: April 2–13'
-date: '2018-04-01'
+date: '2018-04-01T12:00'
 tags:
   - Development
 ---

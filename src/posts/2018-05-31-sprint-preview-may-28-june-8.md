@@ -1,6 +1,6 @@
 ---
 title: 'Sprint Preview May 28–June 8'
-date: '2018-05-31'
+date: '2018-05-31T12:00'
 tags:
   - Development
 ---

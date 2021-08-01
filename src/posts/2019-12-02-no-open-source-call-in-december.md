@@ -1,6 +1,6 @@
 ---
 title: 'No Open Source Call in December'
-date: '2019-12-02'
+date: '2019-12-02T12:00'
 author: Steel Wagstaff
 tags:
   - Development

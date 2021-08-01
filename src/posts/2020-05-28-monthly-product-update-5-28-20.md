@@ -1,6 +1,6 @@
 ---
 title: 'Monthly Product Update 5/28/20'
-date: '2020-05-28'
+date: '2020-05-28T12:00'
 author: Steel Wagstaff
 tags:
   - Development

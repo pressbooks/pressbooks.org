@@ -1,6 +1,6 @@
 ---
 title: 'Looking Back, Looking Forward'
-date: '2019-02-28'
+date: '2019-02-28T12:00'
 tags:
   - 'Pressbooks News'
 ---

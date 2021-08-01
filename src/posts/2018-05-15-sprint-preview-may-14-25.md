@@ -1,6 +1,6 @@
 ---
 title: 'Sprint Preview: May 14-25'
-date: '2018-05-15'
+date: '2018-05-15T12:00'
 tags:
   - Development
 ---

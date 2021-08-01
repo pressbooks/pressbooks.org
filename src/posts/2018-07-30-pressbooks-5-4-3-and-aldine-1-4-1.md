@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks 5.4.3 and Aldine 1.4.1'
-date: '2018-07-30'
+date: '2018-07-30T12:00'
 tags:
   - Changelog
 ---

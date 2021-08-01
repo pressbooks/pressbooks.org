@@ -1,6 +1,6 @@
 ---
 title: 'Open Source Call 06/03'
-date: '2019-06-03'
+date: '2019-06-03T12:00'
 tags:
   - Development
 ---

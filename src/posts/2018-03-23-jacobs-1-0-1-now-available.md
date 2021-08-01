@@ -1,6 +1,6 @@
 ---
 title: 'Jacobs 1.0.1 Now Available'
-date: '2018-03-23'
+date: '2018-03-23T12:00'
 tags:
   - Changelog
 ---

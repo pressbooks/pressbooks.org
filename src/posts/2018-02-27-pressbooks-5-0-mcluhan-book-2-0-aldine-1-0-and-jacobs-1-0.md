@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks 5.0, McLuhan (Book 2.0), Aldine 1.0, and Jacobs 1.0'
-date: '2018-02-27'
+date: '2018-02-27T12:00'
 tags:
   - Changelog
 ---

@@ -1,6 +1,6 @@
 ---
 title: 'The Pressbooks Community Forum'
-date: '2018-09-12'
+date: '2018-09-12T12:00'
 tags:
   - 'Pressbooks News'
 ---

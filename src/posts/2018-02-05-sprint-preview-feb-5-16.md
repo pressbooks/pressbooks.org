@@ -1,6 +1,6 @@
 ---
 title: 'Sprint Preview: Feb 5–16'
-date: '2018-02-05'
+date: '2018-02-05T12:00'
 tags:
   - Development
 ---

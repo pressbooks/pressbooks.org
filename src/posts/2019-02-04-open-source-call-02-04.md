@@ -1,6 +1,6 @@
 ---
 title: 'Open Source Call 02/04'
-date: '2019-02-04'
+date: '2019-02-04T12:00'
 tags:
   - Development
 ---

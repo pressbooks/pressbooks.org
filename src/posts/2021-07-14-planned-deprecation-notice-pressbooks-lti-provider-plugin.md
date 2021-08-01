@@ -1,6 +1,6 @@
 ---
 title: 'Planned deprecation notice: Pressbooks LTI Provider plugin'
-date: '2021-07-14'
+date: '2021-07-14T12:00'
 author: Steel Wagstaff
 tags:
   - Development

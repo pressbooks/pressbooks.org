@@ -1,6 +1,6 @@
 ---
 title: 'Sprint Preview: August 6 to 17'
-date: '2018-08-02'
+date: '2018-08-02T12:00'
 tags:
   - Development
 ---

@@ -1,6 +1,6 @@
 ---
 title: 'Font Selector Theme Option'
-date: '2019-09-24'
+date: '2019-09-24T12:00'
 author: Dac Chartrand
 tags:
   - Development
@@ -89,9 +89,10 @@ Make changes like the above to:
 - `assets/styles/epub/_fonts.scss`
 - `assets/styles/prince/_fonts.scss`
 
-Pay special attention to variable names _(replace $sans-serif-web to $sans-serif-epub or
-$sans-serif-prince, for example)_ If you have `@import` statements move them from the
-bottom of the file into the `else` conditions.
+Pay special attention to variable names _(replace
+$sans-serif-web to $sans-serif-epub or
+$sans-serif-prince, for example)_ If you have
+`@import` statements move them from the bottom of the file into the `else` conditions.
 
 To finish, add this code snippet in your theme's `functions.php` file:
 

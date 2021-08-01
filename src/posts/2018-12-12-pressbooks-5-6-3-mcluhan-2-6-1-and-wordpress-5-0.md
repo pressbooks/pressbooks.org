@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks 5.6.3, Mcluhan 2.6.1, and Wordpress 5.0'
-date: '2018-12-12'
+date: '2018-12-12T12:00'
 tags:
   - Development
 ---

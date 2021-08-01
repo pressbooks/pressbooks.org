@@ -2,7 +2,7 @@
 title:
   'Pressbooks CAS SSO 1.1.1, Pressbooks LTI Provider 1.1.1, and Pressbooks Shibboleth SSO
   0.0.4'
-date: '2018-10-02'
+date: '2018-10-02T12:00'
 tags:
   - Changelog
 ---

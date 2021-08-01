@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks 5.7.2 McLuhan 2.8.3, SAML SSO 1.0.2'
-date: '2019-05-02'
+date: '2019-05-02T12:00'
 tags:
   - Changelog
 ---

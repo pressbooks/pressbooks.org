@@ -1,6 +1,6 @@
 ---
 title: 'No Open Source Call in July'
-date: '2019-06-28'
+date: '2019-06-28T12:00'
 tags:
   - Development
 ---

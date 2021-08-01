@@ -1,6 +1,6 @@
 ---
 title: 'Sprint Preview: August 20-31'
-date: '2018-08-16'
+date: '2018-08-16T12:00'
 ---
 
 Here are some of the things we’ll be working on this sprint:

@@ -1,6 +1,6 @@
 ---
 title: 'December Monthly Product Update Cancelled'
-date: '2020-12-23'
+date: '2020-12-23T12:00'
 author: Steel Wagstaff
 tags:
   - Development

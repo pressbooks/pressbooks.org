@@ -1,6 +1,6 @@
 ---
 title: 'Introducing pressbooks/ideas 💡'
-date: '2018-03-02'
+date: '2018-03-02T12:00'
 tags:
   - Development
 ---

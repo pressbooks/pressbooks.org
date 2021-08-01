@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks 5.4.0, McLuhan 2.4.0, Aldine 1.4.0, and more!'
-date: '2018-07-04'
+date: '2018-07-04T12:00'
 tags:
   - Changelog
 ---

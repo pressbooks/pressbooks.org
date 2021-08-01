@@ -1,6 +1,6 @@
 ---
 title: 'GitHub Housekeeping'
-date: '2018-01-25'
+date: '2018-01-25T12:00'
 ---
 
 A quick note from the dev team: we are working to improve our GitHub issue management.

@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks 2018: The Year in Review, part 1'
-date: '2019-01-14'
+date: '2019-01-14T12:00'
 tags:
   - 'Pressbooks News'
 ---

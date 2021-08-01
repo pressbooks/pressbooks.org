@@ -1,6 +1,6 @@
 ---
 title: 'Refactoring Slow Forms Using PHP Generators and Event Streams'
-date: '2018-11-12'
+date: '2018-11-12T12:00'
 tags:
   - Development
 ---

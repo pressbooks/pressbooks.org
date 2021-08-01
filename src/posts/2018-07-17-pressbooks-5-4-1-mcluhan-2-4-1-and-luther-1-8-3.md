@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks 5.4.1, McLuhan 2.4.1, and Luther 1.8.3'
-date: '2018-07-17'
+date: '2018-07-17T12:00'
 tags:
   - Changelog
 ---

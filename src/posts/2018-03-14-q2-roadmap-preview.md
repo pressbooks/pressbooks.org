@@ -1,6 +1,6 @@
 ---
 title: 'Q2 Roadmap Preview'
-date: '2018-03-14'
+date: '2018-03-14T12:00'
 tags:
   - Development
 ---

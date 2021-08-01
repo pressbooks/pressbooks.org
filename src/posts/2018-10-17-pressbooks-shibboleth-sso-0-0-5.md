@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks Shibboleth SSO 0.0.5'
-date: '2018-10-17'
+date: '2018-10-17T12:00'
 tags:
   - Development
 ---

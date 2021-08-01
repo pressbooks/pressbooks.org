@@ -1,6 +1,6 @@
 ---
 title: "Declaring your plugin's compatibility with Pressbooks"
-date: '2018-03-05'
+date: '2018-03-05T12:00'
 ---
 
 Last summer, [WooCommerce](https://woocommerce.com) introduced a

@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks 5.9.1, McLuhan 2.8.9, CAS-SSO 1.2.3, Etc.'
-date: '2019-08-21'
+date: '2019-08-21T12:00'
 author: Dac Chartrand
 tags:
   - Changelog

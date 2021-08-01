@@ -1,6 +1,6 @@
 ---
 title: 'DocRaptor for Pressbooks 2.2.1, Excalibur 0.3.2, and Pressbooks Stats 1.4.1'
-date: '2018-03-08'
+date: '2018-03-08T12:00'
 ---
 
 We've released updates to DocRaptor for Pressbooks, Excalibur and Pressbooks Stats to

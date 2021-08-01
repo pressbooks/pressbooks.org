@@ -1,6 +1,6 @@
 ---
 title: 'November Open Source Call'
-date: '2018-11-05'
+date: '2018-11-05T12:00'
 tags:
   - Development
 ---

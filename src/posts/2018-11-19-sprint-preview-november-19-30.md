@@ -1,6 +1,6 @@
 ---
 title: 'Sprint Preview: November 19-30'
-date: '2018-11-19'
+date: '2018-11-19T12:00'
 tags:
   - Development
 ---

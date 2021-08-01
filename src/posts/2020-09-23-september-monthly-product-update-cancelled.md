@@ -1,6 +1,6 @@
 ---
 title: 'September Monthly Product Update Cancelled'
-date: '2020-09-23'
+date: '2020-09-23T12:00'
 author: Steel Wagstaff
 tags:
   - Development

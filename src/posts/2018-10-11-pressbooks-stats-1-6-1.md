@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks Stats 1.6.1'
-date: '2018-10-11'
+date: '2018-10-11T12:00'
 tags:
   - Changelog
 ---

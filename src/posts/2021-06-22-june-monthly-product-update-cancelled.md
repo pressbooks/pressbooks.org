@@ -1,6 +1,6 @@
 ---
 title: 'June Monthly Product Update Cancelled'
-date: '2021-06-22'
+date: '2021-06-22T12:00'
 author: Steel Wagstaff
 tags:
   - Development

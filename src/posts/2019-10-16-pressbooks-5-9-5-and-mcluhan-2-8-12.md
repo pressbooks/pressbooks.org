@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks 5.9.5 and McLuhan 2.8.12'
-date: '2019-10-16'
+date: '2019-10-16T12:00'
 author: Dac Chartrand
 tags:
   - Changelog

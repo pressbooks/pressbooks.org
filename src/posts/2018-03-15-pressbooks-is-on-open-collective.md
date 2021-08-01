@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks is on Open Collective'
-date: '2018-03-15'
+date: '2018-03-15T12:00'
 ---
 
 With our

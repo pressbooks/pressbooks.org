@@ -1,6 +1,6 @@
 ---
 title: 'Sprint Preview: March 19–30'
-date: '2018-03-15'
+date: '2018-03-15T12:00'
 tags:
   - Development
 ---

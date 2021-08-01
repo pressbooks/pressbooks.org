@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks 5.3.0, McLuhan 2.3.0 and Aldine 1.3.0'
-date: '2018-05-15'
+date: '2018-05-15T12:00'
 tags:
   - Development
 ---

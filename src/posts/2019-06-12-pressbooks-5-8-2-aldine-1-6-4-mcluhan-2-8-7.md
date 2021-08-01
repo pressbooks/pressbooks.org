@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks 5.8.2, Aldine 1.6.4, McLuhan 2.8.7'
-date: '2019-06-12'
+date: '2019-06-12T12:00'
 tags:
   - Changelog
 ---

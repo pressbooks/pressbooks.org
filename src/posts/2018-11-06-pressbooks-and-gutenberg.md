@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks and Gutenberg'
-date: '2018-11-06'
+date: '2018-11-06T12:00'
 tags:
   - 'Core'
   - Development

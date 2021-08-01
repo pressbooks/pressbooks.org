@@ -1,6 +1,6 @@
 ---
 title: 'Sprint Preview: December 17–January 4'
-date: '2018-12-17'
+date: '2018-12-17T12:00'
 tags:
   - Development
 ---

@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks 5.5.3 and McLuhan 2.5.2'
-date: '2018-10-10'
+date: '2018-10-10T12:00'
 tags:
   - Changelog
 ---

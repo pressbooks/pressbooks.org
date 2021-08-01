@@ -1,6 +1,6 @@
 ---
 title: 'Sprint Preview: June 25 - July 6'
-date: '2018-06-26'
+date: '2018-06-26T12:00'
 ---
 
 This sprint, we'll be working on:

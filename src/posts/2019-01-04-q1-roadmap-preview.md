@@ -1,6 +1,6 @@
 ---
 title: 'Q1 Roadmap Preview'
-date: '2019-01-04'
+date: '2019-01-04T12:00'
 author: Ned Zimmerman
 tags:
   - Development

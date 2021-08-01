@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks 5.8.3, McLuhan 2.8.8, Stats 1.6.3'
-date: '2019-07-03'
+date: '2019-07-03T12:00'
 tags:
   - Changelog
 ---

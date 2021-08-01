@@ -1,6 +1,6 @@
 ---
 title: 'Open Source Call 11/04'
-date: '2019-11-04'
+date: '2019-11-04T12:00'
 author: Steel Wagstaff
 tags:
   - Development

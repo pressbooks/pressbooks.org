@@ -1,6 +1,6 @@
 ---
 title: 'New time, format, & title for monthly Open Source Calls'
-date: '2020-03-23'
+date: '2020-03-23T12:00'
 author: Steel Wagstaff
 tags:
   - Development

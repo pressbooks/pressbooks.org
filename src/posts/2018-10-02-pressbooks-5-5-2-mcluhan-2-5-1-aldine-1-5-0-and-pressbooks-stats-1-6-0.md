@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks 5.5.2, McLuhan 2.5.1, Aldine 1.5.0, and Pressbooks Stats 1.6.0'
-date: '2018-10-02'
+date: '2018-10-02T12:00'
 tags:
   - Changelog
 ---

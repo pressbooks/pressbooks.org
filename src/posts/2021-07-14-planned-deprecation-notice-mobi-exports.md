@@ -1,6 +1,6 @@
 ---
 title: 'Planned Deprecation Notice: MOBI exports'
-date: '2021-07-14'
+date: '2021-07-14T12:00'
 author: Steel Wagstaff
 tags:
   - Development

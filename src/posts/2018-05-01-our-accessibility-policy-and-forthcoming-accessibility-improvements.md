@@ -1,6 +1,6 @@
 ---
 title: 'Our Accessibility Policy and Forthcoming Accessibility Improvements'
-date: '2018-05-01'
+date: '2018-05-01T12:00'
 tags:
   - 'Accessibility'
 ---

@@ -1,6 +1,6 @@
 ---
 title: 'Sprint Preview: October 22–November 2'
-date: '2018-10-22'
+date: '2018-10-22T12:00'
 tags:
   - Development
 ---

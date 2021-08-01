@@ -1,6 +1,6 @@
 ---
 title: 'Q3 Roadmap Preview'
-date: '2018-06-30'
+date: '2018-06-30T12:00'
 tags:
   - Development
 ---

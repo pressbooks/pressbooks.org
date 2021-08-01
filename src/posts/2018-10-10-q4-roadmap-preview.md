@@ -1,6 +1,6 @@
 ---
 title: 'Q4 Roadmap Preview'
-date: '2018-10-10'
+date: '2018-10-10T12:00'
 tags:
   - Development
 ---
