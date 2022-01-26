@@ -25,8 +25,8 @@ wordpress_sites:
     ssl:
       enabled: true
       provider: manual
-      cert: ~/certificates/pressbooks.org.20211028.fullchain.pem
-      key: ~/certificates/pressbooks.org.20211028.privkey.pem
+      cert: ~/certificates/pressbooks.org.20220126.fullchain.pem
+      key: ~/certificates/pressbooks.org.20220126.privkey.pem
     cache:
       enabled: true
     env:
