@@ -1,16 +1,16 @@
 ---
-title: 'Moving Half a Million Database Tables to AWS Aurora (Part 1)'
-date: '2017-10-19T12:00'
+title: "Moving Half a Million Database Tables to AWS Aurora (Part 1)"
+date: "2017-10-19T12:00"
 author: Dac Chartrand
 tags:
-  - 'Core'
+  - "Core"
 ---
 
 This post is about migrating Pressbooks.com to AWS.
 
 ## Does It Scale?
 
-At [Pressbooks](https://pressbooks.org/) we use
+At [Pressbooks](/) we use
 [WordPress Multisite](https://codex.wordpress.org/Create_A_Network) as a development
 platform. [Pressbooks changes WordPress](https://github.com/pressbooks/pressbooks) and
 makes every blog a book.
@@ -67,7 +67,7 @@ reasons:
 - Mostly, the fastest migration we could get going, running 4 tasks in parallel, was an
   ETA of 10 days
 
-We asked for help. [Ned](https://pressbooks.org/blog/author/ned/) had a conference call
+We asked for help. [Ned](/blog/author/ned/) had a conference call
 with a reputable consulting firm and they gave us a quote: $34K USD + travel & on-site
 expenses.
 

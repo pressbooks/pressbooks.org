@@ -1,6 +1,6 @@
 ---
-title: 'Pressbooks 5.0, McLuhan (Book 2.0), Aldine 1.0, and Jacobs 1.0'
-date: '2018-02-27T12:00'
+title: "Pressbooks 5.0, McLuhan (Book 2.0), Aldine 1.0, and Jacobs 1.0"
+date: "2018-02-27T12:00"
 tags:
   - Changelog
 ---
@@ -11,7 +11,7 @@ now available! Before you upgrade, please be sure to consult the
 
 Full changelogs are available here:
 
-\- [Pressbooks 5.0.0](https://docs.pressbooks.org/changelog/pressbooks/#5-0-0) -
-[McLuhan (Book) 2.0.0](https://docs.pressbooks.org/changelog/pressbooks-book/#2-0-0) -
-[Aldine 1.0.0](https://docs.pressbooks.org/changelog/pressbooks-aldine/#1-0-0) -
-[Jacobs 1.0.0](https://docs.pressbooks.org/changelog/pressbooks-jacobs/#1-0-0)
+- [Pressbooks 5.0.0](https://docs.pressbooks.org/changelog/pressbooks/#5-0-0)
+- [McLuhan (Book) 2.0.0](https://docs.pressbooks.org/changelog/pressbooks-book/#2-0-0)
+- [Aldine 1.0.0](https://docs.pressbooks.org/changelog/pressbooks-aldine/#1-0-0)
+- [Jacobs 1.0.0](https://docs.pressbooks.org/changelog/pressbooks-jacobs/#1-0-0)

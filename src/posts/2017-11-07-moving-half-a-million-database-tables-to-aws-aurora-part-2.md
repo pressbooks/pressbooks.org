@@ -1,17 +1,17 @@
 ---
-title: 'Moving Half a Million Database Tables to AWS Aurora (Part 2)'
-date: '2017-11-07T12:00'
+title: "Moving Half a Million Database Tables to AWS Aurora (Part 2)"
+date: "2017-11-07T12:00"
 author: Dac Chartrand
 tags:
-  - 'Core'
+  - "Core"
 ---
 
-[Quick recap](https://pressbooks.org/blog/2017/10/19/moving-half-a-million-database-tables-to-aws-aurora-part-1/):
+[Quick recap](/blog/2017/10/19/moving-half-a-million-database-tables-to-aws-aurora-part-1/):
 Migrate half a million database tables from a single bare metal server with 1 database to
 101 database slices on AWS Aurora.
 
 Wait, half a million database tables?! Answered in
-[Part 1](https://pressbooks.org/blog/2017/10/19/moving-half-a-million-database-tables-to-aws-aurora-part-1/).
+[Part 1](/blog/2017/10/19/moving-half-a-million-database-tables-to-aws-aurora-part-1/).
 
 ## Plan
 
@@ -42,7 +42,7 @@ All signs point to nope.
 > Why not DMS?
 
 Answered in
-[Part 1](https://pressbooks.org/blog/2017/10/19/moving-half-a-million-database-tables-to-aws-aurora-part-1/).
+[Part 1](/blog/2017/10/19/moving-half-a-million-database-tables-to-aws-aurora-part-1/).
 
 Mostly, at the end of the day, because our
 [hosted networks](https://pressbooks.education/) are already on AWS it was simply more
@@ -77,7 +77,7 @@ Much quicker! (around 7 minutes)
 > – [Ken Carter](http://hnmag.ca/festivals/aiming-for-the-roses-with-devil-at-your-heels/)
 
 Scripts from
-[Part 1 (read it already!)](https://pressbooks.org/blog/2017/10/19/moving-half-a-million-database-tables-to-aws-aurora-part-1/)
+[Part 1 (read it already!)](/blog/2017/10/19/moving-half-a-million-database-tables-to-aws-aurora-part-1/)
 were modified to include [Slack](https://slack.com/) notifications:
 
 ```bash

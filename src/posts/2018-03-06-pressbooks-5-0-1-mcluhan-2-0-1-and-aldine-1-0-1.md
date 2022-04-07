@@ -1,6 +1,6 @@
 ---
-title: 'Pressbooks 5.0.1, McLuhan 2.0.1, and Aldine 1.0.1'
-date: '2018-03-06T12:00'
+title: "Pressbooks 5.0.1, McLuhan 2.0.1, and Aldine 1.0.1"
+date: "2018-03-06T12:00"
 tags:
   - Changelog
 ---
@@ -11,6 +11,6 @@ you upgrade, please be sure to consult the
 
 Full changelogs are available here:
 
-\- [Pressbooks 5.0.1](https://docs.pressbooks.org/changelog/pressbooks/#5-0-1) -
-[McLuhan 2.0.1](https://docs.pressbooks.org/changelog/pressbooks-book/#2-0-1) -
-[Aldine 1.0.1](https://docs.pressbooks.org/changelog/pressbooks-aldine/#1-0-1)
+- [Pressbooks 5.0.1](https://docs.pressbooks.org/changelog/pressbooks/#5-0-1)
+- [McLuhan 2.0.1](https://docs.pressbooks.org/changelog/pressbooks-book/#2-0-1)
+- [Aldine 1.0.1](https://docs.pressbooks.org/changelog/pressbooks-aldine/#1-0-1)

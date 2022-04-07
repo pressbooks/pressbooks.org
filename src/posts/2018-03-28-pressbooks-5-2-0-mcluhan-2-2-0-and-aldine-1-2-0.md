@@ -1,6 +1,6 @@
 ---
-title: 'Pressbooks 5.2.0, McLuhan 2.2.0, and Aldine 1.2.0'
-date: '2018-03-28T12:00'
+title: "Pressbooks 5.2.0, McLuhan 2.2.0, and Aldine 1.2.0"
+date: "2018-03-28T12:00"
 tags:
   - Changelog
 ---
@@ -17,6 +17,6 @@ Shiflet at [Ohio State](https://odee.osu.edu/digital-publishing), and
 
 Full changelogs are available here:
 
-\- [Pressbooks 5.2.0](https://docs.pressbooks.org/changelog/pressbooks/#5-2-0) -
-[McLuhan 2.2.0](https://docs.pressbooks.org/changelog/pressbooks-book/#2-2-0) -
-[Aldine 1.2.0](https://docs.pressbooks.org/changelog/pressbooks-aldine/#1-2-0)
+- [Pressbooks 5.2.0](https://docs.pressbooks.org/changelog/pressbooks/#5-2-0)
+- [McLuhan 2.2.0](https://docs.pressbooks.org/changelog/pressbooks-book/#2-2-0)
+- [Aldine 1.2.0](https://docs.pressbooks.org/changelog/pressbooks-aldine/#1-2-0)

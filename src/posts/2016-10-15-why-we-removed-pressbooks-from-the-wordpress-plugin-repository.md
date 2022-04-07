@@ -1,11 +1,11 @@
 ---
-title: 'Why We Removed Pressbooks from the WordPress Plugin Repository'
-date: '2016-10-15T12:00'
+title: "Why We Removed Pressbooks from the WordPress Plugin Repository"
+date: "2016-10-15T12:00"
 author: Ned Zimmerman
 tags:
-  - 'Pressbooks News'
-  - 'Plugins'
-  - 'Pressbooks Open Source'
+  - "Pressbooks News"
+  - "Plugins"
+  - "Pressbooks Open Source"
 ---
 
 A couple weeks ago, we removed Pressbooks from the WordPress Plugin Repository. We want to
@@ -45,6 +45,6 @@ following options:
   service for publishers
 
 For those who are interested in running their own networks, we are working to improve the
-[installation documentation](https://pressbooks.org/installation/) and provide
+[installation documentation](/installation/) and provide
 [several](https://github.com/pressbooks/pressbooks/issues/502) [methods](https://github.com/pressbooks/pressbooks/issues/502) to
 keep Pressbooks updated.

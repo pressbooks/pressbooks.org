@@ -1,6 +1,6 @@
 ---
 title: "Declaring your plugin's compatibility with Pressbooks"
-date: '2018-03-05T12:00'
+date: "2018-03-05T12:00"
 ---
 
 Last summer, [WooCommerce](https://woocommerce.com) introduced a
@@ -15,7 +15,7 @@ We really liked this idea, so [Dac](https://github.com/connerbw) built a similar
 future updates to Pressbooks show up on the plugins page of a Pressbooks, users will see
 whether or not their Pressbooks-specific add-ons have been tested with the latest version:
 
-![Plugin compatibility notice](https://pressbooks.org/app/uploads/2018/03/Screen-Shot-2018-03-05-at-10.00.37-AM.png)
+![Plugin compatibility notice](/images/Screen-Shot-2018-03-05-at-10.00.37-AM.png)
 
 If you develop plugins that extend Pressbooks functionality (we check for `pressbooks` in
 the plugin slug, name, and description), you can add `Pressbooks tested up to: 5.0.0` (or

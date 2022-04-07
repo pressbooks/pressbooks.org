@@ -1,6 +1,6 @@
 ---
 title: 'Pressbooks 4.0.0 "Slate"'
-date: '2017-07-14T12:00'
+date: "2017-07-14T12:00"
 author: Ned Zimmerman
 tags:
   - Changelog
@@ -117,7 +117,7 @@ that were bundled with earlier versions of Pressbooks. For more information, see
   coding standards using [eslint](http://eslint.org/) with the command `yarn run lint`
   (see [#829](https://github.com/pressbooks/pressbooks/pull/829)).
 - **Enhancement:** Root and book themes are now distributed separately from the Pressbooks
-  plugin -- make sure you install the required themes when you
+  plugin—make sure you install the required themes when you
   [upgrade](http://docs.pressbooks.org/upgrading)! (See
   [#756](https://github.com/pressbooks/pressbooks/issues/756) and
   [#799](https://github.com/pressbooks/pressbooks/pull/799).)

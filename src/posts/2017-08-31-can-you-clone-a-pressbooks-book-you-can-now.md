@@ -1,9 +1,9 @@
 ---
-title: 'Can you “clone” a Pressbooks book? You can now*!'
-date: '2017-08-31T12:00'
+title: "Can you “clone” a Pressbooks book? You can now*!"
+date: "2017-08-31T12:00"
 author: Hugh McGuire
 tags:
-  - 'Pressbooks News'
+  - "Pressbooks News"
 ---
 
 Here at Pressbooks HQ we’ve been doing a whole lot more development work for the Open
@@ -25,7 +25,7 @@ remix an EPUB? How do you redistribute a print book?
 
 # Clone me, please!
 
-The new answer -- at least for Open Textbooks built on Pressbooks as of now is: You
+The new answer—at least for Open Textbooks built on Pressbooks as of now is: You
 **clone** them!
 
 That is, you can now, with the click of a button, clone/copy a complete Pressbooks book
@@ -44,7 +44,7 @@ No. No. No! … No, cloning is only possible in the case that:
 - Your book is **openly licensed** (with a Creative Commons license)
 - You book privacy setting is: **public on the web**
 
-So for any books that have standard copyright, or are not available on the web -- this
+So for any books that have standard copyright, or are not available on the web—this
 doesn’t apply.
 
 # Why would you clone a book?

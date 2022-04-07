@@ -1,23 +1,23 @@
 ---
-title: 'Our new roadmap'
-date: '2017-09-27T12:00'
+title: "Our new roadmap"
+date: "2017-09-27T12:00"
 author: Ned Zimmerman
 tags:
-  - 'Pressbooks News'
+  - "Pressbooks News"
 ---
 
 At the start of 2017, we established a
-[development roadmap](https://pressbooks.org/roadmap/roadmap-2017/) for Pressbooks to
+[development roadmap](/roadmap/roadmap-2017/) for Pressbooks to
 guide our work through the coming year. This past week we had the opportunity to review
 and reflect on that roadmap during our retreat at Pressbooks HQ, and you can see our
-[new roadmap here](https://pressbooks.org/roadmap/).
+[new roadmap here](/roadmap/).
 
 ## 2017: Year of Core
 
 I want to highlight a few of our accomplishments from the past nine months (you'll see
 them crossed out on the old roadmap). In retrospect, our clear focus over the past nine
 months was improving Pressbooks’ core technology. When
-[Dac came back](https://pressbooks.org/blog/2017/05/11/dac-is-back/), having a second
+[Dac came back](/blog/2017/05/11/dac-is-back/), having a second
 developer let us expand upon my efforts in recent years to standardize our development
 processes under the hood. We now use consistent
 [coding standards](https://docs.pressbooks.org/coding-standards/) across all of our open
@@ -51,7 +51,7 @@ authoring toolset as we can. This includes:
 - Adding support for multiple contributors: authors, editors, translators and more
 - Adding indexing and glossary support
 
-And more! Take a look at our [new roadmap](https://pressbooks.org/roadmap/) to see our
+And more! Take a look at our [new roadmap](/roadmap/) to see our
 comprehensive plans for improving Pressbooks’ authorship and editing tools, as well as all
 other aspects of the project.
 

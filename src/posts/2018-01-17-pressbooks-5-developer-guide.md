@@ -1,6 +1,6 @@
 ---
-title: 'Pressbooks 5: Developer Guide'
-date: '2018-01-17T12:00'
+title: "Pressbooks 5: Developer Guide"
+date: "2018-01-17T12:00"
 author: Ned Zimmerman
 ---
 
@@ -36,20 +36,20 @@ now be determined as follows:
 
 In terms of the user interface, we're changing this:
 
-![A mockup of the Export Settings & Publish panels in Pressbooks 4.x.](https://pressbooks.org/app/uploads/2018/01/export-publish.svg)
+![A mockup of the Export Settings & Publish panels in Pressbooks 4.x.](/images/export-publish.svg)
 
 To this:
 
 <figure>
 
-![A mockup of the Status & Visibility panel for a new chapter in Pressbooks 5.](https://pressbooks.org/app/uploads/2018/01/status-visibility-new.svg)
+![A mockup of the Status & Visibility panel for a new chapter in Pressbooks 5.](/images/status-visibility-new.svg)
 
 <figcaption>The panel for a new chapter.</figcaption>
 </figure>
 
 <figure>
 
-![A mockup of the "Status & Visibility" panel for an existing chapter in Pressbooks 5.](https://pressbooks.org/app/uploads/2018/01/status-visibility.svg)
+![A mockup of the "Status & Visibility" panel for an existing chapter in Pressbooks 5.](/images/status-visibility.svg)
 
 <figcaption>The panel for an existing chapter.</figcaption>
 </figure>

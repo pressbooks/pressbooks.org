@@ -1,10 +1,10 @@
 ---
-title: 'Pressbooks is on Open Collective'
-date: '2018-03-15T12:00'
+title: "Pressbooks is on Open Collective"
+date: "2018-03-15T12:00"
 ---
 
 With our
-[sprint previews](https://pressbooks.org/blog/2018/03/15/sprint-preview-march-19-30/),
+[sprint previews](/blog/2018/03/15/sprint-preview-march-19-30/),
 [idea board](https://github.com/pressbooks/ideas), and various other initiatives, we're
 increasing our efforts to foster and engage the Pressbooks Open Source community [1. And
 if you or anyone you know wants to join our monthly Slack calls, it's now a

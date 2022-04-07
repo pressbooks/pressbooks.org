@@ -1,6 +1,6 @@
 ---
-title: 'Book Themes, Part 1: Frames and Pictures'
-date: '2018-04-09T12:00'
+title: "Book Themes, Part 1: Frames and Pictures"
+date: "2018-04-09T12:00"
 tags:
   - Development
 ---
@@ -15,9 +15,12 @@ has evolved over the years, and outline where we hope to take book themes in the
 Conceptually, I find it helpful to think of our book themes as two things: a frame and a
 picture.
 
-[caption id="attachment_857" align="aligncenter"
-width="233"]![A black and white photo of Marshall McLuhan leaning against a mantlepiece in a hand-drawn picture frame.](/images/mcluhan-233x300.png)
-Marshall McLuhan, framed. (Wikimedia Commons)[/caption]
+<figure>
+
+![A black and white photo of Marshall McLuhan leaning against a mantlepiece in a hand-drawn picture frame.](/images/mcluhan-233x300.png)
+
+<figcaption>Marshall McLuhan, framed. (Wikimedia Commons)</figcaption>
+</figure>
 
 Take [McLuhan](https://github.com/pressbooks/pressbooks-book/), our default book theme.
 It's really two elements in one. The first element is a (fairly conventional) WordPress
@@ -37,21 +40,30 @@ So if you change your book's theme to
 [Jacobs](https://github.com/pressbooks/pressbooks-jacobs/), you're putting a new "picture"
 in the original frame:
 
-[caption id="attachment_867" align="aligncenter"
-width="233"]![A black and white photo of Jane Jacobs in a hand-drawn picture frame.](/images/jacobs-233x300.png)
-Jane Jacobs, framed. (Wikimedia Commons)[/caption]
+<figure>
+
+![A black and white photo of Jane Jacobs in a hand-drawn picture frame.](/images/jacobs-233x300.png)
+
+<figcaption>Jane Jacobs, framed. (Wikimedia Commons)</figcaption>
+</figure>
 
 To demonstrate this more concretely, here's a webbook using McLuhan:
 
-[caption id="attachment_871" align="aligncenter"
-width="840"]![A screenshot of the first chapter of Herman Melville's ](/images/mcluhan-webbook-1024x524.png)
-Moby Dick in McLuhan.[/caption]
+<figure>
+
+![A screenshot of the first chapter of Herman Melville's ](/images/mcluhan-webbook-1024x524.png)
+
+<figcaption>Moby Dick in McLuhan.</figcaption>
+</figure>
 
 And the same webbook using Jacobs:
 
-[caption id="attachment_873" align="aligncenter"
-width="840"]![A screenshot of ](/images/jacobs-webbook-1024x524.png) Moby Dick in
-Jacobs.[/caption]
+<figure>
+
+![A screenshot of ](/images/jacobs-webbook-1024x524.png)
+
+<figcaption>Moby Dick in Jacobs.</figcaption>
+</figure>
 
 No difference except the typography of the book content.
 
