@@ -12,12 +12,12 @@ networks.
 
 Changelogs:
 
-\+ https://github.com/pressbooks/pressbooks/releases/tag/5.8.1 +
-https://github.com/pressbooks/pressbooks-aldine/releases/tag/1.6.3 +
-https://github.com/pressbooks/pressbooks-book/releases/tag/2.8.6 +
-https://github.com/pressbooks/pressbooks-lti-provider/releases/tag/1.3.1
+- <https://github.com/pressbooks/pressbooks/releases/tag/5.8.1>
+- <https://github.com/pressbooks/pressbooks-aldine/releases/tag/1.6.3>
+- <https://github.com/pressbooks/pressbooks-book/releases/tag/2.8.6>
+- <https://github.com/pressbooks/pressbooks-lti-provider/releases/tag/1.3.1>
 
-\*\*New:\*\* The minimum translation completion threshold in order for a file to be
-included in our code is 25%. Is your language missing? Translators welcome:
+**New:** The minimum translation completion threshold in order for a file to be included
+in our code is 25%. Is your language missing? Translators welcome:
 
-\+ https://www.transifex.com/pressbooks/pressbooks/
+- <https://www.transifex.com/pressbooks/pressbooks/>

@@ -210,7 +210,7 @@ anti-spamming improvements.
 
 We made a few [minor updates](https://docs.pressbooks.org/changelog/pressbooks-stats/) to
 the small [Pressbooks Stats](https://github.com/pressbooks/pressbooks-stats) plugin, with
-[some bigger work planned for early 2019](https://pressbooks.org/blog/2019/01/04/q1-roadmap-preview/)
+[some bigger work planned for early 2019](/blog/2019/01/04/q1-roadmap-preview/)
 (‘improving usage statistics at the network level’ refers to ongoing efforts to give
 network managers better tools for understanding how their networks are being used). The
 current version of Pressbooks Stats is now 1.6.2.
@@ -267,12 +267,11 @@ configuration fee.
 ### Buckram
 
 In April, our lead developer Ned Zimmerman published a helpful introduction to
-[Pressbooks themes](https://pressbooks.org/blog/2018/04/09/book-themes-part-1-frames-and-pictures/)
-on our open source blog, and in July he did the same for
-[Buckram](https://pressbooks.org/blog/2018/07/03/book-themes-part-2-whats-buckram/), “a
-set of styled components for book theming, with corresponding markup, that can be
-customized with SASS variables,” which we released in an initial stable version that same
-month.
+[Pressbooks themes](/blog/2018/04/09/book-themes-part-1-frames-and-pictures/) on our open
+source blog, and in July he did the same for
+[Buckram](/blog/2018/07/03/book-themes-part-2-whats-buckram/), “a set of styled components
+for book theming, with corresponding markup, that can be customized with SASS variables,”
+which we released in an initial stable version that same month.
 
 While it’s largely invisible to most end users, the work we did in 2018 to develop and
 release Buckram is important because it is provides the foundation for some really

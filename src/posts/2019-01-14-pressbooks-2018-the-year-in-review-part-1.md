@@ -118,7 +118,7 @@ more news on this in the first half of 2019.
 No matter how easy to use its makers think a piece of software is, everyone who’s ever
 been involved in learning a new program will tell you that end users often need help and
 support. Pressbooks is no exception. While we work hard to make our
-[software accessible](https://pressbooks.org/blog/2018/05/01/our-accessibility-policy-and-forthcoming-accessibility-improvements/)
+[software accessible](/blog/2018/05/01/our-accessibility-policy-and-forthcoming-accessibility-improvements/)
 and accompany it with [clear technical documentation](https://docs.pressbooks.org/) and
 helpful [user guides](https://guide.pressbooks.com/), we still get a lot of support
 requests from our Pressbooks.com and PressbooksEDU offerings. In 2018, for example,
@@ -157,7 +157,7 @@ our open source community efforts on the
 [public Discourse forum](https://discourse.pressbooks.org/), which we’ve been operating
 since early 2016. We now hold our monthly open source development calls (these are open to
 all!) in Zoom rather than Slack, and post regular public updates about development and
-upcoming calls on our [open source blog](https://pressbooks.org/blog/) and in the
+upcoming calls on our [open source blog](/blog/) and in the
 [Development category](https://discourse.pressbooks.org/c/development) of Discourse.
 
 Our Discourse forum continued to flourish as a place for Pressbooks developers and other
@@ -184,12 +184,12 @@ engaged with us in 2018, and look forward to another year filled with rich, posi
 engagement with developers and other contributors.
 
 Whether you’re an old hand or are new to Pressbooks and looking for
-[a way to get involved](https://pressbooks.org/get-involved/) in contributing to the open
-source project, we hope that you will feel welcomed and valued in our forum, and that you
-will treat others with kindness and respect. If you have any feedback for us on how we can
-make participating easier or more inclusive for you or others who might want to
-participate, please let us know by sending Ned and/or Steel a private message on the forum
-or by sending a Twitter DM to @pressbooksdev.
+[a way to get involved](/get-involved/) in contributing to the open source project, we
+hope that you will feel welcomed and valued in our forum, and that you will treat others
+with kindness and respect. If you have any feedback for us on how we can make
+participating easier or more inclusive for you or others who might want to participate,
+please let us know by sending Ned and/or Steel a private message on the forum or by
+sending a Twitter DM to @pressbooksdev.
 
 #### GitHub Ideas Forum
 

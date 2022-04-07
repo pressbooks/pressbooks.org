@@ -7,7 +7,8 @@
   <ol class="[ post-list ] [ flow ]">
     {% for item in postListItems %}
       <li class="post-list__item">
-        <a href="{{ item.url }}" class="post-list__link">{{ item.data.title }}</a>
+        <a href="{{ item.url }}" class="post-list__link">{{ item.data.title }}</a><br />
+        <time datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>
       </li>
     {% endfor %}
   </ol>

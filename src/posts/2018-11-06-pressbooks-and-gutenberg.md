@@ -16,8 +16,7 @@ In brief: we have deactivated Gutenberg for Pressbooks users, so upgrading to Wo
 additional plugins like Classic Editor are not required. We’ve made this decision for
 several reasons.
 
-\## 1\\. Gutenberg has continued to change significantly up to the projected release date,
-without a sufficient period of API and UI stability.
+## 1. Gutenberg has continued to change significantly up to the projected release date, without a sufficient period of API and UI stability.
 
 At Pressbooks, our small development team accomplishes a lot with limited resources, but
 ensuring compatibility with Gutenberg in time for its November 19th launch has proven to
@@ -31,7 +30,7 @@ to invest our limited resources in building on a codebase that has not yet stabi
 Once WordPress 5.0 is released, we will be able to evaluate a stable version of Gutenberg
 and map out a plan for integration.
 
-\## 2\\. Gutenberg lacks functionality that Pressbooks relies upon.
+## 2. Gutenberg lacks functionality that Pressbooks relies upon.
 
 Because Pressbooks is used to produce content for the web and for export, we leverage
 WordPress [custom post statuses][5] to determine whether chapters and other content appear
@@ -46,7 +45,7 @@ maintain continuity of this interface for our users. Following the release of Wo
 5.0, we will engage on these specific issues with the WordPress and Gutenberg development
 teams so that we can provide our users with a familiar experience in this area.
 
-\## 3\\. Gutenberg does not meet Pressbooks’ accessibility standards.
+## 3. Gutenberg does not meet Pressbooks’ accessibility standards.
 
 WordPress Accessibility team lead Rian Rietveld’s [resignation][9] in early October and
 the team’s recent [report][10] on Gutenberg have brought widespread attention to the
@@ -76,7 +75,7 @@ signs suggest that Gutenberg would undermine this goal in its current state, we 
 awaiting the results of WPCampus’ audit following the release of WordPress 5.0, and we
 will evaluate our next steps at that time.
 
-\## Closing Thoughts
+## Closing Thoughts
 
 There are parts of the Gutenberg project that we’re pretty excited about. The ability to
 add and edit complex elements visually could be extremely helpful for book production,
@@ -90,22 +89,28 @@ users. We are committed to tracking each of these issues and doing what we can t
 that authors using our software have the best available tools for the job at hand. We look
 forward to a future where Gutenberg can be used for making books.
 
-[1]: https://wordpress.org/gutenberg/ [2]: https://make.wordpress.org/core/5-0/ [3]:
-https://make.wordpress.org/core/2018/10/05/gutenberg-phase-2-leads/#comment-34084 [4]:
-https://github.com/WordPress/gutenberg/projects/18 [5]:
-https://developer.wordpress.org/reference/functions/register_post_status/ [6]:
-https://github.com/WordPress/gutenberg/issues/3144 [7]:
-https://github.com/AllediaWordPress/PublishPress/issues/296 [8]:
-https://github.com/danielbachhuber/gutenberg-migration-guide/blob/master/action-post-submitbox.md
+[1]: https://wordpress.org/gutenberg/
+[2]: https://make.wordpress.org/core/5-0/
+[3]: https://make.wordpress.org/core/2018/10/05/gutenberg-phase-2-leads/#comment-34084
+[4]: https://github.com/WordPress/gutenberg/projects/18
+[5]: https://developer.wordpress.org/reference/functions/register_post_status/
+[6]: https://github.com/WordPress/gutenberg/issues/3144
+[7]: https://github.com/AllediaWordPress/PublishPress/issues/296
+[8]:
+  https://github.com/danielbachhuber/gutenberg-migration-guide/blob/master/action-post-submitbox.md
 [9]: https://rianrietveld.com/2018/10/09/i-have-resigned-the-wordpress-accessibility-team/
 [10]:
-https://make.wordpress.org/accessibility/2018/10/29/report-on-the-accessibility-status-of-gutenberg/
+  https://make.wordpress.org/accessibility/2018/10/29/report-on-the-accessibility-status-of-gutenberg/
 [11]:
-https://make.wordpress.org/accessibility/2018/03/28/accessibility-of-gutenberg-the-state-of-play/
+  https://make.wordpress.org/accessibility/2018/03/28/accessibility-of-gutenberg-the-state-of-play/
 [12]:
-https://make.wordpress.org/accessibility/2018/03/27/accessibility-team-meeting-march-26-2018/
-[13]: https://twitter.com/jesshmitchell [14]: https://idrc.ocadu.ca/ [15]:
-https://make.wordpress.org/accessibility/2018/10/29/report-on-the-accessibility-status-of-gutenberg/
-[16]: https://twitter.com/bamadesigner [17]: https://wpcampus.org/ [18]:
-https://wpcampus.org/2018/10/gutenberg-a11y-audit-rfp/ [19]:
-https://github.com/WordPress/gutenberg/pull/7718/ [20]: https://web.hypothes.is/
+  https://make.wordpress.org/accessibility/2018/03/27/accessibility-team-meeting-march-26-2018/
+[13]: https://twitter.com/jesshmitchell
+[14]: https://idrc.ocadu.ca/
+[15]:
+  https://make.wordpress.org/accessibility/2018/10/29/report-on-the-accessibility-status-of-gutenberg/
+[16]: https://twitter.com/bamadesigner
+[17]: https://wpcampus.org/
+[18]: https://wpcampus.org/2018/10/gutenberg-a11y-audit-rfp/
+[19]: https://github.com/WordPress/gutenberg/pull/7718/
+[20]: https://web.hypothes.is/

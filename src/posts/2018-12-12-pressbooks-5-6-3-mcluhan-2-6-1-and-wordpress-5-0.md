@@ -16,6 +16,6 @@ A note about [WordPress 5.0 "Bebo"](https://wordpress.org/news/2018/12/bebo/): w
 tested Pressbooks with WordPress 5.0 in our development and staging environments, and we
 are confident that open source users can proceed to update their networks to WordPress 5.0
 without any disruption. As we previously wrote, we've
-[disabled Gutenberg](https://pressbooks.org/blog/2018/11/06/pressbooks-and-gutenberg/) for
-the time being, so the editing experience will not be affected. We will be waiting to
-update our hosted networks until January.
+[disabled Gutenberg](/blog/2018/11/06/pressbooks-and-gutenberg/) for the time being, so
+the editing experience will not be affected. We will be waiting to update our hosted
+networks until January.

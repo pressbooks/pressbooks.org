@@ -17,5 +17,5 @@ Pressbooks is fully compatible with the following third-party WordPress plugins:
 - [Hypothesis](https://wordpress.org/plugins/hypothesis)
 
 Have a favourite plugin running on your Pressbooks network?
-[Request it](https://pressbooks.org/plugins/request-a-plugin/) and once we've tested it
-for compatibility with Pressbooks, we will consider it for addition to this list.
+[Request it](/plugins/request-a-plugin/) and once we've tested it for compatibility with
+Pressbooks, we will consider it for addition to this list.

@@ -9,14 +9,15 @@ This sprint we're continuing work towards our next release,
 [Pressbooks 5.7](https://github.com/pressbooks/pressbooks/projects/38). We'll be focusing
 on the following projects:
 
-\- Refining the newly-rebuilt
-[export page](https://github.com/pressbooks/pressbooks/pull/1553) and integrating
-real-time progress indicators - Solidifying support for cloning
-[H5P activities](https://github.com/pressbooks/pressbooks/issues/1529) -
-[Improvements](https://github.com/pressbooks/pressbooks/pull/1559) to our glossary tool,
-bringing support for rich text and better tooltips - Releasing version 2.0 of our Atwood
-theme, and preparing versions 2.0 of Graham and Bradbury and version 3.0 of Austen for
-release in a future sprint
+- Refining the newly-rebuilt
+  [export page](https://github.com/pressbooks/pressbooks/pull/1553) and integrating
+  real-time progress indicators
+- Solidifying support for cloning
+  [H5P activities](https://github.com/pressbooks/pressbooks/issues/1529)
+- [Improvements](https://github.com/pressbooks/pressbooks/pull/1559) to our glossary tool,
+  bringing support for rich text and better tooltips
+- Releasing version 2.0 of our Atwood theme, and preparing versions 2.0 of Graham and
+  Bradbury and version 3.0 of Austen for release in a future sprint
 
 Also, we're changing our sprint structure a little bit. We'll be continuing to work in
 two-week sprints, but we're going to include a one-week

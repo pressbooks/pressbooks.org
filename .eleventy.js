@@ -3,15 +3,11 @@ const syntaxHighlightPlugin = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 // Filters
 const dateFilter = require('./src/filters/date-filter.js');
-const slugifyFilter = require('./src/filters/slugify-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
-
-const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js');
 
 module.exports = config => {
   // Add filters
   config.addFilter('dateFilter', dateFilter);
-  config.addFilter('slugify', slugifyFilter);
   config.addFilter('w3DateFilter', w3DateFilter);
 
   // Plugins
@@ -91,6 +87,8 @@ module.exports = config => {
 
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   config.setUseGitIgnore(false);
+
+  config.addPassthroughCopy('src/images');
 
   return {
     dir: {

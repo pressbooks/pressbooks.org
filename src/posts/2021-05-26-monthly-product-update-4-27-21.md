@@ -6,7 +6,7 @@ tags:
   - Development
 ---
 
-Hi all it's that time again -- our monthly Pressbooks product update will be held tomorrow
+Hi all it's that time again—our monthly Pressbooks product update will be held tomorrow
 (Thursday, May 27) from 2-3pm ET.
 
 The webinar will include a demonstration of new features and bug fixes we've released in

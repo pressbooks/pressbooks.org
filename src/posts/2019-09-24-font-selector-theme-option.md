@@ -102,7 +102,7 @@ add_filter('pb_is_shape_shifter_compatible', '__return_true');
 
 Once activated, the theme should have new Theme Options for each format:
 
-![Shape Shifter Feature](https://pressbooks.org/app/uploads/2019/09/Shape-Shifter-Feature.png)
+![Shape Shifter Feature](/images/Shape-Shifter-Feature.png)
 
 > "[90 percent of design is typography. And the other 90 percent is whitespace](http://www.zeldman.com/2015/12/24/the-year-in-design/)"
 

@@ -15,5 +15,5 @@ plan to release these updates on
 We're also continuing research on a feature milestoned for
 [Pressbooks 5.7.0](https://github.com/pressbooks/pressbooks/milestone/60). For more on
 information, you can read Dac's
-[blog post](https://pressbooks.org/blog/2018/11/12/refactoring-slow-forms-using-php-generators-and-event-streams/)
+[blog post](/blog/2018/11/12/refactoring-slow-forms-using-php-generators-and-event-streams/)
 on his initial research from last week!
