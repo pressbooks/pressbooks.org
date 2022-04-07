@@ -1,6 +1,6 @@
 ---
-title: 'Book Themes, Part 2: What’s Buckram?'
-date: '2018-07-03T12:00'
+title: "Book Themes, Part 2: What’s Buckram?"
+date: "2018-07-03T12:00"
 tags:
   - Development
 ---
@@ -61,31 +61,41 @@ If you’ve started by scaffolding a book theme with our
 [command line tool](https://cli.pressbooks.org), you’ll find the following file in
 `/assets/styles/components/_elements.scss`:
 
-```php // Elements
+```scss
+// Elements
 
-// Override variables above this line, using the !default flag to allow further overrides. @import 'variables/elements';
+// Override variables above this line, using the !default flag to allow further overrides.
+@import "variables/elements";
 
-// Add custom SCSS below these imports and includes. @import 'components/elements';
-
+// Add custom SCSS below these imports and includes.
+@import "components/elements";
 ```
 
 Let’s say you want to add a left border and padding to your blockquotes. You can just do
 this, with reference to the source variables file (or the
 [docs](https://buckram.pressbooks.org)):
 
-````php // Elements
+```scss
+// Elements
 
-$blockquote-padding-left: 1em !default; $blockquote-border-left-width: 2px !default; $blockquote-border-left-style: solid !default; $blockquote-border-left-color: #333 !default;
+$blockquote-padding-left: 1em !default;
+$blockquote-border-left-width: 2px !default;
+$blockquote-border-left-style: solid !default;
+$blockquote-border-left-color: #333 !default;
 
-// Override variables above this line, using the !default flag to allow further overrides. @import 'variables/elements'; ```
+// Override variables above this line, using the !default flag to allow further overrides.
+@import "variables/elements";
+```
 
 Now the values you’ve supplied will override the defaults from `variables/elements`, giving your blockquotes a `padding-left` value of `1em` and a `border-left` value of `solid 2px #333`. We take advantage of the SASS `!default flag`, which lets a variable that comes _before_ another variable override it. In this example:
 
-```php $color: red; $color: blue !default; ```
+```scss
+$color: red;
+$color: blue !default;
+```
 
 The `$color` variable will be set to `red`, as it precedes a variable flagged with `!default`.
 
 Using `!default` flags for the custom values in a theme, as demonstrated above, means that we can add theme options to allow further overrides that users control. So a theme may have a default font for body text, but in the future we’ll be able to let users customize body text by selecting an alternative typeface from a dropdown, overriding all rules where that font is referenced by changing a single variable. Moving our themes to Buckram will make the theme customization experience for Pressbooks users flexible in ways that we’ve always dreamed it would be.
 
 So far, we’ve got three open source themes built with Buckram (Clarke, Jacobs and McLuhan). The newest member of our dev team, [Daniel Fernandes](https://github.com/dannylonglegs), has been hard at work converting our backlog of premium themes to Buckram, and we’ll be releasing them over the coming months. We also will be expanding our documentation for Buckram, and improving the Pressbooks CLI tools for building new Buckram themes so that all Open Source users can benefit from the work that’s gone into our theme structure. We’re excited for what Buckram will let us do, and we welcome your feedback, bug reports and code contributions.
-````

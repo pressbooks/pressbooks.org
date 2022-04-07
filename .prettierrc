@@ -1,10 +1,4 @@
 {
-  "printWidth": 90,
-  "proseWrap": "always",
   "tabWidth": 2,
-  "singleQuote": true,
-  "bracketSpacing": false,
-  "quoteProps": "consistent",
-  "trailingComma": "none",
-  "arrowParens": "avoid"
+  "useTabs": false
 }

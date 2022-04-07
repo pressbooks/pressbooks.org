@@ -1,6 +1,6 @@
 ---
-title: 'Pressbooks LTI Provider plugin ready for testing!'
-date: '2018-07-03T12:00'
+title: "Pressbooks LTI Provider plugin ready for testing!"
+date: "2018-07-03T12:00"
 tags:
   - Development
 ---
@@ -18,8 +18,11 @@ as Lumen Learning’s Candela plugin.
 
 Basic features include:
 
-\* Creation of manual LTI configuration \* Automatic configuration via LMS \* Common
-Cartridge exports (versions 1.1, 1.2, and 1.3) \* Deep Links
+- Creation of manual LTI configuration
+- Automatic configuration via LMS
+- Common
+  Cartridge exports (versions 1.1, 1.2, and 1.3)
+- Deep Links
 
 The plugin has been available for some time on our GitHub repository, and we have had
 valuable input from the Pressbooks open source community.
