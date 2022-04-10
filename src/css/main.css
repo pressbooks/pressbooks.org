@@ -1,7 +1,7 @@
 @import "modern-css-reset";
 
 :root {
-  --measure: 85ch;
+  --measure: 52rem;
   --red: #bb2026;
 }
 /* karla-regular - latin */
