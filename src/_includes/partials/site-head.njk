@@ -5,11 +5,12 @@
       <a href="/" aria-label="{{ site.name }} - home" class="site-head__brand">
         <img src="/images/icon.svg" alt="Pressbooks logo" /> Pressbooks
       </a>
+      <p class="site-head__subhead">{{ site.tagline }}</p>
       <nav
         class="[ nav ] [ site-head__nav ]"
         aria-label="Primary navigaton"
       >
-        <ul class="nav__list">
+        <ul class="nav__list cluster">
           {% for item in navigation.items %}
           <li>
             <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}

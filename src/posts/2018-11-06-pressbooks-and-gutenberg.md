@@ -1,8 +1,8 @@
 ---
-title: 'Pressbooks and Gutenberg'
-date: '2018-11-06T12:00'
+title: "Pressbooks and Gutenberg"
+date: "2018-11-06T12:00"
 tags:
-  - 'Core'
+  - "Core"
   - Development
 ---
 
@@ -64,7 +64,7 @@ of the team at OCAD’s [Inclusive Design Research Centre][14] for their guidanc
 towards these goals.
 
 We acknowledge the assessment of the WordPress Accessibility team, who [write][15] that
-“based on \\[Gutenberg’s\\] current status, we cannot recommend that anybody who has a
+“based on [Gutenberg’s] current status, we cannot recommend that anybody who has a
 need for assistive technology allow it to be in use on any sites they need to use at this
 time.” We’re grateful to the many accessibility experts and advocates who have shone a
 spotlight on accessibility in WordPress, particularly the volunteers who form the
@@ -96,19 +96,14 @@ forward to a future where Gutenberg can be used for making books.
 [5]: https://developer.wordpress.org/reference/functions/register_post_status/
 [6]: https://github.com/WordPress/gutenberg/issues/3144
 [7]: https://github.com/AllediaWordPress/PublishPress/issues/296
-[8]:
-  https://github.com/danielbachhuber/gutenberg-migration-guide/blob/master/action-post-submitbox.md
+[8]: https://github.com/danielbachhuber/gutenberg-migration-guide/blob/master/action-post-submitbox.md
 [9]: https://rianrietveld.com/2018/10/09/i-have-resigned-the-wordpress-accessibility-team/
-[10]:
-  https://make.wordpress.org/accessibility/2018/10/29/report-on-the-accessibility-status-of-gutenberg/
-[11]:
-  https://make.wordpress.org/accessibility/2018/03/28/accessibility-of-gutenberg-the-state-of-play/
-[12]:
-  https://make.wordpress.org/accessibility/2018/03/27/accessibility-team-meeting-march-26-2018/
+[10]: https://make.wordpress.org/accessibility/2018/10/29/report-on-the-accessibility-status-of-gutenberg/
+[11]: https://make.wordpress.org/accessibility/2018/03/28/accessibility-of-gutenberg-the-state-of-play/
+[12]: https://make.wordpress.org/accessibility/2018/03/27/accessibility-team-meeting-march-26-2018/
 [13]: https://twitter.com/jesshmitchell
 [14]: https://idrc.ocadu.ca/
-[15]:
-  https://make.wordpress.org/accessibility/2018/10/29/report-on-the-accessibility-status-of-gutenberg/
+[15]: https://make.wordpress.org/accessibility/2018/10/29/report-on-the-accessibility-status-of-gutenberg/
 [16]: https://twitter.com/bamadesigner
 [17]: https://wpcampus.org/
 [18]: https://wpcampus.org/2018/10/gutenberg-a11y-audit-rfp/

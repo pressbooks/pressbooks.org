@@ -32,10 +32,7 @@ webbook "frame" or in other formats such as PDF, EPUB, or MOBI.
 McLuhan provides the UI for all Pressbooks webbooks, even those that use other styles for
 their content. All other book themes are WordPress
 [child themes](https://codex.wordpress.org/Child_Themes), which means that they inherit
-the "frame" (the webbook UI) from McLuhan, the parent theme[1. That being said, child
-themes _can_ override components of the parent themes, so one could make a child theme
-that changed any aspect of the webbook UI by
-[replacing or modifying template files](https://codex.wordpress.org/Child_Themes#Template_Files).].
+the "frame" (the webbook UI) from McLuhan, the parent theme[^1].
 So if you change your book's theme to
 [Jacobs](https://github.com/pressbooks/pressbooks-jacobs/), you're putting a new "picture"
 in the original frame:
@@ -75,7 +72,7 @@ the UI styles. By failing to separate these concerns, we made the transition fro
 to McLuhan more awkward than it could have been; when we rebuilt the webbook UI in
 McLuhan, we had to
 [supply some (now missing) content styles](https://github.com/pressbooks/pressbooks-book/pull/163)
-for old themes[1. Only old themes, though! More on that in part two.] that had been
+for old themes[^2] that had been
 relying on the Luther webbook stylesheet to properly display some of the webbook content.
 We've learned from this mistake, and all of our work on webbook UI and web content styles
 going forward will emphasize a proper separation of concerns.
@@ -85,3 +82,6 @@ going forward will emphasize a proper separation of concerns.
 The next part of this series will be a deep dive into
 [Buckram](https://github.com/pressbooks/buckram/), the SCSS book component library that is
 at the heart of our new batch of themes. Until next time!
+
+[^1]: That being said, child themes _can_ override components of the parent themes, so one could make a child theme that changed any aspect of the webbook UI by [replacing or modifying template files](https://codex.wordpress.org/Child_Themes#Template_Files).
+[^2]: Only old themes, though! More on that in part two.

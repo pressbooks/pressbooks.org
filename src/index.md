@@ -1,7 +1,7 @@
 ---
-title: 'Pressbooks'
-metaDesc: 'Open publishing. Open web. Open source.'
-layout: 'layouts/home.njk'
+title: "Welcome"
+metaDesc: "Open publishing. Open web. Open source."
+layout: "layouts/home.njk"
 ---
 
 Welcome to the home of the Pressbooks Open Source project.

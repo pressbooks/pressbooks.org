@@ -8,8 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     {% include "partials/meta-info.njk" %}
     <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" />
-    <link rel="stylesheet" href="https://unpkg.com/open-props"/>
-    <link rel="stylesheet" href="https://unpkg.com/prismjs@^1.24/themes/prism-okaidia.css">
+    <link rel="stylesheet" href="/css/main.css"
     <link rel="stylesheet" href="https://unpkg.com/prismjs@^1.24/plugins/treeview/prism-treeview.css">
   </head>
   <body>
@@ -18,5 +17,9 @@
     <main tabindex="-1" id="main-content" >
       {% block content %}{% endblock %}
     </main>
+
+    <footer class="[ wrapper ]">
+      <p>&copy; {{ helpers.currentYear() }} Pressbooks.</p>
+    </footer>
   </body>
 </html>

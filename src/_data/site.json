@@ -1,6 +1,10 @@
 {
   "name": "Pressbooks",
+  "tagline": "Open publishing. Open web. Open source.",
   "url": "https://pressbooks.org",
   "authorName": "Book Oven Inc.",
-  "authorEmail": "code@pressbooks.com"
+  "authorEmail": "code@pressbooks.com",
+  "twitter": "https://twitter.com/pressbooks",
+  "github": "https://github.com/pressbooks",
+  "linkedin": "http://linkedin.com/company/book-oven"
 }
