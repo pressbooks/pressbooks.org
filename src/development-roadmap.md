@@ -4,7 +4,7 @@ layout: 'layouts/page.njk'
 permalink: /roadmap/
 ---
 
-At Pressbooks we use the Scrum framework for software development and work in two-week
+At Pressbooks we use the Scrum framework for software development and work in three-week
 sprints. To see what we're working on now, you can view our
 [current sprint project on GitHub](https://github.com/orgs/pressbooks/projects).
 
