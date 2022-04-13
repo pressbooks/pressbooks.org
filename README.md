@@ -1,15 +1,15 @@
-# Project base for Eleventy Sites
+# Pressbooks.org
 
-Includes static page template, blog post template, post feed, pagination, tags and RSS. Also includes gulp setup for SCSS, fonts and images.
+The repo includes the contents of the website for the Pressbooks Open Source project, hosted at pressbooks.org.
 
-<p style="text-transform: uppercase;"><strong>Please don’t submit issues or PRs. I’m just sharing this for people that might want a decent starter. This isn’t open source: just free. Thanks.</strong></p>
+The main branch of this repository is deployed to Netlify.
 
-ℹ️ If you want to learn how it works, go ahead and take my [Eleventy course](//swop.link/11ty)
+## Development
 
-## Getting started
+To run in local development mode:
 
-Ideally, you’ll be using an LTS version of Node JS and if in Windows, the WSL setup because it works better with gulp.
+`npm install && npm start`
 
-1. Run `npm install`
-2. Run `npm start` to run locally
-3. Run `npm run production` to do a prod build
+To build:
+
+`npm run build`
