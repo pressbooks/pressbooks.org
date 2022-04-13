@@ -25,7 +25,7 @@ well as individual authors. There are three ways to use it:
   as a test bed for institutional use)
 
 On this site we provide resources and links for the open source community.
-[Get involved](/support-pressbooks/#want-to-get-involved)!
+[Get involved](/support-pressbooks/)!
 
 Pressbooks is free software, released under the
 [GPL v3.0](https://opensource.org/licenses/GPL-3.0) license.
