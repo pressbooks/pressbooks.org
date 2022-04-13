@@ -1,0 +1,51 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <article>
+    <div class="[ post ] [ flow wrapper ]">
+      <header>
+        <h1>{{ title }}</h1>
+        <p class="meta">
+          <p class="author vcard"><span class="visually-hidden">Posted by </span><span class="fn n">{{ author if author else "Pressbooks Team" }}</span></p>
+          <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
+        </p>
+        {% if tags %}
+        <div class="tags">
+          <svg xmlns="http://www.w3.org/2000/svg" class="tags-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+          </svg>
+          <ul class="tags-list" aria-label="Tags">
+            {% for tag in tags %}
+              <li>
+                <a href="/tag/{{ tag | slugify }}/">{{ tag }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </header>
+      
+      {{ content | safe }}
+    </div>
+    {% set nextPost = collections.blog | getPreviousCollectionItem(page) %}
+    {% set previousPost = collections.blog | getNextCollectionItem(page) %}
+    {% if previousPost or nextPost %}
+    <footer class="pagination">
+      <div class="wrapper">
+        <nav class="pagination__inner" aria-label="Pagination links">
+          {% if previousPost %}
+            <a href="{{ previousPost.url }}{{ paginationAnchor }}" data-direction="backwards">
+              <span>&larr; {{ paginationPrevText if paginationPrevText else 'Previous' }}</span>
+            </a>
+          {% endif %}
+          {% if nextPost %}
+            <a href="{{ nextPost.url }}{{ paginationAnchor }}" data-direction="forwards">
+              <span>{{ paginationNextText if paginationNextText else 'Next' }} &rarr;</span>
+            </a>
+          {% endif %}
+        </nav>
+      </div>
+    </footer>
+  {% endif %}
+  </article>
+{% endblock %}
