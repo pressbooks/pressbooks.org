@@ -166,9 +166,9 @@ Example config files for a dev site hosted at `http://localhost/~example/textopr
 
 _Need a wp-cli deploy? Start here: <https://github.com/pressbooks/snippets/blob/master/deploying/wp-cli-example.md>_
 
-[pressbooks]: https://pressbooks.org/download/pressbooks/
-[mcluhan]: https://pressbooks.org/download/mcluhan/
-[aldine]: https://pressbooks.org/download/aldine/
+[pressbooks]: https://github.com/pressbook/pressbooks/releases/latest
+[mcluhan]: https://github.com/pressbook/pressbooks-book/releases/latest
+[aldine]: https://github.com/pressbook/pressbooks-aldine/releases/latest
 [book-themes]: https://github.com/search?q=topic:book-theme%20org:pressbooks&type=Repositories
 [php]: https://secure.php.net/supported-versions.php
 [wp-install]: http://codex.wordpress.org/Installing_WordPress
