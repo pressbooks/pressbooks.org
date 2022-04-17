@@ -102,6 +102,7 @@ module.exports = (config) => {
 
   config.addPassthroughCopy("src/images");
   config.addPassthroughCopy("src/fonts");
+  config.addPassthroughCopy({ "src/icons": "/" });
 
   config.addTemplateFormats("css");
 
