@@ -32,4 +32,4 @@ We encourage you to give the
 and send us your feedback via GitHub!
 
 Documentation for the Pressbooks LTI Provider plugin is available here:
-[https://docs.pressbooks.org/integrations/pressbooks-lti-provider/](https://docs.pressbooks.org/integrations/pressbooks-lti-provider/)
+[/docs/integrations/pressbooks-lti-provider/](/docs/integrations/pressbooks-lti-provider/)

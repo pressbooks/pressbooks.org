@@ -24,4 +24,4 @@ Pressbooks 5.4.1 requires
 [WordPress 4.9.7](https://wordpress.org/news/2018/07/wordpress-4-9-7-security-and-maintenance-release/).
 
 For full changelogs, you can visit our
-[documentation site](https://docs.pressbooks.org/changelog).
+[documentation site](/docs/changelog).

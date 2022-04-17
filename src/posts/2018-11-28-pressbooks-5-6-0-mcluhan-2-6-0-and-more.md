@@ -1,6 +1,6 @@
 ---
-title: 'Pressbooks 5.6.0, Mcluhan 2.6.0, and More'
-date: '2018-11-28T12:00'
+title: "Pressbooks 5.6.0, Mcluhan 2.6.0, and More"
+date: "2018-11-28T12:00"
 tags:
   - Changelog
 ---
@@ -14,7 +14,7 @@ them! There are also improvements to content licensing, webbook navigation and t
 contents display, dashboard user experience, export customization, and performance as well
 as many bug fixes. We've also released [Clarke 2.3.1][clarke] and [Jacobs 1.2.0][jacobs].
 You can read the full changelogs for all of these updates on our
-[documentation site](https://docs.pressbooks.org/changelog).
+[documentation site](/docs/changelog).
 
 We'd like to thank [Phil Barker](https://github.com/philbarker),
 [Ed Beck](https://github.com/beckej13820),

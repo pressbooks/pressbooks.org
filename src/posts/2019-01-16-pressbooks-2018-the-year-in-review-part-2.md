@@ -1,8 +1,8 @@
 ---
-title: 'Pressbooks 2018: The Year in Review, part 2'
-date: '2019-01-16T12:00'
+title: "Pressbooks 2018: The Year in Review, part 2"
+date: "2019-01-16T12:00"
 tags:
-  - 'Pressbooks News'
+  - "Pressbooks News"
 ---
 
 In a
@@ -62,7 +62,7 @@ commits).
 
 So those are the raw numbers. But what do they mean? How did Pressbooks improve over the
 last year? Well, in lots of ways. The obsessive among you are welcome to view a detailed
-[changelog](https://docs.pressbooks.org/changelog/pressbooks/) for a more exhaustive
+[changelog](/docs/changelog/pressbooks/) for a more exhaustive
 record of everything we shipped this past year, but the following list is a baker’s dozen
 of our favorite improvements from the past year:
 
@@ -148,7 +148,7 @@ itself was designed with textbooks in mind, although it supports all kinds of co
 
 Since its initial appearance, McLuhan has seen more than a dozen additional releases and
 is now on version 2.6.1 (interested readers can consult the detailed
-[changelog](https://docs.pressbooks.org/changelog/pressbooks-book/)). All told the
+[changelog](/docs/changelog/pressbooks-book/)). All told the
 pressbook-book repo saw
 [the net addition of more than 80,000 lines of code by humans](https://github.com/pressbooks/pressbooks-book/graphs/contributors?from=2018-01-01&to=2018-12-31&type=c),
 with ~78,000 coming from Ned (across 397 commits), ~3,000 from Daniel (across 59 commits),
@@ -192,7 +192,7 @@ In late February, we replaced Pressbooks Publisher with a new Pressbooks root th
 called Aldine. Aldine’s creation was one of the major improvements supported by Ryerson
 University. Since its initial appearance, Aldine has seen an additional eight releases and
 is now on version 1.5.0 (interested readers can consult the
-[changelog](https://docs.pressbooks.org/changelog/pressbooks-aldine/)).
+[changelog](/docs/changelog/pressbooks-aldine/)).
 
 Aldine was designed to make customizing the look and feel of Pressbooks networks easier.
 It gives network managers tools to add institutional branding to a Pressbooks network by
@@ -208,7 +208,7 @@ anti-spamming improvements.
 
 ### Other Plugins
 
-We made a few [minor updates](https://docs.pressbooks.org/changelog/pressbooks-stats/) to
+We made a few [minor updates](/docs/changelog/pressbooks-stats/) to
 the small [Pressbooks Stats](https://github.com/pressbooks/pressbooks-stats) plugin, with
 [some bigger work planned for early 2019](/blog/2019/01/04/q1-roadmap-preview/)
 (‘improving usage statistics at the network level’ refers to ongoing efforts to give
@@ -242,7 +242,7 @@ Much of what I wrote then still rings true for me today. In my opinion, our LTI 
 plugin is a hugely exciting feature for anyone interested in using Pressbooks content
 inside of a Learning Management System (a common desire for teachers, both in K-12 and
 higher ed settings). Our plugin is now on version 1.1.2, released in November
-([changelog](https://docs.pressbooks.org/changelog/pressbooks-lti-provider/)). In Q1 2019,
+([changelog](/docs/changelog/pressbooks-lti-provider/)). In Q1 2019,
 we plan to pursue official IMS Global certification against both the LTI and Thin Common
 Cartridge standards.
 
