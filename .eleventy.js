@@ -1,20 +1,24 @@
 const rssPlugin = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight");
+const markdownItAnchor = require("markdown-it-anchor");
 const markdownItFootnote = require("markdown-it-footnote");
 const path = require("path");
 const postcss = require("postcss");
+const slugify = require("@sindresorhus/slugify");
 
 // Filters
 const dateFilter = require("./src/filters/date-filter.js");
 const w3DateFilter = require("./src/filters/w3-date-filter.js");
 
 module.exports = (config) => {
-  // Add footnotes to Markdown
+  // Add footnotes and anchor links to Markdown
   let markdownIt = require("markdown-it");
   let options = {
     html: true,
   };
-  let markdownLib = markdownIt(options).use(markdownItFootnote);
+  let markdownLib = markdownIt(options)
+    .use(markdownItFootnote)
+    .use(markdownItAnchor, { slugify: slugify });
 
   config.setLibrary("md", markdownLib);
 

@@ -1,8 +1,8 @@
 ---
-title: 'Pressbooks 2018: The Year in Review, part 1'
-date: '2019-01-14T12:00'
+title: "Pressbooks 2018: The Year in Review, part 1"
+date: "2019-01-14T12:00"
 tags:
-  - 'Pressbooks News'
+  - "Pressbooks News"
 ---
 
 When others ask me what Pressbooks is, I often say that itâ€™s two things: 1) terrific
@@ -119,7 +119,7 @@ No matter how easy to use its makers think a piece of software is, everyone whoâ
 been involved in learning a new program will tell you that end users often need help and
 support. Pressbooks is no exception. While we work hard to make our
 [software accessible](/blog/2018/05/01/our-accessibility-policy-and-forthcoming-accessibility-improvements/)
-and accompany it with [clear technical documentation](https://docs.pressbooks.org/) and
+and accompany it with [clear technical documentation](/docs/) and
 helpful [user guides](https://guide.pressbooks.com/), we still get a lot of support
 requests from our Pressbooks.com and PressbooksEDU offerings. In 2018, for example,
 Pressbooks staff received and responded to nearly 3,500 support requests. When it came to

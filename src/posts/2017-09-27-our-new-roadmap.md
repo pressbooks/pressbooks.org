@@ -20,17 +20,17 @@ months was improving Pressbooks’ core technology. When
 [Dac came back](/blog/2017/05/11/dac-is-back/), having a second
 developer let us expand upon my efforts in recent years to standardize our development
 processes under the hood. We now use consistent
-[coding standards](https://docs.pressbooks.org/coding-standards/) across all of our open
+[coding standards](/docs/coding-standards/) across all of our open
 source projects, and we have adopted a
 [standardized build process](https://laravel.com/docs/5.5/mix) for admin and front end
 assets. We have expanded our [code coverage](https://codecov.io/gh/pressbooks/pressbooks)
 on the core Pressbooks plugin, and continue to do so with every release. These
 improvements let us work more efficiently and give
-[open source contributors](https://docs.pressbooks.org/contributors/) a clear framework
+[open source contributors](/docs/contributors/) a clear framework
 within which to contribute to the Pressbooks ecosystem.
 
 Our most significant core enhancement is our new
-[REST API](https://docs.pressbooks.org/api/), built on the
+[REST API](/docs/api/), built on the
 [WordPress Core REST API](https://developer.wordpress.org/rest-api/) infrastructure. This
 is the engine that powers our new
 [cloning tool](https://pressbooks.com/blog/can-you-clone-a-pressbooks-book-you-can-now/),

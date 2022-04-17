@@ -34,4 +34,4 @@ to accommodate changes in this release, which improves TOC output in PDF and EPU
 image layout, and educational textbox styling.
 
 For full changelogs, you can visit our
-[documentation site](https://docs.pressbooks.org/changelog).
+[documentation site](/docs/changelog).

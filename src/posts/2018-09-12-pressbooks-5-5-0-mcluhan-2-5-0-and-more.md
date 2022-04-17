@@ -34,13 +34,13 @@ There are also some bug fixes, coding standards improvements, and tweaks in the 
 plugins. **Pressbooks 5.5.0 requires WordPress 4.9.8 and PHP 7.1 or greater.**
 
 You can read all the changelogs on our
-[documentation site](https://docs.pressbooks.org/changelog/). Thanks to Brad and Alex of
+[documentation site](/docs/changelog/). Thanks to Brad and Alex of
 BCcampus for their development work and to [Antonio Devís](https://github.com/colomet) and
 [Luis Izquierdo](https://discourse.pressbooks.org/t/formatting-of-titles-of-collapsed-sections/661)
 for their bug reports and suggestions.
 
-[pb-5-5-0]: https://docs.pressbooks.org/changelog/pressbooks/#5-5-0
-[mcluhan-2-5-0]: https://docs.pressbooks.org/changelog/pressbooks-book/#2-5-0
-[lti-1-1-0]: https://docs.pressbooks.org/changelog/pressbooks-lti-provider/#1-1-0
-[cas-1-1-0]: https://docs.pressbooks.org/changelog/pressbooks-cas-sso/#1-1-0
-[stats-1-5-0]: https://docs.pressbooks.org/changelog/pressbooks-stats/#1-5-0
+[pb-5-5-0]: /docs/changelog/pressbooks/#5-5-0
+[mcluhan-2-5-0]: /docs/changelog/pressbooks-book/#2-5-0
+[lti-1-1-0]: /docs/changelog/pressbooks-lti-provider/#1-1-0
+[cas-1-1-0]: /docs/changelog/pressbooks-cas-sso/#1-1-0
+[stats-1-5-0]: /docs/changelog/pressbooks-stats/#1-5-0

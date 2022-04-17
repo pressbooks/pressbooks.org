@@ -1,3 +1,13 @@
 [build]
   command = "npm run production"
   publish = "dist"
+
+[[redirects]]
+  from = "http://docs.pressboks.org/*"
+  to = "http://pressbooks.org/docs/:splat"
+  status = 301
+
+[[redirects]]
+  from = "https://docs.pressboks.org/*"
+  to = "https://pressbooks.org/docs/:splat"
+  status = 301

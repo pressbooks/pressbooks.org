@@ -21,7 +21,7 @@ introduced an improved and expanded REST API based on the WordPress Core
 API v2 supports authenticated CRUD (Create, Read, Update, Destroy) access to all
 Pressbooks content types (front and back matter, parts, and chapters) as well as read-only
 access to book structure and metadata. For more information, see our
-[REST API documentation](http://docs.pressbooks.org/api). We're excited to see what the
+[REST API documentation](/docs/api). We're excited to see what the
 Pressbooks Open Source community will do with these new API capabilities! Share your
 projects with us: [code@pressbooks.com](mailto:code@pressbooks.com).
 
@@ -52,7 +52,7 @@ advantage of our intuitive SCSS-based theme structure. More commands to come --
 with any of our other open source
 [book themes](https://github.com/search?q=topic%3Abook-theme+org%3Apressbooks&type=Repositories)
 that were bundled with earlier versions of Pressbooks. For more information, see the
-[upgrading instructions](https://docs.pressbooks.org/upgrading).
+[upgrading instructions](/docs/upgrading).
 
 **NOTICE:** Pressbooks 4.0 requires
 [WordPress 4.8.0](https://wordpress.org/news/2017/06/evans/).
@@ -80,7 +80,7 @@ that were bundled with earlier versions of Pressbooks. For more information, see
   [#816](https://github.com/pressbooks/pressbooks/pull/816),
   [#823](https://github.com/pressbooks/pressbooks/pull/823),
   [#832](https://github.com/pressbooks/pressbooks/pull/832), and our
-  [API Docs](http://docs.pressbooks.org/api)
+  [API Docs](/docs/api)
 - **Feature:** LaTeX outputs are now at a sufficient resolution for print applications
   (see [#819](https://github.com/pressbooks/pressbooks/pull/819)).
 - **Feature:** You can now change statuses in bulk on the **Organize** page (see
@@ -102,7 +102,7 @@ that were bundled with earlier versions of Pressbooks. For more information, see
 - **Enhancement:** We now use the
   [Human Made coding standards](https://engineering.hmn.md/how-we-work/style/php/) for
   PHP.
-  [Check your code](http://docs.pressbooks.org/coding-standards/#validating-with-php-code-sniffer)
+  [Check your code](/docs/coding-standards/#validating-with-php-code-sniffer)
   before submitting a PR 👍.
 - **Enhancement:** We now use [Laravel Mix](https://github.com/jeffreyway/laravel-mix) to
   handle all plugin assets (see [#769](https://github.com/pressbooks/pressbooks/pull/769)
@@ -118,7 +118,7 @@ that were bundled with earlier versions of Pressbooks. For more information, see
   (see [#829](https://github.com/pressbooks/pressbooks/pull/829)).
 - **Enhancement:** Root and book themes are now distributed separately from the Pressbooks
   plugin—make sure you install the required themes when you
-  [upgrade](http://docs.pressbooks.org/upgrading)! (See
+  upgrade! (See
   [#756](https://github.com/pressbooks/pressbooks/issues/756) and
   [#799](https://github.com/pressbooks/pressbooks/pull/799).)
 - **Enhancement:** Part content has been migrated to the standard content editor instead
