@@ -1,6 +1,6 @@
 ---
 title: PhpStorm Configuration
-permalink: /docs/local-development/phpstorm/
+permalink: /docs/phpstorm/
 ---
 
 ## Enable WordPress Integration

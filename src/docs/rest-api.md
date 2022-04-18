@@ -1,6 +1,6 @@
 ---
 title: REST API
-permalink: /docs/local-development/rest-api/
+permalink: /docs/rest-api/
 ---
 
 ## Recommended Tools

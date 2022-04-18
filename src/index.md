@@ -24,5 +24,9 @@ are three ways to use it:
 On this site we provide resources and links for the open source community.
 [Get involved](/support-pressbooks/)!
 
+Read our [guides for developers](/docs/).
+
+[//]: # ( Path: src/index.md
+
 Pressbooks is free software, released under the
 [GPL v3.0](https://opensource.org/licenses/GPL-3.0) license.

@@ -12,7 +12,7 @@ Download the latest releases of [Pressbooks][pressbooks], [McLuhan][mcluhan], an
 ### IMPORTANT!
 
 - Do not install Pressbooks on an existing WordPress blog -- create a new WordPress install instead.
-- Pressbooks works with [PHP 7.3][php] and _(usually)_ the most recent version of WordPress right now. Lower versions are not supported.
+- Pressbooks works with [PHP 7.4][php] and _(usually)_ the most recent version of WordPress right now. Lower versions are not supported.
 
 ### Part 1: WordPress
 
@@ -54,7 +54,7 @@ define('WP_ALLOW_MULTISITE', true);
 
     - User accounts may be registered. (Do not use this setting, since it will not allow users to create new books!)
     - Logged in users may register new sites. (If you are a publisher using Pressbooks as a production tool, this is the best setting: it allows network administrators to add new users, who can then create books/sites. However, registration is not available to the public.)
-    - Both sites and user accounts can be registered. (Use this setting if you intend on offering a publishing-platform open to the public, such as [Pressbooks.com][8])
+    - Both sites and user accounts can be registered. (Use this setting if you intend on offering a publishing-platform open to the public.)
 
 11. Navigate to **My Catalog** → **Your Site** → **Dashboard**
 
@@ -74,18 +74,18 @@ Pressbooks requires some third-party libraries to be installed on your server to
 
 - For PDF export, you have three options:
   1. Configure [DocRaptor](https://docraptor.com), which is a software as a service version of [PrinceXML][9]. To do this, you just need to add your DocRaptor API key to `wp-config.php`: `define( 'DOCRAPTOR_API_KEY', 'YOUR_API_KEY_HERE' );`
-  2. Install [PrinceXML][9] 12 on your server (note: this is not free software although you can use it free of charge for non-commercial purposes, see their license).
+  2. Install [PrinceXML][9] 14 on your server (note: this is not free software although you can use it free of charge for non-commercial purposes, see their license).
   3. Install the [mPDF for Pressbooks][10] plugin to use the open source mPDF library. (Note: As of May 2019 this project is [unmaintained](https://github.com/pressbooks/docs/issues/32#issuecomment-503255424) )
-- For EPUB validation install [EpubCheck][13] 4.1.1
-- For XML validation install [xmllint][14] 20903
-- For ODT export install [Saxon-HE][15] 9.7.0-10
+- For EPUB validation install [EpubCheck][13] 4.1.1.
+- For XML validation install [xmllint][14] 20903.
+- For ODT export install [Saxon-HE][15] 9.7.0-10.
 - For the Cover Generator feature, install:
   - Ghostscript 9.18: `sudo apt-get install ghostscript`
   - ImageMagick 6.8.9: `sudo apt-get install imagemagick`
   - PdfToPpm and PdfInfo 0.41.0: `sudo apt-get install poppler-utils`
 - For MathJax export install (and host!) master branch of [pb-mathjax][16]
 - Certain Linux installations do not ship with the `php-xsl` library enabled by default. If you attempt to export an ePub and get a either a white screen with minimal text, or a "Fatal error: Class 'XSLTProcessor' not found" error, you may need to run a command like `sudo apt-get install php-xsl`.
-- Certain Linux installations do not ship with the `php-exif` library enabled by default. If you attempt to export an ePub and get a either a white screen with minimal text, or an error, you may need to install this extension (e.g. `sudo apt-get install php-exif` )
+- Certain Linux installations do not ship with the `php-exif` library enabled by default. If you attempt to export an ePub and get either a white screen with minimal text or an error, you may need to install this extension (e.g. `sudo apt-get install php-exif` )
 - Linux installations do not ship with Microsoft fonts, which can be useful when producing PDF exports. See https://itsfoss.com/install-microsoft-fonts-ubuntu/ or similar for instructions on installing.
 
 Unlisted versions are not supported. Upgrade/downgrade accordingly.
@@ -173,7 +173,6 @@ _Need a wp-cli deploy? Start here: <https://github.com/pressbooks/snippets/blob/
 [php]: https://secure.php.net/supported-versions.php
 [wp-install]: http://codex.wordpress.org/Installing_WordPress
 [create-a-network]: http://codex.wordpress.org/Create_A_Network
-[8]: https://pressbooks.com
 [9]: https://www.princexml.com/
 [10]: https://github.com/BCcampus/pressbooks-mpdf
 [11]: http://codex.wordpress.org/Changing_File_Permissions

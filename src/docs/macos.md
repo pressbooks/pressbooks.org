@@ -1,6 +1,6 @@
 ---
 title: Local Development on macOS
-permalink: /docs/local-development/macos/
+permalink: /docs/macos/
 ---
 
 Following these instructions will give you a local development network of Pressbooks based on [roots/bedrock][1] and [roots/trellis][2], with the following features:

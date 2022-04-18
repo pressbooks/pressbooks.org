@@ -5,11 +5,11 @@ permalink: /docs/theme-development/
 
 ## Getting Started
 
-We recommend you start by installing [WP-CLI][3], which will let you use Pressbooks' built-in [pb-cli][4] utility to scaffold a new Pressbooks book theme in your development environment with the following command:
+Start by installing [WP-CLI][1], which will let you use Pressbooks' built-in [pb-cli][2] utility to scaffold a new Pressbooks book theme in your development environment with the following command:
 
     wp scaffold book-theme <slug>
 
-For further options, [read the docs][5].
+For further options, [read the docs][3].
 
 The resulting theme will have the following structure and contents:
 
@@ -39,11 +39,11 @@ The resulting theme will have the following structure and contents:
     ├── functions.php
     ├── style.css
 
-Note that [`style.css`][6] is not used except to provide Pressbooks with [theme file header][7] information. Your web theme stylesheet is compiled when your theme is activated or theme options that affect it are changed. For easier development, you can add the following line to `wp-config.php`:
+Note that `style.css` is not used except to provide Pressbooks with [theme file header][4] information. Your web theme stylesheet is compiled when your theme is activated or theme options that affect it are changed. For easier development, you can add the following line to `wp-config.php`:
 
 `define('WP_ENV', 'development');`
 
-This will turn on the development compiler introduced in Pressbooks 3.9.0, which triggers a recompile of your web theme stylesheet if the source files have been modified since it was last compiled when you visit any page in your webbook ([see here][8]).
+This will turn on the development compiler introduced in Pressbooks 3.9.0, which triggers a recompile of your web theme stylesheet if the source files have been modified since it was last compiled when you visit any page in your webbook ([see here][5]).
 
 ## Overriding Defaults
 
@@ -71,7 +71,7 @@ Contains rules for custom elements (columns, footnotes, pullquotes, dropcaps, et
 
 ### \_structure.scss
 
-Contains rules for document and page and structure (only included in [PrinceXML][10] PDF — page dimensions, margins, recto-verso, running content et cetera).
+Contains rules for document and page and structure (only included in [PrinceXML][6] PDF — page dimensions, margins, recto-verso, running content et cetera).
 
 ### \_titles.scss
 
@@ -81,7 +81,7 @@ Contains rules for book, front matter, part, chapter and back matter titles.
 
 Contains rules for the book's table of contents.
 
-Let's take a look at [`assets/styles/components/_elements.scss`][11]:
+Let's take a look at `assets/styles/components/_elements.scss`:
 
 ```scss
 // Elements
@@ -100,7 +100,7 @@ Let's take a look at [`assets/styles/components/_elements.scss`][11]:
 @import "components/elements/tables";
 ```
 
-As you can see, this file is importing a variables file and a number of individual component files (all of which can be found within the Pressbooks plugin in the [`assets/book/styles`][12] directory). Let's examine the rules found in [`components/elements/_blockquotes.scss`][13]:
+As you can see, this file is importing a variables file and a number of individual component files (all of which can be found within the Pressbooks plugin in the [`assets/book/styles`][7] directory). Let's examine the rules found in [`components/elements/_blockquotes.scss`][8]:
 
 ```scss
 .blockquote,
@@ -118,7 +118,7 @@ blockquote {
 }
 ```
 
-The values for these SCSS variables are found in [`variables/_elements.scss`][14] (all directories and root-level SCSS partials in `assets/book/styles/components` have a corresponding variables file):
+The values for these SCSS variables are found in [`variables/_elements.scss`][9] (all directories and root-level SCSS partials in `assets/book/styles/components` have a corresponding variables file):
 
 ```scss
 $blockquote-font-family: $font-1 !default;
@@ -133,7 +133,7 @@ $blockquote-margin-left: 1em !default;
 $blockquote-align: justify !default;
 ```
 
-You will notice that all these values are set with the SCSS [`!default` flag][15]. The `!default` flag tells the SCSS compiler to use this value **unless** another value has already been assigned to the variable. Going back to your new theme's [`assets/styles/components/_elements.scss`][11], file, you could change it as follows:
+You will notice that all these values are set with the SCSS [`!default` flag][10]. The `!default` flag tells the SCSS compiler to use this value **unless** another value has already been assigned to the variable. Going back to your new theme's [`assets/styles/components/_elements.scss`], file, you could change it as follows:
 
 ```scss
 // Elements
@@ -176,7 +176,7 @@ The reason you should use the `!default` flag on your variable definitions is so
 
 ## Adding Custom Rules
 
-Now that you've overridden a variable, try adding your own custom rule. Perhaps your book needs a special type of blockquote that is centered on the page. You can add it by inserting the following rule below the `@import` rules in [`assets/styles/components/_elements.scss`][17]:
+Now that you've overridden a variable, try adding your own custom rule. Perhaps your book needs a special type of blockquote that is centered on the page. You can add it by inserting the following rule below the `@import` rules in [`assets/styles/components/_elements.scss`]:
 
 ```css
 blockquote.centered,
@@ -186,7 +186,7 @@ blockquote.centered,
 }
 ```
 
-Now our full [`assets/styles/components/_elements.scss`][17] file looks like this:
+Now our full [`assets/styles/components/_elements.scss`] file looks like this:
 
 ```scss
 // Elements
@@ -216,7 +216,7 @@ When you export your book, Pressbooks will compile your new rule after the defau
 
 ## Different Formats, Different Rules
 
-Sometimes you need to set a variable differently depending on which format you are using. Perhaps you want to left-align your blockquotes for EPUB and web, but you want to justify them for PDF. This is easy to accomplish using an SCSS if-statement with the `$type` variable. Add another variable override to the top of [`assets/styles/components/_elements.scss`][19] as follows:
+Sometimes you need to set a variable differently depending on which format you are using. Perhaps you want to left-align your blockquotes for EPUB and web, but you want to justify them for PDF. This is easy to accomplish using an SCSS if-statement with the `$type` variable. Add another variable override to the top of [`assets/styles/components/_elements.scss`] as follows:
 
 ```scss
 @if $type == "epub" {
@@ -228,7 +228,7 @@ Sometimes you need to set a variable differently depending on which format you a
 }
 ```
 
-All the component files you are working on are imported into the different outputs' `style.scss` files. For example, your book theme's stylesheet for Prince PDF, [`assets/styles/prince/style.scss`][20], looks like this:
+All the component files you are working on are imported into the different outputs' `style.scss` files. For example, your book theme's stylesheet for Prince PDF, [`assets/styles/prince/style.scss`], looks like this:
 
 ```scss
 $type: "prince";
@@ -263,7 +263,7 @@ $font-2: "Lato", Helvetica, Arial, $sans-serif-prince;
 @import "LatoFont", "TinosFont";
 ```
 
-Most themes have at least two font stacks, but may have more. `$font-1` must be the body font, and `$font-2` must be the header font. The `@import` rule loads a SCSS `_font-stack-{TYPE}` file which is dynamically generated based on the [Language and Script Support][21] settings in the Global tab of Theme Options. The `_font-stack-{TYPE}` is built from partials found in our default book theme McLuhan. These files, in combination with the `$serif-epub, $sans-serif-epub, $serif-prince, $sans-serif-prince, $serif-web` and `$sans-serif-web` variables, allow us to dynamically add support for non-Latin character sets.
+Most themes have at least two font stacks, but may have more. `$font-1` must be the body font, and `$font-2` must be the header font. The `@import` rule loads a SCSS `_font-stack-{TYPE}` file which is dynamically generated based on the [Language and Script Support][11] settings in the Global tab of Theme Options. The `_font-stack-{TYPE}` is built from partials found in our default book theme McLuhan. These files, in combination with the `$serif-epub, $sans-serif-epub, $serif-prince, $sans-serif-prince, $serif-web` and `$sans-serif-web` variables, allow us to dynamically add support for non-Latin character sets.
 
 You can insert custom fonts for your theme into the font stacks shown below. Always end the stack with `$serif-epub` or `$sans-serif-epub`, as appropriate—this allows custom language support to be added dynamically.
 
@@ -280,24 +280,14 @@ You may also include a typeface from a directory like Google Fonts in your web b
 
 `@import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Crimson+Text:400,400italic,700,700italic");`
 
-[1]: https://github.com/pressbooks/pressbooks-demo
-[2]: https://github.com/pressbooks/pressbooks-demo/commit/15875fb8c7d4ea8a026190c60e48ae4b4971cef3
-[3]: http://wp-cli.org/#installing
-[4]: https://github.com/pressbooks/pb-cli/#installing
-[5]: https://github.com/pressbooks/pb-cli/#using
-[6]: https://github.com/pressbooks/pressbooks-demo/blob/15875fb8c7d4ea8a026190c60e48ae4b4971cef3/style.css
-[7]: https://codex.wordpress.org/File_Header#Theme_File_Header_Example
-[8]: https://github.com/pressbooks/pressbooks/blob/v3.9.0/themes-book/pressbooks-book/functions.php#L97-L143
-[9]: https://github.com/pressbooks/pressbooks-demo/commit/53619ba787069fd46853ac66fd697ed11a21443d
-[10]: https://pressbooks.com/prince/
-[11]: https://github.com/pressbooks/pressbooks-demo/blob/15875fb8c7d4ea8a026190c60e48ae4b4971cef3/assets/styles/components/_elements.scss
-[12]: https://github.com/pressbooks/pressbooks/tree/master/assets/book/styles
-[13]: https://github.com/pressbooks/pressbooks/blob/master/assets/book/styles/components/elements/_blockquotes.scss
-[14]: https://github.com/pressbooks/pressbooks/blob/master/assets/book/styles/variables/_elements.scss
-[15]: https://robots.thoughtbot.com/sass-default
-[16]: https://github.com/pressbooks/pressbooks-demo/commit/550648bf3c6ea947a5670ce083b8078535d39fb5
-[17]: https://github.com/pressbooks/pressbooks-demo/blob/550648bf3c6ea947a5670ce083b8078535d39fb5/assets/styles/components/_elements.scss
-[18]: https://github.com/pressbooks/pressbooks-demo/commit/4eb01592c38830127f8392ecfaf4afb7de491260
-[19]: https://github.com/pressbooks/pressbooks-demo/blob/4eb01592c38830127f8392ecfaf4afb7de491260/assets/styles/components/_elements.scss
-[20]: https://github.com/pressbooks/pressbooks-demo/blob/4eb01592c38830127f8392ecfaf4afb7de491260/assets/styles/prince/style.scss
-[21]: https://guide.pressbooks.com/chapter/languages/
+[1]: http://wp-cli.org/#installing
+[2]: https://github.com/pressbooks/pb-cli/#installing
+[3]: https://github.com/pressbooks/pb-cli/#using
+[4]: https://codex.wordpress.org/File_Header#Theme_File_Header_Example
+[5]: https://github.com/pressbooks/pressbooks/blob/v3.9.0/themes-book/pressbooks-book/functions.php#L97-L143
+[6]: https://pressbooks.com/prince/
+[7]: https://github.com/pressbooks/pressbooks/tree/master/assets/book/styles
+[8]: https://github.com/pressbooks/pressbooks/blob/master/assets/book/styles/components/elements/_blockquotes.scss
+[9]: https://github.com/pressbooks/pressbooks/blob/master/assets/book/styles/variables/_elements.scss
+[10]: https://robots.thoughtbot.com/sass-default
+[11]: https://guide.pressbooks.com/chapter/languages/

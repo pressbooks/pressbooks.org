@@ -14,7 +14,7 @@ Plugin to integrate Pressbooks with a SAML2 single sign-on service. ([Shibboleth
 
 _Limitations: This plugin is restricted to non-federated, bilateral configuration with a single IdP only._
 
-This documentation is up to date as of version 1.5.0 of the Pressbooks SAML2 Single Sign-on plugin.
+This documentation is up to date as of version 1.6.0 of the Pressbooks SAML2 Single Sign-on plugin.
 
 ## Installation / Activation
 
@@ -70,13 +70,13 @@ add_filter( 'pb_saml_auth_settings', function( $config ) {
 
 If the Bypass option is **OFF**: Pressbooks' Network settings for both authorized and banned email domains will be applied and enforced.
 
-If the Bypass option is **ON**: The "Limited Email Registrations" and "Banned Email Domains" lists will not be applied or enforced in the case of SAML2 logins. For example, even if the email domain entered in SAML2 settings matches a Banned Email Domain, a user will still be created.
+If the Bypass option is **ON**: The "Limited Email Registrations" and "Banned Email Domains" lists will not be applied or enforced in the case of SAML2 logins. For example, a user will still be created even if the email domain entered in SAML2 settings matches a Banned Email Domain.
 
 ### **Forced Redirection behaviour:**
 
-If Forced Redirection is **OFF**, the "Sign In" link from the network website homepage brings the user to the Pressbooks login page, where a "Connect via SAML2" button will appear in the login form. Clicking on this button will bring the user to the institution's SAML2 login page.
+If Forced Redirection is **OFF**, the "Sign In" link from the network website homepage brings the user to the Pressbooks login page, where a "Connect via SAML2" button will appear in the login form. Clicking on this button will bring the user to the login page for the configured IdP.
 
-If Forced Redirection is **ON**, the "Sign In" link will bring the user directly to the institution's SAML2 login page.
+If Forced Redirection is **ON**, the "Sign In" link will bring the user directly to the login page for the configured IdP.
 
 ### **Add New User / Refuse Access behaviour:**
 
@@ -101,14 +101,14 @@ The button can accept multiple lines of text. Add a `<br />` tag in the button t
 The plugin looks for the following Attributes in the Response:
 
 - Requires: `urn:oid:0.9.2342.19200300.100.1.1` (with a value corresponding to `samAccountName` or equivalent. This can be sent with the FriendlyName `uid`)
-- Strongly recommends: `urn:oid:0.9.2342.19200300.100.1.3` (with a value corresponding to `email-address`, or equivalent. This can be sent with FriendlyName `mail`). If no value is available we fall back to uid@127.0.0.1
+- Strongly recommends: `urn:oid:0.9.2342.19200300.100.1.3` (with a value corresponding to `email-address`, or equivalent. This can be sent with FriendlyName `mail`). If no value is available we fall back to `[samAccountName]@127.0.0.1`
 - Optional: `urn:oid:1.3.6.1.4.1.5923.1.1.1.6` (with a value corresponding to `eduPersonPrincipalName` or equivalent). Upon the first launch for a given user, if we cannot match the `urn:oid:0.9.2342.19200300.100.1.3` value to the email address of an existing user, we'll attempt to look for an existing user whose email address matches the value of this attribute.
 
 ## User identification mechanism
 
-When a user logs into Pressbooks via SAML2, the SAML2 plugin will attempt to find an existing user corresponding to the user who is logging in. If it does not find the user, the SAML2 plugin will either create a new user (if the SAML2 setting is set to "Create new user") or refuse access (if the SAML2 setting is set to "Refuse access").
+When a user logs into Pressbooks via SAML2, the SAML2 plugin will attempt to find an existing user corresponding to the user who is logging in. If it does not find the user, the SAML2 plugin will either create a new user or refuse access (depending on which option has been selected).
 
-The mechanism to match the SAML2 user with the Pressbooks user is the following:
+The user matching mechanism is as follows:
 
 1. Plugin tries to find a user `where wp_usermeta.meta_key = pressbooks_saml_identity and wp_usermeta.meta_value = uid`
    - Where `uid` is the unique ID sent by the Identity Provider with the required attribute name `urn:oid:0.9.2342.19200300.100.1.1`

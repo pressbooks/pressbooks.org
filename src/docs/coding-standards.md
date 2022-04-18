@@ -12,7 +12,7 @@ Instead of reading any of this why not just let the computer nag you? From the P
 
 Bonus: You can sometimes automatically fix errors by running:
 
-`vendor/bin/phpcbf --standard=phpcs.ruleset.xml /path/to/your/file`
+`composer fix` or `vendor/bin/phpcbf --standard=phpcs.ruleset.xml /path/to/your/file`
 
 ## Pressbooks Coding Standards (Mandatory)
 

@@ -11,9 +11,9 @@ permalink: /docs/integrations/lti/
 - [Manually Set up a LTI Configuration](#manually-set-up-a-lti-configuration)
 - [Common Cartridge](#common-cartridge)
 
-**This plugin is being deprecated. See [our forum](https://pressbooks.community/t/planned-deprecation-notice-pressbooks-lti-provider-plugin/1715) for details.**
+**This plugin is deprecated and will not receiveing ongoing support. See [our forum](https://pressbooks.community/t/planned-deprecation-notice-pressbooks-lti-provider-plugin/1715) for details.**
 
-This documentation is up to date as of version 1.x of the Pressbooks LTI Provider plugin.
+This documentation is up to date as of version 1.3.5 of the Pressbooks LTI Provider plugin.
 
 # Installation
 
@@ -35,7 +35,7 @@ Moreover, on the book level, a submenu item ("LTI Settings") is added to the boo
 
 ## LTI Consumers (network admin)
 
-The "LTI Consumers" link leads to a page listing the existing, configured LTI connexions with LTI consumers. This page is empty upon first activation of the Pressbooks LTI Provider plugin, and is populated as LTI connections are created, either manually or automatically.
+The "LTI Consumers" link leads to a page listing the existing, configured LTI connections with LTI consumers. This page is empty upon first activation of the Pressbooks LTI Provider plugin, and is populated as LTI connections are created, either manually or automatically.
 
 ![Screenshot of Pressbooks LTI Consumers configuration page](/images/lti-consumers.png)
 
@@ -140,7 +140,7 @@ If the mapping is set to:
 - Get the email from the LMS.
 - Get LTI ID from the LMS. [tool_consumer_instance_guid + user_id]
 
-Sometimes an email is not sent so we create a fake email using the [UserID@127.0.0.1](mailto:UserID@127.0.0.1). Canvas user ids look like `967620f91cb9080c633b4e55f561d40ed83924a4`.
+Sometimes an email is not sent by the LMS so we create a fake email using the [UserID@127.0.0.1](mailto:UserID@127.0.0.1). Canvas user ids look like `967620f91cb9080c633b4e55f561d40ed83924a4`.
 
 - Try to match a Pressbooks user by LTI ID (Stored in user_meta table.)
 - If no match, then try to match a Pressbooks user by email.
@@ -181,4 +181,4 @@ Common Cartridge Exports follow the same pattern as regular book exports. There 
 
 1. In the book admin interface, under **Integrations > LTI Settings**, select the Common Cartridge version you would like to export, according to your LMS's specifications, and click the **Save Changes** button.
 
-2. On your book's Export page, select **Common Cartridge with LTI links** (1)**,** then click on the **Export your book** button (2). Your CC export will appear on the page once it is ready (3).
+2. On your book's Export page, select **Common Cartridge with LTI links**, then click the **Export your book** button. Your CC export will appear on the page once it is ready and can be downloaded and imported into your desired LMS.

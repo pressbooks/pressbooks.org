@@ -1,6 +1,6 @@
 ---
 title: Local Development on Ubuntu
-permalink: /docs/local-development/ubuntu/
+permalink: /docs/ubuntu/
 ---
 
 Following these instructions will give you a local development network of Pressbooks based on [roots/bedrock][1] and [roots/trellis][2], with the following features:
