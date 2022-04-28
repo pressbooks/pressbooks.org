@@ -66,8 +66,6 @@ Pressbooks was created and is maintained by developers working for [Pressbooks][
 - Ned Zimmerman ([@greatislander][37])
 - and many more!
 
-[![Deploys by Netlify](https://www.netlify.com/img/global/badges/netlify-dark.svg)](https://netlify.com)
-
 [1]: https://github.com/indiamos
 [2]: https://github.com/monkecheese
 [3]: https://github.com/israelcefrin
