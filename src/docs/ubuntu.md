@@ -3,21 +3,28 @@ title: Local Development on Ubuntu
 permalink: /docs/local-development/ubuntu/
 ---
 
+# Local Development on Ubuntu
+
 Following these instructions will give you a local development network of Pressbooks based on [roots/bedrock][1] and [roots/trellis][2], with the following features:
 
 - Unit testing via [PHPUnit][3]
 - Code standards evaluation via [PHP_CodeSniffer][4]
 - Build tools for plugin assets via [npm][5] and [webpack][6].
 
+## Supported Ubuntu versions
+
+- 20.04
+
 ## 1. Dependencies
 
 - Install Git: <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>
-- Install PHP7.3: <https://askubuntu.com/a/1238983>
-- Install Composer: <https://getcomposer.org/doc/00-intro.md#installation-linux-unix-macos>
+- Install PHP7.4: <https://computingforgeeks.com/how-to-install-php-on-ubuntu>
+- Install Composer v2: <https://getcomposer.org/doc/00-intro.md#installation-linux-unix-macos>
 - Install Node.js LTS with NPM: <https://nodejs.org/en/download/>
 - Install Virtual Box: <https://www.virtualbox.org/>
-- Install Vagrant: <https://www.vagrantup.com/>
-- Install Ansible: <https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-specific-operating-systems>
+- Install Vagrant >=2.2.6: <https://www.vagrantup.com/>
+- Install Python 3
+- Install Ansible 2.10.7: <https://stackoverflow.com/a/50550017> or https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-specific-operating-systems/>
 
 Concise directions for installing VirtualBox, Vagrant, and Ansible are available [in the Trellis docs](https://roots.io/docs/getting-started/ubuntu-linux/#working-with-trellis).
 
@@ -44,7 +51,7 @@ composer require pressbooks/pressbooks-saml-sso:dev-dev
 
 ## 3. Configuration
 
-The file `~/Code/pressbooks-dev/trellis/group_vars/development/wordpress_sites.yml` reflects your desired local development site URL. It looks like:
+The file `~/Code/pressbooks-dev/trellis/group_vars/development/wordpress_sites.yml` reflects your desired local development site URL.
 
 ```
 wordpress_sites:
@@ -63,9 +70,10 @@ wordpress_sites:
       provider: self-signed
     cache:
       enabled: false
+    packagist_token: <PACKAGIST_TOKEN>
 ```
 
-It should work out-of-the-box. If you want to setup staging or production environments, you will need to update all instances of `example.com` and `pressbooks.test` in `~/Code/pressbooks-dev/trellis/group_vars/` to a consistent value. For more info, consult the [Trellis docs][13].
+Replace `<PACKAGIST_TOKEN>` with your packagist token. It should work out-of-the-box. If you want to setup staging or production environments, you will need to update all instances of `example.com` and `pressbooks.test` in `~/Code/pressbooks-dev/trellis/group_vars/` to a consistent value. For more info, consult the [Trellis docs][13].
 
 ## 4. Launch
 
