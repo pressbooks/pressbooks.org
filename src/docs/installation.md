@@ -1,6 +1,6 @@
 ---
 title: Installation
-permalink: /docs/installation/
+permalink: user-docs/installation/
 ---
 
 ## Downloads
@@ -9,10 +9,11 @@ Download the latest releases of [Pressbooks][pressbooks], [McLuhan][mcluhan], an
 
 ## Installation (Manual)
 
-### IMPORTANT!
+::: danger IMPORTANT!
 
 - Do not install Pressbooks on an existing WordPress blog -- create a new WordPress install instead.
 - Pressbooks works with [PHP 7.4][php] and _(usually)_ the most recent version of WordPress right now. Lower versions are not supported.
+  :::
 
 ### Part 1: WordPress
 
@@ -22,7 +23,7 @@ Download the latest releases of [Pressbooks][pressbooks], [McLuhan][mcluhan], an
 
 3. Edit the `wp-config.php` file and add the following:
 
-```php
+```
 define('WP_ALLOW_MULTISITE', true);
 ```
 
@@ -46,19 +47,19 @@ define('WP_ALLOW_MULTISITE', true);
 
 7. Navigate to **Themes** → **Installed Themes**.
 
-8. Network Enable "McLuhan", "Aldine", and any other Pressbooks theme you want to use.
+8. Network Enable "Aldine", "McLuhan", and any other Pressbooks theme you want to use.
 
 9. Navigate to **Settings** → **Network Settings**.
 
 10. Pick the most appropriate Registration setting:
 
-    - User accounts may be registered. (Do not use this setting, since it will not allow users to create new books!)
-    - Logged in users may register new sites. (If you are a publisher using Pressbooks as a production tool, this is the best setting: it allows network administrators to add new users, who can then create books/sites. However, registration is not available to the public.)
-    - Both sites and user accounts can be registered. (Use this setting if you intend on offering a publishing-platform open to the public.)
+    - User accounts may be registered. (We recommend that you avoid this setting, as users will not be able to create new books!)
+    - Logged in users may register new sites. (If you are a publisher using Pressbooks as a production tool, this is the recommended setting: it allows network administrators to add new users, who can then create books/sites. However, registration is not available to the public.)
+    - Both sites and user accounts can be registered. (Be careful about selecting this option, as it allows both public account registration and book creation. You will likely need to have good account and content moderation practices to avoid your network being flooded with spam.)
 
-11. Navigate to **My Catalog** → **Your Site** → **Dashboard**
+11. Navigate to **Your Network Title** → **Dashboard** → **Appearance** and activate "Aldine".
 
-12. Navigate to **Appearance** and activate "Aldine".
+12. Navigate to **My Catalog** → **Your Site** → **Dashboard**
 
 13. Navigate to **My Catalog** → **Add A New Book** (this will be your first book).
 
@@ -72,20 +73,20 @@ define('WP_ALLOW_MULTISITE', true);
 
 Pressbooks requires some third-party libraries to be installed on your server to enable export capabilities.
 
-- For PDF export, you have three options:
-  1. Configure [DocRaptor](https://docraptor.com), which is a software as a service version of [PrinceXML][9]. To do this, you just need to add your DocRaptor API key to `wp-config.php`: `define( 'DOCRAPTOR_API_KEY', 'YOUR_API_KEY_HERE' );`
-  2. Install [PrinceXML][9] 14 on your server (note: this is not free software although you can use it free of charge for non-commercial purposes, see their license).
-  3. Install the [mPDF for Pressbooks][10] plugin to use the open source mPDF library. (Note: As of May 2019 this project is [unmaintained](https://github.com/pressbooks/docs/issues/32#issuecomment-503255424) )
-- For EPUB validation install [EpubCheck][13] 4.1.1.
-- For XML validation install [xmllint][14] 20903.
-- For ODT export install [Saxon-HE][15] 9.7.0-10.
+- For PDF export, you have two supported options:
+  1. Install [PrinceXML][prince] 12 on your server (note: this is not free software, although you can use it free of charge for non-commercial purposes. See their license for details).
+  2. Configure [DocRaptor](https://docraptor.com), a software as a service version of PrinceXML. To do this, obtain and add a DocRaptor API key to `wp-config.php`: `define( 'DOCRAPTOR_API_KEY', 'YOUR_API_KEY_HERE' );`
+     Note: the mPDF for Pressbooks plugin uses the open source mPDF library, but is [no longer being maintained](https://github.com/pressbooks/docs/issues/32#issuecomment-503255424) by its creators. Use it at your own risk.
+- For EPUB validation install [EpubCheck][epub-check]
+- For XML validation install xmllint: `sudo apt-get install libxml2-utils`
+- For ODT export install [Saxon-HE][saxon] 9.7.0-10
 - For the Cover Generator feature, install:
-  - Ghostscript 9.18: `sudo apt-get install ghostscript`
-  - ImageMagick 6.8.9: `sudo apt-get install imagemagick`
-  - PdfToPpm and PdfInfo 0.41.0: `sudo apt-get install poppler-utils`
-- For MathJax export install (and host!) master branch of [pb-mathjax][16]
-- Certain Linux installations do not ship with the `php-xsl` library enabled by default. If you attempt to export an ePub and get a either a white screen with minimal text, or a "Fatal error: Class 'XSLTProcessor' not found" error, you may need to run a command like `sudo apt-get install php-xsl`.
-- Certain Linux installations do not ship with the `php-exif` library enabled by default. If you attempt to export an ePub and get either a white screen with minimal text or an error, you may need to install this extension (e.g. `sudo apt-get install php-exif` )
+  - Ghostscript: `sudo apt-get install ghostscript`
+  - ImageMagick: `sudo apt-get install imagemagick`
+  - PdfToPpm and PdfInfo: `sudo apt-get install poppler-utils`
+- For MathJax export install (and host!) master branch of [pb-mathjax][pb-mathjax]
+- Certain Linux installations do not ship with the `php-xsl` library enabled by default. If you attempt to export an ePub and get either a white screen with minimal text, or a "Fatal error: Class 'XSLTProcessor' not found" error, you may need install this library (e.g. `sudo apt-get install php-xsl`).
+- Certain Linux installations do not ship with the `php-exif` library enabled by default. If you attempt to export an ePub and get either a white screen with minimal text, or an error, you may need to install this library (e.g. `sudo apt-get install php-exif` )
 - Linux installations do not ship with Microsoft fonts, which can be useful when producing PDF exports. See https://itsfoss.com/install-microsoft-fonts-ubuntu/ or similar for instructions on installing.
 
 Unlisted versions are not supported. Upgrade/downgrade accordingly.
@@ -102,7 +103,6 @@ Example config files for a dev site hosted at `http://localhost/~example/textopr
 
 ### wp-config.php file [snippet]:
 
-```php
     /**
      * For developers: WordPress debugging mode.
      *
@@ -146,7 +146,6 @@ Example config files for a dev site hosted at `http://localhost/~example/textopr
     // define( 'EMPTY_TRASH_DAYS', 1 ); // Purge trash interval. PB default is after 30 days.
 
     /* That's all, stop editing! Happy blogging. */
-```
 
 ### .htaccess file:
 
@@ -164,19 +163,19 @@ Example config files for a dev site hosted at `http://localhost/~example/textopr
     RewriteRule  ^[_0-9a-zA-Z-]+/(.*.php)$ $1 [L]
     RewriteRule . index.php [L]
 
-_Need a wp-cli deploy? Start here: <https://github.com/pressbooks/snippets/blob/master/deploying/wp-cli-example.md>_
+::: tip
+Need a wp-cli deploy? Start here: https://github.com/pressbooks/snippets/blob/master/deploying/wp-cli-example.md
+:::
 
-[pressbooks]: https://github.com/pressbook/pressbooks/releases/latest
-[mcluhan]: https://github.com/pressbook/pressbooks-book/releases/latest
-[aldine]: https://github.com/pressbook/pressbooks-aldine/releases/latest
+[pressbooks]: https://github.com/pressbooks/pressbooks
+[mcluhan]: https://github.com/pressbooks/pressbooks-book
+[aldine]: https://github.com/pressbooks/pressbooks-aldine/
 [book-themes]: https://github.com/search?q=topic:book-theme%20org:pressbooks&type=Repositories
 [php]: https://secure.php.net/supported-versions.php
 [wp-install]: http://codex.wordpress.org/Installing_WordPress
 [create-a-network]: http://codex.wordpress.org/Create_A_Network
-[9]: https://www.princexml.com/
-[10]: https://github.com/BCcampus/pressbooks-mpdf
-[11]: http://codex.wordpress.org/Changing_File_Permissions
-[13]: https://github.com/w3c/epubcheck
-[14]: http://xmlsoft.org/xmllint.html
-[15]: https://sourceforge.net/projects/saxon/files/Saxon-HE/
-[16]: https://github.com/pressbooks/pb-mathjax
+[prince]: https://www.princexml.com/
+[epub-check]: https://github.com/w3c/epubcheck
+[xmllint]: https://askubuntu.com/questions/1382254/i-need-to-install-xmllint-but-dont-know-how-to
+[saxon]: https://sourceforge.net/projects/saxon/files/Saxon-HE/
+[pb-mathjax]: https://github.com/pressbooks/pb-mathjax
