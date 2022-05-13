@@ -1,31 +1,29 @@
 ---
 title: Pressbooks LTI Provider
-permalink: /docs/integrations/lti/
+permalink: /user-docs/lti/
 ---
 
-## Table of contents
+**This plugin is deprecated and will not receive ongoing support. See [our forum](https://pressbooks.community/t/planned-deprecation-notice-pressbooks-lti-provider-plugin/1715) for details.**
+
+**Table of contents**
 
 - [Installation](#installation)
 - [Basic interfaces](#basic-interfaces)
 - [Behaviour details](#behaviour-details)
 - [Manually Set up a LTI Configuration](#manually-set-up-a-lti-configuration)
-- [Common Cartridge](#common-cartridge)
+- [Common Cartridge exports](#common-cartridge-exports)
 
-**This plugin is deprecated and will not receiveing ongoing support. See [our forum](https://pressbooks.community/t/planned-deprecation-notice-pressbooks-lti-provider-plugin/1715) for details.**
+This documentation is up to date as of version 1.3.6 of the Pressbooks LTI Provider plugin.
 
-This documentation is up to date as of version 1.3.5 of the Pressbooks LTI Provider plugin.
-
-# Installation
-
-Get the plugin here: [https://github.com/pressbooks/pressbooks-lti-provider](https://github.com/pressbooks/pressbooks-lti-provider)
+## Installation
 
 This plugin must be installed and activated on the network level, but has configurations available both at the network and book level.
 
-**Note**: If the user's web browser does not allow 3rd Party Cookies, then logins will not work when Pressbooks is in an iframe.
+**Note**: If the user's web browser does not allow 3rd Party Cookies, logins will not work when Pressbooks is in an iframe.
 
 **Note**: Please ensure that your web server has correct X-Frame-Options settings, otherwise iframes will refuse to display. More info: [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options)
 
-# Basic Interfaces
+## Basic Interfaces
 
 The "Pressbooks LTI Provider" plugin is available from the Plugins menu at the Network level.
 
@@ -33,7 +31,7 @@ When the plugin is active, two submenu items (“LTI Consumers” and "LTI Setti
 
 Moreover, on the book level, a submenu item ("LTI Settings") is added to the book admin interface under "Integrations".
 
-## LTI Consumers (network admin)
+### LTI Consumers (network admin)
 
 The "LTI Consumers" link leads to a page listing the existing, configured LTI connections with LTI consumers. This page is empty upon first activation of the Pressbooks LTI Provider plugin, and is populated as LTI connections are created, either manually or automatically.
 
@@ -55,7 +53,7 @@ The table containing the list of LTI configurations is based on the IMS Global e
 
 The "**Add New**" button leads to a form where the network manager can create a new configuration manually. See "[Manually Set Up a LTI Configuration](#manually-set-up-a-lti-configuration)" below for instructions.
 
-## LTI Settings (network admin)
+### LTI Settings (network admin)
 
 The LTI Settings link (on the network admin level) leads to the general, network-level LTI configurations page. This page contains:
 
@@ -68,7 +66,7 @@ The LTI Settings link (on the network admin level) leads to the general, network
 
 ![Screenshot of LTI network settings page](/images/lti-network-settings.png)
 
-## LTI Settings (book admin)
+### LTI Settings (book admin)
 
 The LTI Settings link (at the book admin level) leads to a configuration page that is specific for the book. The book administrator can then override the network defaults for the following settings:
 
@@ -76,7 +74,7 @@ The LTI Settings link (at the book admin level) leads to a configuration page th
 - **Appearance**
 - **Common Cartridge version**
 
-## LTI links
+### LTI links
 
 - Each book has an LTI URL in the following format: **https://site/book/format/lti/launch**
   (ex: https:&#x200d;//university.pressbooks.pub/testbook/**format/lti/launch**)
@@ -84,9 +82,9 @@ The LTI Settings link (at the book admin level) leads to a configuration page th
 - LTI URLs to specific chapters are in the following format: **https://site/book/format/lti/launch/part/chapter**
   (ex: https:&#x200d;//university.pressbooks.pub/testbook/**format/lti/launch**/chapter/chapter-1/)
 
-# Behaviour details
+## Behaviour details
 
-## Allowlisting
+### Allowlisting
 
 Allowlisting is necessary in order for an LTI connection to be **automatically** configured.
 Allowlisting is not necessary for manual configurations.
@@ -97,7 +95,7 @@ To disable an LTI connection, go to **Network admin > Integrations > LTI Consume
 
 **Note:** Automatic configuration is a feature of the [LTI 2.0](https://www.imsglobal.org/specs/ltiv2p0) specification and is not widely supported by Learning Management Systems.
 
-## User creation and mapping
+### User creation and mapping
 
 When a user accesses Pressbooks content via LTI, it is possible for Pressbooks to automatically create a new user or log a returning user into his Pressbooks account based on information sent by the LMS (user role and ID).
 
@@ -149,7 +147,7 @@ Sometimes an email is not sent by the LMS so we create a fake email using the [U
 
 The email can be filtered, example: `add_filter( 'pb_integrations_multidomain_email', function( $email, $uid, $plugin ) { /* Custom use case, return $email */ }, 10, 3 );`
 
-# Manually Set Up an LTI Configuration
+## Manually Set Up an LTI Configuration
 
 1. Click the Add new button on the LTI Consumers page. You will be brought to the "Adding LTI Consumer" form:
    ![Screenshot of the Add Consumer form](/images/lti-add-consumer.png)
@@ -165,15 +163,15 @@ The email can be filtered, example: `add_filter( 'pb_integrations_multidomain_em
 
 **Note**: once a configuration is created, it will not be possible to edit the "**Key**" and "**Secret**" fields.
 
-# Configuring Pressbooks with a Tool Consumer
+## Configuring Pressbooks with a Tool Consumer
 
 While the steps for configuring LTI providers differ among different tool consumers (like Learning Management Systems), a typical registration process will require a key/secret pair and a launch URL. The key/secret pair can be obtained following the manual "Adding LTI Consumer" form instructions above. The launch URL can be either the URL for the network itself, i.e. `https://yourinstitution.pressbooks.pub` or the URL for a particular book, i.e. `https://yourinstitution.pressbooks.pub/mybook`.
 
 Setting the launch URL to the root domain for the network will mean that the LTI configuration will be valid for all books on that network. Setting the launch URL to a particular book on the network will limit the LTI configuration to that book and its components only.
 
-# Common Cartridge
+## Common Cartridge Exports
 
-The Pressbooks LTI Provider plugin (or the "LTI Plugin") exports Common Cartridge ("CC") files. Our LTI plugin supports CC v1.1 (compatible with Moodle), CC v1.2 (compatible with Blackboard, D2L, and Sakai), and CC v1.3 (compatible with Canvas).
+The Pressbooks LTI Provider plugin allows authors to product Common Cartridge ("CC") export files with LTI links. Our LTI plugin supports the creation of CC v1.1, v1.2, and v1.3 export files.
 
 **Exporting a Common Cartridge file in Pressbooks**
 

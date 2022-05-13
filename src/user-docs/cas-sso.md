@@ -1,6 +1,6 @@
 ---
 title: Pressbooks CAS Single Sign-On
-permalink: /docs/integrations/cas-sso/
+permalink: /user-docs/cas-sso/
 ---
 
 **Table of Contents**
@@ -10,13 +10,11 @@ permalink: /docs/integrations/cas-sso/
 - [Details of settings behaviours](#details-of-settings-behaviours)
 - [User identification mechanism](#user-identification-mechanism)
 
-This documentation is up to date as of version 1.2.3 of the Pressbooks CAS Single Sign-on plugin.
+This documentation is up to date as of version 1.2.4 of the Pressbooks CAS Single Sign-on plugin.
 
 ## Installation / Activation
 
-Get the plugin here: <https://github.com/pressbooks/pressbooks-cas-sso>
-
-The CAS SSO plugin is installed and activated on the network level.
+Get the plugin here: <https://github.com/pressbooks/pressbooks-cas-sso>. The CAS SSO plugin should be installed and activated on the network level.
 
 ## Admin interface description
 
@@ -48,19 +46,19 @@ Decide the response if the CAS user does not have a Pressbooks account:
 
 ## Details of settings behaviours:
 
-### **Bypass domains behaviour:**
+### Bypass domains behaviour:
 
 If the Bypass option is **OFF**: Pressbooks' Network settings apply for authorized and banned domains.
 
 If the Bypass option is **ON**: The "Limited Email Registrations" and "Banned Email Domains" lists do not apply for CAS logins. Even IF Email domain entered in CAS settings match a Banned Email Domain, user will still be created.
 
-### **Forced Redirection behaviour:**
+### Forced Redirection behaviour:
 
 If Forced Redirection is **OFF**, the "Sign In" link from the network website homepage brings the user to the Pressbooks login page, where a "Connect via CAS" button is in the login form. Clicking on this button brings the user to the institution's CAS login page.
 
 If Forced Redirection is **ON**, the "Sign In" link brings the user directly to the institution's CAS login page.
 
-### **Add New User / Refuse Access behaviour:**
+### Add New User / Refuse Access behaviour:
 
 1. IF no Pressbooks user exists for this CAS user
    - IF CAS is configured to "Add New User" AND CAS login is successful
@@ -89,6 +87,6 @@ The mechanism to match the CAS user with the Pressbooks user is the following:
 3.  If neither #1 or #2 are found, create a new user.
     - `wp_usermeta.meta_key` and `wp_usermeta.meta_value` are set by the CAS plugin upon user creation; subsequent logins follow case #1 above.
 
-For network admins creating new users in Pressbooks, this means that they need to use the correct user email address so that the CAS plugin can properly match the users logging in via CAS and manually-created Pressbooks users.
+Network admins creating new users in Pressbooks should use the same email address provided by the CAS identity provider when registering the user so that the CAS plugin will be able to reliably match users logging in via CAS with their manually-created Pressbooks user accounts.
 
 Note: existing usernames are not used for matching purposes.

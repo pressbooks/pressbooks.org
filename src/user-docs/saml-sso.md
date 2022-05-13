@@ -1,6 +1,6 @@
 ---
 title: Pressbooks SAML SSO
-permalink: /docs/integrations/saml-sso/
+permalink: /user-docs/saml-sso/
 ---
 
 **Table of Contents**
@@ -14,15 +14,13 @@ Plugin to integrate Pressbooks with a SAML2 single sign-on service. ([Shibboleth
 
 _Limitations: This plugin is restricted to non-federated, bilateral configuration with a single IdP only._
 
-This documentation is up to date as of version 1.6.0 of the Pressbooks SAML2 Single Sign-on plugin.
+This documentation is up to date as of version 1.6.1 of the Pressbooks SAML2 Single Sign-on plugin.
 
 ## Installation / Activation
 
-The SAML2 SSO plugin is installed and activated on the network level.
+Get the plugin here: https://github.com/pressbooks/pressbooks-saml-sso.
 
-Get the plugin here: https://github.com/pressbooks/pressbooks-saml-sso
-
-Follow the steps in [the README file](https://github.com/pressbooks/pressbooks-saml-sso/blob/master/README.md). Be sure to correctly install, configure, and secure the security certificates.
+The SAML2 SSO plugin is installed and activated on the network level. Follow the steps in [the README file](https://github.com/pressbooks/pressbooks-saml-sso/blob/master/README.md). Be sure to correctly install, configure, and secure the security certificates.
 
 ## Admin interface description
 
@@ -36,7 +34,7 @@ Your network's Service Provider (SP) metadata can be viewed and downloaded from 
 
 ## Required Settings
 
-To configure SAML2 the following information is needed:
+The following information is required for the SAML IdP you want to integrate with Pressbooks:
 
 - EntityID
 - SingleSignOnService
@@ -51,10 +49,9 @@ Decide the response if the SAML2 user does not have a Pressbooks account: **Refu
 - **SingleLogoutService**: URL Location of the IdP where SLO Request will be sent.
 - **[Bypass](#bypass-domains-behaviour)**: Bypass the "Limited Email Registrations" and "Banned Email Domains" lists under Network Settings.
 - **[Forced redirection](#forced-redirection-behaviour)**: Hide the Pressbooks login page and go directly to the insitutions's SAML2 login page.
-- [**Customize Button Text**:](#customize-button-text) Customize the label of the "Connect via SAML2" button in the Pressbooks login page. If Forced Redirection is checked, then this field is disabled.
+- **[Customize Button Text](#customize-button-text)**: Customize the label of the "Connect via SAML2" button in the Pressbooks login page. If Forced Redirection is checked, then this field is disabled.
 
-By default, this plugin requires the Assertion elements of the Response send by the Identity Provider (IdP) to be both encrypted and signed.
-[These settings can be changed](<(https://github.com/onelogin/php-saml/#settings)>) using a filter, example:
+By default, this plugin requires the Assertion elements of the Response sent by the Identity Provider (IdP) to be both encrypted and signed. If you are self-hosting a Pressbooks network, you can change [these settings](<(https://github.com/onelogin/php-saml/#settings)>) with a filter, for example:
 
 ```php
 add_filter( 'pb_saml_auth_settings', function( $config ) {
