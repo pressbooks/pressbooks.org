@@ -1,6 +1,6 @@
 ---
 title: Installation
-permalink: user-docs/installation/
+permalink: /user-docs/installation/
 ---
 
 ## Downloads
