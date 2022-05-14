@@ -1,11 +1,11 @@
 ---
 title: Theme Development
-permalink: /docs/theme-development/
+permalink: /dev-docs/theme-development/
 ---
 
 ## Getting Started
 
-Start by installing [WP-CLI][1], which will let you use Pressbooks' built-in [pb-cli][2] utility to scaffold a new Pressbooks book theme in your development environment with the following command:
+Start by installing [WP-CLI][1] and our [pb-cli][2] utility. This will allow you to scaffold a new Pressbooks book theme in your development environment with the following command:
 
     wp scaffold book-theme <slug>
 
@@ -43,7 +43,7 @@ Note that `style.css` is not used except to provide Pressbooks with [theme file 
 
 `define('WP_ENV', 'development');`
 
-This will turn on the development compiler introduced in Pressbooks 3.9.0, which triggers a recompile of your web theme stylesheet if the source files have been modified since it was last compiled when you visit any page in your webbook ([see here][5]).
+This will turn on the development compiler introduced in Pressbooks 3.9.0, which triggers a recompile of your web theme stylesheet when you visit any page in your webbook if the source files have been modified since it was last compiled ([see here][5]).
 
 ## Overriding Defaults
 
@@ -263,7 +263,7 @@ $font-2: "Lato", Helvetica, Arial, $sans-serif-prince;
 @import "LatoFont", "TinosFont";
 ```
 
-Most themes have at least two font stacks, but may have more. `$font-1` must be the body font, and `$font-2` must be the header font. The `@import` rule loads a SCSS `_font-stack-{TYPE}` file which is dynamically generated based on the [Language and Script Support][11] settings in the Global tab of Theme Options. The `_font-stack-{TYPE}` is built from partials found in our default book theme McLuhan. These files, in combination with the `$serif-epub, $sans-serif-epub, $serif-prince, $sans-serif-prince, $serif-web` and `$sans-serif-web` variables, allow us to dynamically add support for non-Latin character sets.
+Themes usually have at least two font stacks. `$font-1` must be the body font, and `$font-2` must be the header font. The `@import` rule loads a SCSS `_font-stack-{TYPE}` file which is dynamically generated based on the [Language and Script Support][11] settings in the Global tab of Theme Options. The `_font-stack-{TYPE}` is built from partials found in our default book theme McLuhan. These files, in combination with the `$serif-epub, $sans-serif-epub, $serif-prince, $sans-serif-prince, $serif-web` and `$sans-serif-web` variables, allow us to dynamically add support for non-Latin character sets.
 
 You can insert custom fonts for your theme into the font stacks shown below. Always end the stack with `$serif-epub` or `$sans-serif-epub`, as appropriate—this allows custom language support to be added dynamically.
 
@@ -280,14 +280,14 @@ You may also include a typeface from a directory like Google Fonts in your web b
 
 `@import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Crimson+Text:400,400italic,700,700italic");`
 
-[1]: http://wp-cli.org/#installing
+[1]: https://wp-cli.org/#installing
 [2]: https://github.com/pressbooks/pb-cli/#installing
 [3]: https://github.com/pressbooks/pb-cli/#using
 [4]: https://codex.wordpress.org/File_Header#Theme_File_Header_Example
 [5]: https://github.com/pressbooks/pressbooks/blob/v3.9.0/themes-book/pressbooks-book/functions.php#L97-L143
-[6]: https://pressbooks.com/prince/
+[6]: https://www.princexml.com/
 [7]: https://github.com/pressbooks/pressbooks/tree/master/assets/book/styles
 [8]: https://github.com/pressbooks/pressbooks/blob/master/assets/book/styles/components/elements/_blockquotes.scss
 [9]: https://github.com/pressbooks/pressbooks/blob/master/assets/book/styles/variables/_elements.scss
 [10]: https://robots.thoughtbot.com/sass-default
-[11]: https://guide.pressbooks.com/chapter/languages/
+[11]: https://guide.pressbooks.com/chapter/support-multilingual-publications/

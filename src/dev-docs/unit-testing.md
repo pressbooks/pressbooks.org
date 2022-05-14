@@ -1,9 +1,9 @@
 ---
 title: Unit Testing
-permalink: /docs/unit-testing/
+permalink: /dev-docs/unit-testing/
 ---
 
-The Pressbooks unit testing framework was built (then slightly tweaked) using [WP-CLI][1]. The tests run automatically on commit via [GitHub Actions][2], with more in-depth reporting via [Codecov][3].
+The Pressbooks unit testing framework was built with [WP-CLI][1]. The tests run automatically on commit via [GitHub Actions][2], with more in-depth reporting via [Codecov][3].
 
 To run the tests locally, make sure [PHPUnit][4] is installed, then do:
 
@@ -16,7 +16,7 @@ To run the tests locally, make sure [PHPUnit][4] is installed, then do:
 - `DBUSER` is your MySQL user name
 - `DBPASS` is your MySQL user password
 - `localhost` is your MySQL host
-- `latest` is the WordPress version; could also be `4.7`, `5.9.3` etc.
+- `latest` is the WordPress version; could also be `5.7`, `5.9.3` etc.
 
 The bash script installs a copy of WordPress and the WordPress unit testing tools in`/tmp`. It then creates a new tests database to be used while running tests. The bash script can be run multiple times without errors, but it will _not_ overwrite previously existing files.
 
@@ -35,11 +35,11 @@ Please [help us improve code coverage!][3]
 - [Write Unit Tests For Your WordPress Plugin Using PhpStorm Code Completion][9]
 
 [1]: https://make.wordpress.org/cli/handbook/plugin-unit-tests/
-[2]: https://github.com/pressbooks/pressbooks/blob/master/.github/workflows/lint-and-test.yml
+[2]: https://github.com/pressbooks/pressbooks/blob/master/.github/workflows/standards-and-tests.yml
 [3]: https://app.codecov.io/gh/pressbooks/pressbooks
 [4]: https://phpunit.de/
-[5]: https://phpunit.de/manual/4.8/en/appendixes.assertions.html
-[6]: http://codesymphony.co/writing-wordpress-plugin-unit-tests/#object-factories
-[7]: http://code.tutsplus.com/tutorials/how-to-write-testable-and-maintainable-code-in-php--net-31726
-[8]: http://carlalexander.ca/introduction-wordpress-unit-testing/
-[9]: http://kizu514.com/blog/write-unit-tests-for-your-wordpress-plugin-using-phpstorm-code-completion/
+[5]: https://phpunit.readthedocs.io/en/9.5/assertions.html
+[6]: https://codesymphony.co/writing-wordpress-plugin-unit-tests/#object-factories
+[7]: https://code.tutsplus.com/tutorials/how-to-write-testable-and-maintainable-code-in-php--net-31726
+[8]: https://carlalexander.ca/introduction-wordpress-unit-testing/
+[9]: https://kizu514.com/blog/write-unit-tests-for-your-wordpress-plugin-using-phpstorm-code-completion/

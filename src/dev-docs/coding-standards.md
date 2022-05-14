@@ -1,11 +1,11 @@
 ---
 title: Coding Standards
-permalink: /docs/coding-standards/
+permalink: /dev-docs/coding-standards/
 ---
 
 ## Validating with PHP Code Sniffer
 
-Instead of reading any of this why not just let the computer nag you? From the Pressbooks plugin directory:
+Instead of reading this why not just let the computer nag you? From the Pressbooks plugin directory:
 
 1.  `composer install`
 2.  `composer standards`
@@ -19,13 +19,12 @@ Bonus: You can sometimes automatically fix errors by running:
 We enforce [Human Made Coding Standards][1] with the following small tweaks.
 
 - Use `camelCase` for class methods & properties, `UPPERCASE` for class constants, `snake_case` everywhere else.
+- We do not strictly enforce commenting requirements.
 - [PHP Sessions][2] are allowed.
 
 ### Write Classes or Namespaced functions, stay out of global space!
 
-[PHP Namespaces][3] have been available since 2009. Namespaces are not a new concept. We use them.
-
-Our namespace is: `\Pressbooks\`
+We use [PHP Namespaces][3]. Our namespace is: `\Pressbooks\`
 
 - If your Class isn't an Object like `\WP_User`, `\WP_Dependencies`, `\WP_Query` etc., write a library of functions.
 - If your Class is a bunch of Static methods and nothing else, write a library of functions.

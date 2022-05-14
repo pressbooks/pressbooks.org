@@ -1,6 +1,6 @@
 ---
 title: REST API
-permalink: /docs/rest-api/
+permalink: /dev-docs/rest-api/
 ---
 
 ## Recommended Tools
@@ -24,7 +24,7 @@ WP API is self-documenting. Send an OPTIONS request to any endpoint and get back
 
 [JSON Schema][6] compatible info on how to use it:
 
-![Options in YARC](/images/options.png)
+![Options in YARC](../images/options.png)
 
 _Options in YARC_
 
@@ -34,25 +34,25 @@ To get the entire API schema in a single query, add `context=help` at the index.
 
 Pressbooks has different API endpoints for book and the root site:
 
-![Book vs. Root](/images/namespaces.png)
+![Book vs. Root](../images/namespaces.png)
 
 ### Features
 
-WP API items have a `_links` node based on [HAL][8] (Hypertext Application Language):
+WP API items have a `_links` node based on [HAL][7] (Hypertext Application Language):
 
-![_links](/images/links.png)
+![_links](../images/links.png)
 
-To reduce the number of HTTP requests use [the \_embed parameter][9] to tell the API that the response should include embeddable resources.
+To reduce the number of HTTP requests use [the \_embed parameter][8] to tell the API that the response should include embeddable resources.
 
-![_embedded](/images/embeded.png)]
+![_embedded](../images/embeded.png)]
 
 WP API exposes pagination info in the response header.
 
-![Pagination](/images/pagination.png)]
+![Pagination](../images/pagination.png)]
 
 ### PHP to JSON
 
-WP API renders JSON in a generic way that does not match the DB columns. Keep calm and [RTFM][10]:
+WP API renders JSON in a generic way that does not match the DB columns. Keep calm and [RTFM][9]:
 
 ```php
 if ( ! empty( $schema['properties']['author'] ) ) {
@@ -85,7 +85,7 @@ if ( ! empty( $schema['properties']['content'] ) ) {
 [3]: https://github.com/eventespresso/Basic-Auth
 [4]: https://developer.wordpress.org/rest-api/
 [5]: https://developer.wordpress.org/rest-api/using-the-rest-api/authentication/#authentication-plugins
-[6]: http://json-schema.org/
-[8]: http://stateless.co/hal_specification.html
-[9]: https://developer.wordpress.org/rest-api/using-the-rest-api/global-parameters/#_embed
-[10]: https://developer.wordpress.org/rest-api/reference/posts/
+[6]: https://json-schema.org/
+[7]: https://stateless.group/hal_specification.html
+[8]: https://developer.wordpress.org/rest-api/using-the-rest-api/global-parameters/#_embed
+[9]: https://developer.wordpress.org/rest-api/reference/posts/

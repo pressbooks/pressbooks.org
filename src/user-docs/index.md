@@ -1,35 +1,19 @@
 ---
-title: Welcome
-permalink: /docs/
+title: User Guides
+permalink: /user-docs/
 ---
 
-Welcome to the documentation pages for the [Pressbooks Open Source project][34].
+## User Guides
 
-## Developer Guides
-
-These are our branches:
-
-- **[master](https://github.com/pressbooks/pressbooks/tree/master)** is our stable branch. You'll find it running on all our hosted networks and reflected in our [latest release](https://github.com/pressbooks/pressbooks/releases/latest/).
-- **[dev](https://github.com/pressbooks/pressbooks/tree/dev)** is a general-purpose work-in-progress branch. It is merged with `master` when a new release is forthcoming.
-- **[hotfix](https://github.com/pressbooks/pressbooks/tree/hotfix)** is for emergency patches. It exists solely to avoid conflicts with `dev`.
-- Any other branches you find are for feature development prior to merging into `dev`. Use at your own risk.
-- [Tags](https://github.com/pressbooks/pressbooks/tags) represent releases, but if you are downloading a release for installation, you should download the package (e.g. `pressbooks-5.34.0.zip`) from [releases](https://github.com/pressbooks/pressbooks/releases/) as opposed to the source code.
-
-- Set up your Pressbooks development environment locally using [Ubuntu](/docs/local-development/ubuntu), [macOS](/docs/local-development/macos/), or [Windows](/docs/local-development/windows)
-- [Coding Standards](/docs/coding-standards/)
-- [Unit Testing](/docs/unit-testing/)
-- [PHPStorm Configuration](/docs/phpstorm/)
-- [Debugging](/docs/debugging/)
-- [Theme Development](/docs/theme-development/)
-- [Rest API](/docs/rest-api/)
-- [Pressbooks SAML SSO](/docs/saml-sso/)
-- [Pressbooks CAS SSO](/docs/cas-sso/)
-- [Manual installation guide](/docs/installation/)
-- [Upgrading from pre-5.0 releases](/docs/upgrading/)
+- [Manual installation guide](/installation/)
+- [Debugging](/debugging/)
+- [Pressbooks SAML SSO](/saml-sso/)
+- [Pressbooks CAS SSO](/cas-sso/)
+- [Accessibility Statement](/accessibility/)
 
 ## Contributors
 
-Pressbooks was created and is maintained by developers working for [Pressbooks][35] (aka Book Oven Inc.), with contributions from:
+Pressbooks was created and is maintained by developers working for [Pressbooks][35] (aka Book Oven Inc.), with contributions from dozens of others, including:
 
 - India Amos ([@indiamos][1])
 - Elisa Bastianello ([@liladude][18])
@@ -97,7 +81,7 @@ Pressbooks was created and is maintained by developers working for [Pressbooks][
 [24]: https://github.com/unit29868
 [25]: https://github.com/alex-418
 [26]: https://github.com/bdolor
-[27]: http://www.wikipublisher.org
+[27]: https://www.wikipublisher.org/wiki/
 [28]: https://github.com/chrillep
 [29]: https://github.com/BakingSoda
 [30]: https://github.com/stepmuel
