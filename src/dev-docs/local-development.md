@@ -307,7 +307,7 @@ composer standards
 
 We use [webpack][6] wrapped in [Laravel Mix][14] to build plugin assets (CSS and JavaScript) for Pressbooks.
 
-1. At the command prompt from the Pressbooks plugin directory, e.g. `~/Code/pressbooks-dev/site/web/app/plugins/pressbooks`, run `npm install` or `npm install --no-save pressbooks-build-tools` to install build tools.
+1. At the command prompt from the Pressbooks plugin directory, e.g. `~/Code/pressbooks-dev/site/web/app/plugins/pressbooks`, run `npm i` or `npm install --no-save pressbooks-build-tools` to install build tools.
 2. To lint your [Javascript](https://eslint.org) and [SCSS](https://stylelint.io) assets, run `npm run lint`.
 3. Then, run `npm run build` or `npm run build:production` to build your plugin assets (`npm run build:production` will add a version hash to the asset manifest for browser cache busting).
 
@@ -358,7 +358,7 @@ git checkout master
 git merge upstream
 ```
 
-Then commit the merge. You may need to regenerate your composer.lock file before you can commit, as there will often be merge conflicts.
+You may need to regenerate your composer.lock file to resolve merge conflicts before committing changes.
 
 [1]: https://roots.io/bedrock
 [2]: https://roots.io/trellis
