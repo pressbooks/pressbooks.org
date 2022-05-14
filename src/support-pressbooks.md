@@ -33,16 +33,14 @@ details on how to join those updates, or watch recordings of past meetings on ou
 and ask others in the community for help. If you use Pressbooks, we invite you to help others in the community who may
 be encountering issues.
 
-### GitHub
+## Contribute via GitHub
 
-At Pressbooks we use the Scrum framework for software development. You can always report bugs, open pull requests, and
-follow our development [on GitHub](https://github.com/pressbooks/). We also maintain an
-[ideas repository](https://github.com/pressbooks/ideas) where we welcome product suggestions and feature improvements
+You can always report bugs, open pull requests, and follow our development [on GitHub](https://github.com/pressbooks/). We also maintain an [ideas repository](https://github.com/pressbooks/ideas) where we welcome product suggestions and feature improvements
 from any and all. Our product owner regularly reviews these suggestions and adds them to our product backlog.
 
-## Contributors
+### Contributors
 
-Pressbooks was created and is maintained by developers working for [Pressbooks][35] (aka Book Oven Inc.), with contributions from dozens of others, including:
+Pressbooks is maintained by developers working for [Pressbooks][34] (aka Book Oven Inc.), with past contributions from dozens of others, including:
 
 - India Amos ([@indiamos][1])
 - Elisa Bastianello ([@liladude][18])
@@ -50,18 +48,18 @@ Pressbooks was created and is maintained by developers working for [Pressbooks][
 - Israel Cerfin ([@israelcefrin][3])
 - [@changemachine][4]
 - Arik Chao ([@wastemobile][5])
-- Dac Chartrand ([@connerbw][36])
+- Dac Chartrand ([@connerbw][35])
 - Nick Ciske ([@nciske][6])
 - Dubravko Cvikl ([@dcvikl][31])
 - Kelly de Vries ([@kdv24][7])
 - Antonio Devís ([@colomet][8])
-- Daniel Fernandes ([@dannylonglegs][39])
+- Daniel Fernandes ([@dannylonglegs][38])
 - Silvia Flórez ([@larusalka][9])
 - Joe Flowers ([@jflowers45][10])
 - Michael Giesler ([@MichaelGiesler][11])
 - Vasilis Georgoudis ([@masaka222][33])
 - Jeff Graham ([@jgraham909][12]
-- Carlos Gutiérrez ([$cagp-dev-mtl][38])
+- Carlos Gutiérrez ([@cagp-dev-mtl][37])
 - Federico ([@pmfederico][32])
 - Jeremy Felt ([@jeremyfelt][13])
 - [@julienCXX][14]
@@ -81,10 +79,9 @@ Pressbooks was created and is maintained by developers working for [Pressbooks][
 - Ron
 - Christian Widlund ([@chrillep][28])
 - Ashlee Zhang ([@BakingSoda][29])
-- Ned Zimmerman ([@greatislander][37])
-- and many more!
+- Ned Zimmerman ([@greatislander][36])
 
-Your contributions to our project are always welcome.
+Your contributions to our project are always welcome!
 
 [1]: https://github.com/indiamos
 [2]: https://github.com/monkecheese
@@ -119,9 +116,8 @@ Your contributions to our project are always welcome.
 [31]: https://github.com/dcvikl
 [32]: https://github.com/pmfederico
 [33]: https://github.com/masaka222
-[34]: https://github.com/pressbooks
-[35]: https://pressbooks.com/about/#:~:text=Meet%20our%20team
-[36]: https://github.com/connerbw
-[37]: https://github.com/greatislander
-[38]: https://github.com/cagp-dev-mtl
-[39]: https://github.com/dannylonglegs
+[34]: https://pressbooks.com/about/#:~:text=Meet%20our%20team
+[35]: https://github.com/connerbw
+[36]: https://github.com/greatislander
+[37]: https://github.com/cagp-dev-mtl
+[38]: https://github.com/dannylonglegs
