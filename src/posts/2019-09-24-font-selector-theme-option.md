@@ -1,6 +1,6 @@
 ---
-title: 'Font Selector Theme Option'
-date: '2019-09-24T12:00'
+title: "Font Selector Theme Option"
+date: "2019-09-24T12:00"
 author: Dac Chartrand
 tags:
   - Development
@@ -38,17 +38,16 @@ Developers who want to take advantage of this feature need to convert their
 SCSS.
 
 Here's how it could be done for
-[Clarke](https://github.com/pressbooks/pressbooks-clarke/blob/8a87708bd9a8be712e3dcba39007eeac2f5cb8cb/assets/styles/web/_fonts.scss#L1),
-one of our existing open-source book themes.
+[Clarke](https://github.com/pressbooks/pressbooks-clarke/blob/8a87708bd9a8be712e3dcba39007eeac2f5cb8cb/assets/styles/web/_fonts.scss#L1), one of our existing open-source book themes.
 
 Before:
 
 ```scss
-@import 'font-stack-web';
+@import "font-stack-web";
 $serif-web: serif !default;
 $sans-serif-web: sans-serif !default;
 
-$font-1: 'Times New Roman', Georgia, $serif-web;
+$font-1: "Times New Roman", Georgia, $serif-web;
 $font-2: Helvetica, Arial, $sans-serif-web;
 $font-3: $font-2;
 ```
@@ -57,12 +56,12 @@ After:
 
 ```scss
 // Load dynamically generated Global Typography fonts
-@import 'font-stack-web';
+@import "font-stack-web";
 $serif-web: serif !default;
 $sans-serif-web: sans-serif !default;
 
 // Load Shape Shifter fonts, if any.
-@import 'shapeshifter-font-stack-web';
+@import "shapeshifter-font-stack-web";
 $shapeshifter-font-1-is-serif: true !default;
 $shapeshifter-font-2-is-serif: true !default;
 
@@ -73,7 +72,7 @@ $shapeshifter-font-2-is-serif: true !default;
 @if variable-exists(shapeshifter-font-1) {
   $font-1: $shapeshifter-font-1, if($shapeshifter-font-1-is-serif, $serif-web, $sans-serif-web);
 } @else {
-  $font-1: 'Times New Roman', Georgia, $serif-web;
+  $font-1: "Times New Roman", Georgia, $serif-web;
 }
 @if variable-exists(shapeshifter-font-2) {
   $font-2: $shapeshifter-font-2, if($shapeshifter-font-2-is-serif, $serif-web, $sans-serif-web);
@@ -104,8 +103,4 @@ Once activated, the theme should have new Theme Options for each format:
 
 ![Shape Shifter Feature](/images/Shape-Shifter-Feature.png)
 
-> "[90 percent of design is typography. And the other 90 percent is whitespace](http://www.zeldman.com/2015/12/24/the-year-in-design/)"
-
-```
-
-```
+> "[90 percent of design is typography. And the other 90 percent is whitespace](https://www.zeldman.com/2015/12/24/the-year-in-design/)"

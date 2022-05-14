@@ -6,7 +6,7 @@ tags:
 ---
 
 We're drawing near the end of Q1 at Pressbooks! And we've crossed off a lot of the items
-on our [2018 Roadmap](/roadmap/):
+on our 2018 Roadmap:
 
 - ✔ Ensure support for [H5P](https://h5p.org/wordpress) interactive elements with
   graceful fallbacks across all formats
@@ -66,17 +66,16 @@ feature requests we've been hearing about from our clients and Open Source users
   to the open source Austen and [Donham](https://github.com/pressbooks/pressbooks-donham)
   themes.
 - We'll be continuing research and development towards implementing new markup for
-  books, based on [HTMLBook](http://oreillymedia.github.io/HTMLBook).
+  books, based on [HTMLBook](https://oreillymedia.github.io/HTMLBook).
 
 ### Import, Export, and Cloning
 
-- We'll be testing and adding the BCcampus
+- We'll be testing the BCcampus
   [OpenStax Importer for Pressbooks](https://github.com/BCcampus/pressbooks-openstax-import)
-  to our recommended plugins list.
+  to see if can be added to our recommended plugins list.
 - We'll be reviewing various implementations of Common
   Cartridge import and export to ensure first-class support for this format.
-- We'll be
-  exploring ways of tracking the adoption of Open Textbooks.
+- We'll be exploring ways of tracking the adoption of Open Textbooks.
 
 ### User Interface
 

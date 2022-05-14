@@ -2,10 +2,10 @@
 title:
   'Pressbooks working with Ryerson University on eCampusOntario grant: "Open Publishing
   Infrastructure"'
-date: '2017-05-19T12:00'
+date: "2017-05-19T12:00"
 author: Hugh McGuire
 tags:
-  - 'Pressbooks News'
+  - "Pressbooks News"
 ---
 
 We are very very excited to announce that we’re working with
@@ -39,7 +39,7 @@ Pressbooks core (also leaning on work done by Brad).
 
 This means that you’ll soon be able to point at any openly-licensed Pressbooks book in the
 universe, and pull it into your own Pressbooks environment, to enable the famous
-[5Rs of Open Educational Resources: Retain, Reuse, Revise, Remix, Redistribute](http://opencontent.org/definition/).
+[5Rs of Open Educational Resources: Retain, Reuse, Revise, Remix, Redistribute](https://opencontent.org/definition/).
 
 ## An API for Books (finally!)
 
@@ -48,7 +48,7 @@ I’ve been thinking about since I started Pressbooks back in 2011: an API for b
 
 Indeed, looking through some archives, I am gratified to see that we’ve managed to build a
 lot of what I laid out in my May 2010 (!!) article for O’Reilly:
-[“An Open, Webby, Book-Publishing Platform.”](http://toc.oreilly.com/2010/05/wordpress-as-book-publishing.html)
+[“An Open, Webby, Book-Publishing Platform.”](https://toc.oreilly.com/2010/05/wordpress-as-book-publishing.html)
 
 More exciting is that we are now poised to move beyond that initial set of ideas, and
 offer something I wrote about a year later, in September 2010 (!),
@@ -83,4 +83,3 @@ Patterson have a a great vision for the future of Open Textbooks in Ontario, and
 excited to be part of it.
 
 If you’d like more information about Pressbooks and Open Textbooks, get in touch!
-[hugh@pressbooks.com.](mailto:hugh@pressbooks.com)

@@ -121,7 +121,7 @@ automatically when you visit your book after updating.
 ### HTMLBook Preview
 
 In Pressbooks 5, [we’ve introduced](https://github.com/pressbooks/pressbooks/pull/1032) a
-new [HTMLBook](http://oreillymedia.github.io/HTMLBook/) export module as a proof of
+new [HTMLBook](https://oreillymedia.github.io/HTMLBook/) export module as a proof of
 concept. We’re excited about the potential of adopting and advancing this proposed
 standard for the semantic representation of books on the web, and we will be actively
 developing our export module in the months to come. We're also working with the creators
@@ -171,13 +171,7 @@ In Pressbooks 5, books that use Buckram-based themes will now have the following
 </div>
 ```
 
-This change will only impact themes using Buckram, which include our open source
-[Clarke](https://github.com/pressbooks/pressbooks-clarke) theme and the premium Asimov
-theme (the latter only available to [Pressbooks EDU](https://pressbooks.education) or
-[Pressbooks.com](https://pressbooks.com) users). We are thoroughly testing these
-Buckram-based themes to ensure that this change does not affect existing books. If you
-have built a theme using Buckram, we suggest you test your theme as well once
-[this issue](https://github.com/pressbooks/buckram/issues/36) has been closed.
+This change will only impact themes using Buckram, which include our open source [Clarke](https://github.com/pressbooks/pressbooks-clarke) theme and the premium Asimov theme (the latter only available to Pressbooks EDU or [Pressbooks.com](https://pressbooks.com) users). We are thoroughly testing these Buckram-based themes to ensure that this change does not affect existing books. If you have built a theme using Buckram, we suggest you test your theme as well once [this issue](https://github.com/pressbooks/buckram/issues/36) has been closed.
 
 ## Filesystem Changes
 

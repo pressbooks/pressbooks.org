@@ -16,11 +16,11 @@ Pressbooks has never been a typical WordPress plugin. It is a
 [platform, not a plugin](https://wordpress.org/support/topic/platform-not-plugin/), and as
 such it completely transforms the WordPress interface into a content management system for
 book authoring and formatting. Furthermore, it requires
-[WordPress Multisite](https://codex.wordpress.org/Create_A_Network) and it also requires a
+[WordPress Multisite](https://codex.wordpress.org/Create_A_Network) and it also requires a
 number of third-party libraries to support its export routines
 ([epubcheck](https://github.com/idpf/epubcheck),
 [KindleGen](https://www.amazon.com/gp/feature.html?docId%3D1000765211),
-[PrinceXML](http://www.princexml.com) and [xmllint](http://xmlsoft.org/xmllint.html) to
+[PrinceXML](http://www.princexml.com) and xmllint to
 name a few) which cannot be installed on shared hosting environments. As such, Pressbooks
 is not a WordPress plugin that is particularly useful without:
 
@@ -29,7 +29,7 @@ is not a WordPress plugin that is particularly useful without:
 3. Some devops experience.
 
 Over the years, we have encountered many WordPress users who installed Pressbooks from the
-WordPress Plugin Repository on their existing blogs[1. Don't do this!] and were frustrated
+WordPress Plugin Repository on their existing blogs[1. Don't do this!] and were frustrated
 by the experience. After much consideration, we have decided that the best way to support
 all users of the Pressbooks plugin is to remove it from the WordPress Plugin Repository
 and distribute it via [GitHub](https://github.com/pressbooks/pressbooks/releases/).
@@ -45,6 +45,6 @@ following options:
   service for publishers
 
 For those who are interested in running their own networks, we are working to improve the
-[installation documentation](/installation/) and provide
-[several](https://github.com/pressbooks/pressbooks/issues/502) [methods](https://github.com/pressbooks/pressbooks/issues/502) to
+installation documentation and provide
+[several](https://github.com/pressbooks/pressbooks/issues/502) [methods](https://github.com/pressbooks/pressbooks/issues/502) to
 keep Pressbooks updated.

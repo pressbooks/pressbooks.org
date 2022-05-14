@@ -1,6 +1,6 @@
 ---
-title: 'New time, format, & title for monthly Open Source Calls'
-date: '2020-03-23T12:00'
+title: "New time, format, & title for monthly Open Source Calls"
+date: "2020-03-23T12:00"
 author: Steel Wagstaff
 tags:
   - Development
@@ -11,7 +11,7 @@ Hi all,
 The monthly "open source calls" we previously held on the first Monday of each month are
 being replaced by a monthly "product update webinar." These product update meetings will
 be held from 2-3pm ET on the last Thursday of each month; the first of them will be this
-Thursday, March 26. Meetings will be held in [Zoom](https://zoom.us/j/583078361). A
+Thursday, March 26. These meetings have [a running agenda which includes the Zoom link](https://docs.google.com/document/d/1BcvX0V-iDi6fJO_W8pHVOL_lec_9OTXujAfw6tFpZlQ/edit?usp=sharing). A
 recurring event for these meetings has been published to
 [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=N3BqbXBsbTRhMW1pMmVlbDNnYWRmNDVvN2tfMjAyMDAzMjZUMTgwMDAwWiBzdGVlbEBwcmVzc2Jvb2tzLmNvbQ&tmsrc=steel%40pressbooks.com&scp=ALL).
 

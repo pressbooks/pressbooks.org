@@ -10,7 +10,7 @@ tags:
 Migrate half a million database tables from a single bare metal server with 1 database to
 101 database slices on AWS Aurora.
 
-Wait, half a million database tables?! Answered in
+Wait, half a million database tables?! Answered in
 [Part 1](/blog/2017/10/19/moving-half-a-million-database-tables-to-aws-aurora-part-1/).
 
 ## Plan
@@ -33,10 +33,10 @@ Wait, half a million database tables?! Answered in
 > Why not setup the Aurora as a replica and then switch over?
 
 Because our MariaDB server was a bare metal box outside of AWS. The
-[read Replica docs](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Aurora.Migration.RDSMySQL.html) imply
+[read Replica docs](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Aurora.Migration.RDSMySQL.html) imply
 that MySQL has to already be in AWS for that to work. If that's not enough
-[this doc says use mysqldump to start, then sync after.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.NonRDSRepl.html)
-[This doc also says use mysqldump.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.External.Repl.html)
+[this doc says use mysqldump to start, then sync after.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.NonRDSRepl.html)
+[This doc also says use mysqldump.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.External.Repl.html)
 All signs point to nope.
 
 > Why not DMS?
@@ -44,14 +44,11 @@ All signs point to nope.
 Answered in
 [Part 1](/blog/2017/10/19/moving-half-a-million-database-tables-to-aws-aurora-part-1/).
 
-Mostly, at the end of the day, because our
-[hosted networks](https://pressbooks.education/) are already on AWS it was simply more
-cost effective to shut down our freemium site and migrate in one swoop than to have our
-whole team keep at this for weeks, possibly months.
+Mostly, at the end of the day, because our hosted networks are already on AWS it was simply more cost effective to shut down our freemium site and migrate in one swoop than to have our whole team keep at this for weeks, possibly months.
 
 ## Epilogue: What About Uploads?
 
-Each book has media library files *(GIF, PNG, JPG, EPUB, PDF, etc)*. A few days before the
+Each book has media library files _(GIF, PNG, JPG, EPUB, PDF, etc)_. A few days before the
 migration, we copied all files from the production server's `uploads/` directory using
 `rsync`:
 
@@ -74,11 +71,11 @@ Much quicker! (around 7 minutes)
 ## Launch it!
 
 > “If we get into the trees it could be rather disastrous, so we’ve got to hit the roses.”
-> – [Ken Carter](http://hnmag.ca/festivals/aiming-for-the-roses-with-devil-at-your-heels/)
+> – [Ken Carter](http://hnmag.ca/festivals/aiming-for-the-roses-with-devil-at-your-heels/)
 
 Scripts from
 [Part 1 (read it already!)](/blog/2017/10/19/moving-half-a-million-database-tables-to-aws-aurora-part-1/)
-were modified to include [Slack](https://slack.com/) notifications:
+were modified to include Slack notifications:
 
 ```bash
 notify() {
@@ -139,10 +136,10 @@ All while coding sprint tasks in between.
 ## Things That Went Wrong
 
 We noticed an embarrassing typo in the first few database slices we imported. We had to
-redo them because
+redo them because
 [renaming a database with tens of thousands of tables in it is not obvious](https://stackoverflow.com/questions/67093/how-do-i-quickly-rename-a-mysql-database-change-schema-name).
 
-I ordered takeout from the wrong [fish & chips shop](http://www.comptoir21.com/). I had to
+I ordered takeout from the wrong [fish & chips shop](https://www.comptoir21.com/). I had to
 take a subway 30 minutes to downtown to get it. _(Psst [Foodora](https://www.foodora.ca),
 your geolocation feature sucks!)_
 

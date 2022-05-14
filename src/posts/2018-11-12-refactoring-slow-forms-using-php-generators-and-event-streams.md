@@ -1,6 +1,6 @@
 ---
-title: 'Refactoring Slow Forms Using PHP Generators and Event Streams'
-date: '2018-11-12T12:00'
+title: "Refactoring Slow Forms Using PHP Generators and Event Streams"
+date: "2018-11-12T12:00"
 tags:
   - Development
 ---
@@ -79,7 +79,7 @@ Insert cliché "What if I told you" meme here.
 ## After
 
 It is possible to use
-[PHP Generators](http://php.net/manual/en/language.generators.overview.php) and
+[PHP Generators](https://php.net/manual/en/language.generators.overview.php) and
 [Event Streams](https://developer.mozilla.org/en-US/docs/Web/API/EventSource) to provide
 real-time feedback to the web browser.
 
@@ -113,31 +113,31 @@ To:
 And some JavaScript:
 
 ```js
-$('#pb-cloner-form').on('submit', function (e) {
+$("#pb-cloner-form").on("submit", function (e) {
   e.preventDefault();
-  $('#pb-cloner-button').attr('disabled', true);
-  let form = $('#pb-cloner-form');
+  $("#pb-cloner-button").attr("disabled", true);
+  let form = $("#pb-cloner-form");
   let eventSourceUrl =
     PB_ClonerToken.ajaxUrl +
-    (PB_ClonerToken.ajaxUrl.includes('?') ? '&' : '?') +
-    $.param(form.find(':input'));
+    (PB_ClonerToken.ajaxUrl.includes("?") ? "&" : "?") +
+    $.param(form.find(":input"));
   let evtSource = new EventSource(eventSourceUrl);
   evtSource.onopen = function () {
-    $('#pb-cloner-button').hide();
+    $("#pb-cloner-button").hide();
   };
   evtSource.onmessage = function (message) {
-    let bar = $('#pb-sse-progressbar');
-    let info = $('#pb-sse-info');
+    let bar = $("#pb-sse-progressbar");
+    let info = $("#pb-sse-info");
     let data = JSON.parse(message.data);
     switch (data.action) {
-      case 'updateStatusBar':
-        bar.progressbar({value: parseInt(data.percentage, 10)});
+      case "updateStatusBar":
+        bar.progressbar({ value: parseInt(data.percentage, 10) });
         info.html(data.info);
         break;
-      case 'complete':
+      case "complete":
         evtSource.close();
         if (data.error) {
-          bar.progressbar({value: false});
+          bar.progressbar({ value: false });
           info.html(data.error);
         } else {
           window.location = PB_ClonerToken.redirectUrl;
@@ -149,8 +149,8 @@ $('#pb-cloner-form').on('submit', function (e) {
   };
   evtSource.onerror = function () {
     evtSource.close();
-    $('#pb-sse-progressbar').progressbar({value: false});
-    $('#pb-sse-info').html('EventStream Connection Error');
+    $("#pb-sse-progressbar").progressbar({ value: false });
+    $("#pb-sse-info").html("EventStream Connection Error");
   };
 });
 ```
@@ -200,7 +200,7 @@ Key ideas:
   time to finish, don't put `sleep` in your production code, you already knew this, I
   hope?
 
-> [Originally posted on my personal blog](http://kizu514.com/blog/refactor-your-slow-form-using-php-generators-and-event-streams/)
+> [Originally posted on my personal blog](https://kizu514.com/blog/refactor-your-slow-form-using-php-generators-and-event-streams/)
 > in a more generic format, with references to the movie Office Space, but it turns out
 > [it was me, doing research for Pressbooks, the whole time.](https://www.youtube.com/watch?v=_sYQeIO6Wyg)
 

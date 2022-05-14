@@ -32,4 +32,4 @@ We're also working on:
 - Continuing to convert themes and improve Buckram
 
 As always, we'd love to hear your ideas for Pressbooks, so feel free to share them in the
-[Pressbooks Community Forum](https://discourse.pressbooks.org)!
+[Pressbooks Community Forum](https://pressbooks.community)!
