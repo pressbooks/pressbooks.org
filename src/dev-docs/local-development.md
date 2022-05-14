@@ -133,7 +133,7 @@ Install [Node][21] with NPM:
 
 `brew install node`
 
-## 2. Setup
+### Setup
 
 Create a directory for your local development environment and `cd` there:
 

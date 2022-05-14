@@ -24,7 +24,7 @@ WP API is self-documenting. Send an OPTIONS request to any endpoint and get back
 
 [JSON Schema][6] compatible info on how to use it:
 
-![Options in YARC](../images/options.png)
+![Options in YARC](/images/options.png)
 
 _Options in YARC_
 
@@ -34,21 +34,21 @@ To get the entire API schema in a single query, add `context=help` at the index.
 
 Pressbooks has different API endpoints for book and the root site:
 
-![Book vs. Root](../images/namespaces.png)
+![Book vs. Root](/images/namespaces.png)
 
 ### Features
 
 WP API items have a `_links` node based on [HAL][7] (Hypertext Application Language):
 
-![_links](../images/links.png)
+![_links](/images/links.png)
 
 To reduce the number of HTTP requests use [the \_embed parameter][8] to tell the API that the response should include embeddable resources.
 
-![_embedded](../images/embeded.png)]
+![_embedded](/images/embeded.png)]
 
 WP API exposes pagination info in the response header.
 
-![Pagination](../images/pagination.png)]
+![Pagination](/images/pagination.png)]
 
 ### PHP to JSON
 
