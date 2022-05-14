@@ -133,7 +133,7 @@ $blockquote-margin-left: 1em !default;
 $blockquote-align: justify !default;
 ```
 
-You will notice that all these values are set with the SCSS [`!default` flag][10]. The `!default` flag tells the SCSS compiler to use this value **unless** another value has already been assigned to the variable. Going back to your new theme's [`assets/styles/components/_elements.scss`], file, you could change it as follows:
+You will notice that all these values are set with the SCSS [`!default` flag][10]. The `!default` flag tells the SCSS compiler to use this value **unless** another value has already been assigned to the variable. Going back to your new theme's `assets/styles/components/_elements.scss`, file, you could change it as follows:
 
 ```scss
 // Elements
@@ -176,7 +176,7 @@ The reason you should use the `!default` flag on your variable definitions is so
 
 ## Adding Custom Rules
 
-Now that you've overridden a variable, try adding your own custom rule. Perhaps your book needs a special type of blockquote that is centered on the page. You can add it by inserting the following rule below the `@import` rules in [`assets/styles/components/_elements.scss`]:
+Now that you've overridden a variable, try adding your own custom rule. Perhaps your book needs a special type of blockquote that is centered on the page. You can add it by inserting the following rule below the `@import` rules in `assets/styles/components/_elements.scss`:
 
 ```css
 blockquote.centered,
@@ -186,7 +186,7 @@ blockquote.centered,
 }
 ```
 
-Now our full [`assets/styles/components/_elements.scss`] file looks like this:
+Now our full `assets/styles/components/_elements.scss` file looks like this:
 
 ```scss
 // Elements
@@ -216,7 +216,7 @@ When you export your book, Pressbooks will compile your new rule after the defau
 
 ## Different Formats, Different Rules
 
-Sometimes you need to set a variable differently depending on which format you are using. Perhaps you want to left-align your blockquotes for EPUB and web, but you want to justify them for PDF. This is easy to accomplish using an SCSS if-statement with the `$type` variable. Add another variable override to the top of [`assets/styles/components/_elements.scss`] as follows:
+Sometimes you need to set a variable differently depending on which format you are using. Perhaps you want to left-align your blockquotes for EPUB and web, but you want to justify them for PDF. This is easy to accomplish using an SCSS if-statement with the `$type` variable. Add another variable override to the top of `assets/styles/components/_elements.scss` as follows:
 
 ```scss
 @if $type == "epub" {
@@ -228,7 +228,7 @@ Sometimes you need to set a variable differently depending on which format you a
 }
 ```
 
-All the component files you are working on are imported into the different outputs' `style.scss` files. For example, your book theme's stylesheet for Prince PDF, [`assets/styles/prince/style.scss`], looks like this:
+All the component files you are working on are imported into the different outputs' `style.scss` files. For example, your book theme's stylesheet for Prince PDF, `assets/styles/prince/style.scss`, looks like this:
 
 ```scss
 $type: "prince";
