@@ -40,8 +40,6 @@ follow our development [on GitHub](https://github.com/pressbooks/). We also main
 [ideas repository](https://github.com/pressbooks/ideas) where we welcome product suggestions and feature improvements
 from any and all. Our product owner regularly reviews these suggestions and adds them to our product backlog.
 
-### Contributors
-
 ## Contributors
 
 Pressbooks was created and is maintained by developers working for [Pressbooks][35] (aka Book Oven Inc.), with contributions from dozens of others, including:

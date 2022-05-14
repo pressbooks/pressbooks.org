@@ -3,18 +3,18 @@ title: Local Development
 permalink: /dev-docs/local-development/
 ---
 
+**Table of contents**
+
+- [Ubuntu](#ubuntu)
+- [macOS](#macos)
+- [Windows](#windows)
+- [Development Tools](#development-tools)
+
 This document describes how to set up a local development environment for Pressbooks on various operating systems. Following these instructions will give you a local development network of Pressbooks based on [roots/bedrock][1] and [roots/trellis][2], with the following features:
 
 - Unit testing via [PHPUnit][3]
 - Code standards evaluation via [PHP_CodeSniffer][4]
 - Build tools for plugin assets via [npm][5] and [webpack][6].
-
-**Table of contents**
-
-- [Ubuntu](#ubuntu)
-- [macOS](#macOS)
-- [Windows](#windows)
-- [Development Tools](#development-tools)
 
 ## Ubuntu
 
