@@ -16,5 +16,3 @@ Pressbooks is used by educational institutions, academic presses, small publishe
 - Use [Pressbooks.com](https://pressbooks.com/self-publishers/) (ideal for individual authors)
 
 On this site we provide resources and links for the open source community. Read our guides for [developers](/dev-docs/) and [users](/user-docs/) and [get involved](/support-pressbooks/)!
-
-[//]: # ( Path: src/index.md
