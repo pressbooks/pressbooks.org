@@ -33,6 +33,7 @@ In the SSH/SSL tab:
 - Proxy user: vagrant
 - Auth type: Key pair (OpenSSH)
 - Private key file: `~/Code/pressbooks-dev/trellis/.vagrant/machines/default/virtualbox/private_key`
+- Make sure the `Parse config file ~/.ssh/config` option is **not** selected
   ![](/images/database-ssh.png)
 
 ## Configure Remote PHP Interpreter
