@@ -6,6 +6,7 @@
   "main": ".eleventy.js",
   "scripts": {
     "start": "npx eleventy --serve",
+    "build": "NODE_ENV=production eleventy",
     "production": "NODE_ENV=production eleventy",
     "prepare": "husky install"
   },

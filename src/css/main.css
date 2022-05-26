@@ -139,6 +139,15 @@ h3 {
   margin-top: var(--size-8);
 }
 
+a.site-head__brand:hover,
+a.site-head__brand:focus {
+  background: inherit;
+}
+
+a.site-head__brand:focus {
+  outline: 1px solid red;
+}
+
 .site-head__brand {
   align-items: center;
   display: inline-flex;
@@ -148,11 +157,6 @@ h3 {
   font-weight: var(--font-weight-7);
   text-decoration: none;
   color: currentColor;
-}
-
-.site-head__brand img {
-  width: var(--size-8);
-  height: auto;
 }
 
 .site-head__subhead {
