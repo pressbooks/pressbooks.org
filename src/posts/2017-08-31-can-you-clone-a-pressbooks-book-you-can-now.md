@@ -9,21 +9,21 @@ tags:
 Here at Pressbooks HQ we’ve been doing a whole lot more development work for the Open
 Textbook world, in our opinion the most exciting space in the world of publishing. For the
 uninitiated, an Open Textbook is an openly licensed (i.e. free) book that supports the
-“5Rs,” [defined by David Wiley](http://www.opencontent.org/definition/) as the rights to:
+“5Rs,” [defined by David Wiley](https://www.opencontent.org/definition/) as the rights to:
 **remix, revise, reuse, retain, and redistribute**.
 
 Open Textbooks are powerful not just because they are free for students, but also because
 teachers and profs (or even students) can easily improve them and modify them for the
 particular needs of their students.
 
-# Theory vs. Practice
+## Theory vs. Practice
 
 In theory, at least.
 
 In practice, all that 5R-y stuff can be difficult: How do you revise a PDF? How do you
 remix an EPUB? How do you redistribute a print book?
 
-# Clone me, please!
+## Clone me, please!
 
 The new answer—at least for Open Textbooks built on Pressbooks as of now is: You
 **clone** them!
@@ -37,7 +37,7 @@ instance to another, as long as the original book is:
 
 And this means, once you’ve cloned that book, you can 5R it to your heart’s content!
 
-# Wait, does this mean anyone can just copy my book?
+## Wait, does this mean anyone can just copy my book?
 
 No. No. No! … No, cloning is only possible in the case that:
 
@@ -47,7 +47,7 @@ No. No. No! … No, cloning is only possible in the case that:
 So for any books that have standard copyright, or are not available on the web—this
 doesn’t apply.
 
-# Why would you clone a book?
+## Why would you clone a book?
 
 This is, we think, a very exciting development for the Open Textbook ecosystem.
 
@@ -65,7 +65,7 @@ Here are just some of the ways we expect the new feature to be utilized:
 Cloning ultimately allows books built in Pressbooks to become more modular and easily
 adaptable for more courses.
 
-# Pressbooks, Ryerson University & eCampus Ontario
+## Pressbooks, Ryerson University & eCampus Ontario
 
 Have you heard about the exciting Open Textbook work happening in Ontario?
 
@@ -79,7 +79,7 @@ Also under this project, Pressbooks is getting a full design refresh, including 
 of the book home page, the webbook reading interface, and, for Pressbooks systems, updates
 to the landing page and Pressbooks’ built-in catalog page.
 
-# So, How Do I Start Cloning?
+## So, How Do I Start Cloning?
 
 The bad news is: This feature is not available on Pressbooks.com. Cloning is an
 educational feature only available in standalone Pressbooks systems (Pressbooks EDU client
@@ -92,4 +92,4 @@ XML files. This new cloning feature omits these steps for enterprise users, maki
 duplication possible with only a few clicks of a button.
 
 Learn more about
-[how to use the new cloning feature](https://eduguide.pressbooks.com/chapter/how-to-clone-a-book-on-pressbooks/).
+[how to use the new cloning feature](https://guide.pressbooks.com/chapter/clone-a-book/).

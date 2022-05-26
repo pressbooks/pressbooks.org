@@ -154,11 +154,11 @@ and formulating new approaches and support tools that meet common needs.
 Some of these changes are already underway in our open source and developer community. For
 example, in September 2018, we decided to close our open source Slack channel and focus
 our open source community efforts on the
-[public Discourse forum](https://discourse.pressbooks.org/), which we’ve been operating
+[public Discourse forum](https://pressbooks.community/), which we’ve been operating
 since early 2016. We now hold our monthly open source development calls (these are open to
 all!) in Zoom rather than Slack, and post regular public updates about development and
 upcoming calls on our [open source blog](/blog/) and in the
-[Development category](https://discourse.pressbooks.org/c/development) of Discourse.
+[Development category](https://pressbooks.community/c/development) of Discourse.
 
 Our Discourse forum continued to flourish as a place for Pressbooks developers and other
 users to ask technical questions of each other. 2018 saw the addition of more than 60 new
@@ -166,15 +166,15 @@ members, 340 new topics and 1,400 new posts, such that the forum now contains ov
 members, nearly 600 topics and almost 2,800 posts.
 
 The most popular posts from 2018 in our community forum included
-[a post Ned made about the developer’s guide to accompany the release of Pressbooks 5.0](https://discourse.pressbooks.org/t/pressbooks-5-developer-guide/335)
+[a post Ned made about the developer’s guide to accompany the release of Pressbooks 5.0](https://pressbooks.community/t/pressbooks-5-developer-guide/335)
 and inquiries from Pressbooks users on topics ranging from
-[importing content into Pressbooks](https://discourse.pressbooks.org/t/importing-content-into-pressbooks/347),
-[PrinceXML](https://discourse.pressbooks.org/t/troubleshooting-princexml/445),
-[iFrames and oEmbed customization](https://discourse.pressbooks.org/t/import-xml-stripping-embedded-content/423),
-[book theming](https://discourse.pressbooks.org/t/theme-book-sugestions/391),
-[automatic line numbering](https://discourse.pressbooks.org/t/automatic-line-numbering/369/6),
+[importing content into Pressbooks](https://pressbooks.community/t/importing-content-into-pressbooks/347),
+[PrinceXML](https://pressbooks.community/t/troubleshooting-princexml/445),
+[iFrames and oEmbed customization](https://pressbooks.community/t/import-xml-stripping-embedded-content/423),
+[book theming](https://pressbooks.community/t/theme-book-sugestions/391),
+[automatic line numbering](https://pressbooks.community/t/automatic-line-numbering/369/6),
 and
-[watermarks and DocRaptor exports](https://discourse.pressbooks.org/t/watermarks-and-user-restrictions/467).
+[watermarks and DocRaptor exports](https://pressbooks.community/t/watermarks-and-user-restrictions/467).
 
 Working on an open source software project means that questions come in all the time on
 surprising topics and unexpected use cases. Observing and responding to these forum

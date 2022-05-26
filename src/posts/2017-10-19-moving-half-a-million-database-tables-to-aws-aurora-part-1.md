@@ -10,9 +10,9 @@ This post is about migrating Pressbooks.com to AWS.
 
 ## Does It Scale?
 
-At [Pressbooks](/) we use
+At [Pressbooks](/) we use
 [WordPress Multisite](https://codex.wordpress.org/Create_A_Network) as a development
-platform. [Pressbooks changes WordPress](https://github.com/pressbooks/pressbooks) and
+platform. [Pressbooks changes WordPress](https://github.com/pressbooks/pressbooks) and
 makes every blog a book.
 
 The prevailing wisdom of the day is that a relational database should have a manageable
@@ -27,7 +27,7 @@ routines. It's simple no frills MySQL.
 Pressbooks dot com is currently running on a single bare metal server. _(Our hosted
 instances are already on AWS)_ This server has a single MariaDB database with 60,000 books
 in it. When we do the math that's over 600,000 tables in one database.
-[Are you nuts?!](http://www.askbjoernhansen.com/2008/02/14/10000_tables_in_one_mysql_database.html)
+[Are you nuts?!](https://www.askbjoernhansen.com/2008/02/14/10000_tables_in_one_mysql_database.html)
 Unusual? Horrible? Yet
 [entirely possible](https://dev.mysql.com/doc/refman/5.7/en/database-count-limit.html),
 [even plausible](https://www.percona.com/blog/2017/10/01/one-million-tables-mysql-8-0/).
@@ -35,7 +35,7 @@ Unusual? Horrible? Yet
 I've met people who worked at Automattic and
 [from the stories, I heard](https://www.meetup.com/wp-mtl/events/240377606/) WordPress dot
 com uses the same WP Multisite technology but instead of half a million tables it's over a
-billion tables *(probably not all in the same database though, more on that later)*.
+billion tables _(probably not all in the same database though, more on that later)_.
 
 I call this the Schrödinger's Cat of database design because so long as we don't look it's
 alive?
@@ -43,8 +43,8 @@ alive?
 ## Prerequisites
 
 As I said, we already host hundreds of WP Multisite networks on AWS. We build, manage, and
-deploy to our infrastructure using [Terraform](https://www.terraform.io/),
-[Ansible](https://www.ansible.com/), [wp-cli](http://wp-cli.org/) and
+deploy to our infrastructure using [Terraform](https://www.terraform.io/),
+[Ansible](https://www.ansible.com/), [wp-cli](https://wp-cli.org/) and
 [all things competent](https://github.com/roots/trellis). We simply just, sort of, well,
 neglected to move our freemium site over because we were too busy.
 
@@ -54,10 +54,10 @@ The time has come.
 
 We tried `mysqldump`. It was too slow. Our tests showed that a dump would take days.
 
-Some colleagues recommended [AWS DMS](https://aws.amazon.com/dms/). It did not work.  Some
+Some colleagues recommended [AWS DMS](https://aws.amazon.com/dms/). It did not work. Some
 reasons:
 
-- [The `AUTO_INCREMENT` attribute is not migrated.](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.MySQL.html#CHAP_Source.MySQL.Limitations)
+- [The `AUTO_INCREMENT` attribute is not migrated.](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.MySQL.html#CHAP_Source.MySQL.Limitations)
 - WP Multisite tables are prefixed `wp_1_, wp_2_, wp_3_, ...` MySQL considers the
   underscore a
   [one character wildcard](https://stackoverflow.com/questions/8236818/why-does-underscore-match-hyphen)
@@ -67,8 +67,7 @@ reasons:
 - Mostly, the fastest migration we could get going, running 4 tasks in parallel, was an
   ETA of 10 days
 
-We asked for help. [Ned](/blog/author/ned/) had a conference call
-with a reputable consulting firm and they gave us a quote: $34K USD + travel & on-site
+We asked for help. Ned had a conference call with a reputable consulting firm and they gave us a quote: $34K USD + travel & on-site
 expenses.
 
 ![Coffee spitting ](/images/coffee-spitting.gif)
@@ -94,7 +93,7 @@ So far so good...
 ![Jerry Seinfeld leaving](/images/jerry-seinfeld-leaving.gif)
 
 Just kidding. It turns out we don't have to build mydumper. On
-Ubuntu `sudo apt install mydumper` works fine. Similar command using `yum` on CentOS.
+Ubuntu `sudo apt install mydumper` works fine. Similar command using `yum` on CentOS.
 
 Our tests conclude that mydumper finishes in hours instead of days.
 
@@ -103,12 +102,12 @@ Our tests conclude that mydumper finishes in hours instead of days.
 It is our opinion that this kind of problem is better suited for a
 [document-oriented database](https://en.wikipedia.org/wiki/Document-oriented_database).
 Given that this is the database design we inherited, there's not much we can do about it,
-so we'll try our best with what we've got. ¯\\_(ツ)_/¯
+so we'll try our best with what we've got. ¯\\_(ツ)_/¯
 
 At a billion tables, Automattic has already established its own internal best practices
-with plugins like [HypderDB](https://github.com/Automattic/hyperdb). Unfortunately HyperDB
-doesn't have [Composer](https://getcomposer.org/) support and doesn't look
-maintained. [LudicrousDB](https://github.com/stuttter/ludicrousdb), a Composer compatible
+with plugins like [HypderDB](https://github.com/Automattic/hyperdb). Unfortunately HyperDB
+doesn't have [Composer](https://getcomposer.org/) support and doesn't look
+maintained. [LudicrousDB](https://github.com/stuttter/ludicrousdb), a Composer compatible
 drop-in that works with our [existing tech stack](https://github.com/roots/bedrock/), to
 the rescue.
 
@@ -118,10 +117,10 @@ the rescue.
 With LudicrousDB tested and working, we are moving towards a 101 slice approach. 1 slice
 for core tables and 100 slices for books.
 
-The idea is to use the last **two digits** of a book ID to pick one of 100 slices. If this
+The idea is to use the last **two digits** of a book ID to pick one of 100 slices. If this
 becomes unmanageable in the future _(important to remember that we already have over half
 a million_ tables _in 1 database and
-[things are fine](http://knowyourmeme.com/memes/this-is-fine))_, we can change the
+[things are fine](https://knowyourmeme.com/memes/this-is-fine))_, we can change the
 splitting algorithm by adding a condition to use the last **X digits** on books with IDs
 bigger than **Y**.
 
@@ -130,7 +129,7 @@ bigger than **Y**.
 _For informational purposes only. Read the snippets and reason about them. Copy/paste at
 your own peril._
 
-## LudicrousDB  Callback
+## LudicrousDB Callback
 
 ```php
 /**
@@ -207,7 +206,7 @@ Because Pressbooks has so many MySQL tables, the Clients I use are always gettin
 freezing. Here are some tricks I use to keep sane:
 
 - Don't let MySQL Workbench load the table schemas. Set up your GUI so that schemas are in
-  a separate tab, disable autoloading, autocomplete, etc. _(Edit ⇨ Preferences ⇨ SQL
+  a separate tab, disable autoloading, autocomplete, etc. _(Edit ⇨ Preferences ⇨ SQL
   Editor)_
 - Disable MySQL CLI auto-completion
-  with [`--disable-auto-rehash`](https://dev.mysql.com/doc/refman/5.7/en/mysql-command-options.html#option_mysql_auto-rehash)
+  with [`--disable-auto-rehash`](https://dev.mysql.com/doc/refman/5.7/en/mysql-command-options.html#option_mysql_auto-rehash)

@@ -9,12 +9,12 @@
       "url": "/blog/"
     },
     {
-      "text": "Documentation",
-      "url": "/docs/"
+      "text": "Developer Guides",
+      "url": "/dev-docs/"
     },
     {
-      "text": "Accessibility",
-      "url": "/accessibility/"
+      "text": "User Guides",
+      "url": "/user-docs/"
     },
     {
       "text": "Support Pressbooks",

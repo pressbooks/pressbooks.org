@@ -6,7 +6,7 @@ tags:
 ---
 
 We're pleased to share Pressbooks' new
-[policy on accessibility](/accessibility):
+[policy on accessibility](/user-docs/accessibility/):
 
 > Pressbooks is committed to ensuring that our software is accessible to users and
 > readers. We understand accessibility and inclusive design to be holistic, proactive
@@ -17,7 +17,7 @@ We're pleased to share Pressbooks' new
 > [Inclusive Design Research Centre](https://idrc.ocadu.ca) and others to identify areas for
 > improvement.
 
-For full details, you can [consult the policy](/accessibility).
+For full details, you can [consult the policy](/user-docs/accessibility/).
 
 As noted in this morning's sprint preview, we are tackling
 [a number of accessibility issues](https://github.com/pressbooks/pressbooks-book/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Aa11y+milestone%3A2.3.0)

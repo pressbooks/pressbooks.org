@@ -7,17 +7,15 @@ tags:
 ---
 
 At the start of 2017, we established a
-[development roadmap](/roadmap/roadmap-2017/) for Pressbooks to
+development roadmap for Pressbooks to
 guide our work through the coming year. This past week we had the opportunity to review
-and reflect on that roadmap during our retreat at Pressbooks HQ, and you can see our
-[new roadmap here](/roadmap/).
+and reflect on that roadmap during our retreat at Pressbooks HQ.
 
 ## 2017: Year of Core
 
 I want to highlight a few of our accomplishments from the past nine months (you'll see
 them crossed out on the old roadmap). In retrospect, our clear focus over the past nine
-months was improving Pressbooks’ core technology. When
-[Dac came back](/blog/2017/05/11/dac-is-back/), having a second
+months was improving Pressbooks’ core technology. When Dac came back, having a second
 developer let us expand upon my efforts in recent years to standardize our development
 processes under the hood. We now use consistent
 [coding standards](/docs/coding-standards/) across all of our open
@@ -37,7 +35,7 @@ is the engine that powers our new
 and we will be making use of it in other areas over the next year. We’re also extremely
 excited to see what the Pressbooks Open Source community does with an API for books. If
 you are building something with it,
-[let us know](https://discourse.pressbooks.org/c/apis).
+[let us know](https://pressbooks.community/c/apis).
 
 ## 2018: Year of the Author
 
@@ -51,7 +49,7 @@ authoring toolset as we can. This includes:
 - Adding support for multiple contributors: authors, editors, translators and more
 - Adding indexing and glossary support
 
-And more! Take a look at our [new roadmap](/roadmap/) to see our
+And more! Take a look at our new roadmap to see our
 comprehensive plans for improving Pressbooks’ authorship and editing tools, as well as all
 other aspects of the project.
 
