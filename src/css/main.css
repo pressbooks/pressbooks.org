@@ -145,7 +145,7 @@ a.site-head__brand:focus {
 }
 
 a.site-head__brand:focus {
-  outline: 1px solid red;
+  outline: 1px solid var(--red);
 }
 
 .site-head__brand {
@@ -157,6 +157,11 @@ a.site-head__brand:focus {
   font-weight: var(--font-weight-7);
   text-decoration: none;
   color: currentColor;
+}
+
+.site-head__brand img {
+  width: calc(2 * var(--size-13));
+  height: auto;
 }
 
 .site-head__subhead {
