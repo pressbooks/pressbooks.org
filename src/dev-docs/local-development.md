@@ -90,7 +90,7 @@ vagrant up
 
 Fully provisioning your development environment will take several minutes.
 
-## macOS
+## macOS Intel and Apple Silicon  
 
 ### Dependencies
 
@@ -102,18 +102,39 @@ Install [Homebrew Cask][16]:
 
 `brew tap homebrew/cask`
 
-Install the version of Ansible in [requirements.txt] (currently >=2.7.12,<2.9 - 2.9 is not supported). A specific version can be installed by running:
+Install the version of Ansible in [requirements.txt]. A specific version can be installed by running:
 
-`pip install ansible==2.8.20`
+`pip install ansible==2.10.7`
 
 or to better track the requirements version from the pressbooks/trellis project, download requirements.txt from https://github.com/pressbooks/trellis/blob/master/requirements.txt and then run the following command:
 `pip install -r requirements.txt`
+
+### Intel/x86_64 hardware only
+
+On Apple systems running Intel CPUs Virtualbox is a free and open source virtualization platform:
 
 Install [Virtualbox][16]:
 
 `brew install --cask virtualbox`
 
+### Apple Silicon (M1/M2)
+
+For machines running on Apple silicon, virtualbox is not an option, as it it x86 only. Parallels is an option that is known to work (but is not free or open source). Purchase a subscription license for *Parallels Desktop Pro Edition*, and install it as per their instructions. This also requires the [Vagrant Parallels Provider][24]. After Parallels is installed run:
+
+`vagrant plugin install vagrant-parallels`
+
+Edit vagrant.default.yml and comment out the Intel lines, uncomment the M1 lines (so that the Ubuntu image uses the correct archictecture). For M1 these line should be:
+
+`vagrant_box: 'jeffnoxon/ubuntu-20.04-arm64'
+vagrant_box_version: '>= 1.0.0'`
+
+### Intel and Apple Silicon (continued)
+
 Install [Vagrant][17]:
+
+There is currently a problem with vagrant 2.2.19 on MacOS, which is what is also packaged with Brew. Until this is resolved, fetch it directly from Hashicorp here:
+
+[https://releases.hashicorp.com/vagrant/2.2.18/vagrant_2.2.18_x86_64.dmg][23]
 
 `brew install --cask vagrant`
 
@@ -129,9 +150,31 @@ Install [Composer][20]:
 
 `brew install composer`
 
+**NOTE**: This will pull in the most current version of PHP that Brew has available, which might not be desirable if you want to run composer on the MacOS side. To install an earlier version of PHP, such as PHP 7.4 exectute the following:
+
+`brew install php@7.4` 
+
+You will also need to change your $PATH in your .bashrc or .zshrc files, depending on what shell you're running.
+
 Install [Node][21] with NPM:
 
 `brew install node`
+
+### MacOS Permissions and nfsd
+
+On recent versionf of MacOS (Catalina and later), the NFS file sharing between the VM and the host OS is broken unless it is granted special permissions. To resove this do the following:
+
+`1. Open system preferences (under the Apple menu)
+2. Click on 'Security & Privacy'
+3. Click on 'Privacy' tab
+4. Find 'Full Disk Access' in the left column
+5. Unlock the preference panel so that you can make changes (this will require your MacOS password)
+6. Click '+' to add a program
+7. Press CMD+Shift+G to browse to a folder
+8. Go to folder '/sbin'
+9. Add the nfsd application
+10. Reboot your Mac
+`
 
 ### Setup
 
@@ -382,3 +425,5 @@ You may need to regenerate your composer.lock file to resolve merge conflicts be
 [20]: https://getcomposer.org
 [21]: https://nodejs.org
 [22]: https://gitforwindows.org/
+[23]: https://releases.hashicorp.com/vagrant/2.2.18/vagrant_2.2.18_x86_64.dmg
+[24]: https://parallels.github.io/vagrant-parallels/docs/
