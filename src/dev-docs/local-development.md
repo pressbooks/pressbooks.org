@@ -127,8 +127,8 @@ For machines running on Apple silicon, virtualbox is not an option, as it it x86
 
 Edit vagrant.default.yml and comment out the Intel lines, uncomment the M1 lines (so that the Ubuntu image uses the correct archictecture). For M1 these line should be:
 
-`vagrant_box: 'jeffnoxon/ubuntu-20.04-arm64'`
-`vagrant_box_version: '>= 1.0.0'`
+ `vagrant_box: 'jeffnoxon/ubuntu-20.04-arm64'`
+ `vagrant_box_version: '>= 1.0.0'`
 
 ### Intel and Apple Silicon (continued)
 
@@ -166,16 +166,16 @@ Install [Node][21] with NPM:
 
 On recent versionf of MacOS (Catalina and later), the NFS file sharing between the VM and the host OS is broken unless it is granted special permissions. To resove this do the following:
 
-`1. Open system preferences (under the Apple menu)`
-`2. Click on 'Security & Privacy'`
-`3. Click on 'Privacy' tab`
-`4. Find 'Full Disk Access' in the left column`
-`5. Unlock the preference panel so that you can make changes (this will require your MacOS password)`
-`6. Click '+' to add a program`
-`7. Press CMD+Shift+G to browse to a folder`
-`8. Go to folder '/sbin'`
-`9. Add the nfsd application`
-`10. Reboot your Mac`
+1. Open system preferences (under the Apple menu)
+2. Click on 'Security & Privacy'
+3. Click on 'Privacy' tab
+4. Find 'Full Disk Access' in the left column
+5. Unlock the preference panel so that you can make changes (this will require your MacOS password)
+6. Click '+' to add a program
+7. Press CMD+Shift+G to browse to a folder
+8. Go to folder '/sbin'
+9. Add the nfsd application
+10. Reboot your Mac
 
 
 ### Setup
