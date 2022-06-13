@@ -90,7 +90,9 @@ vagrant up
 
 Fully provisioning your development environment will take several minutes.
 
-## macOS Intel and Apple Silicon  
+## macOS Intel and Apple Silicon 
+
+Big Sur or later is strongly recommended. Earlier versions of MacOS may or may not work with the instructions below.
 
 ### Dependencies
 
