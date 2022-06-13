@@ -111,6 +111,22 @@ Install the version of Ansible in [requirements.txt]. A specific version can be 
 or to better track the requirements version from the pressbooks/trellis project, download requirements.txt from https://github.com/pressbooks/trellis/blob/master/requirements.txt and then run the following command:
 `pip install -r requirements.txt`
 
+Install [Vagrant][17]:
+
+There is currently a problem with vagrant 2.2.19 on MacOS, which is what is also packaged with Brew. Until this is resolved, fetch it directly from Hashicorp here:
+
+[https://releases.hashicorp.com/vagrant/2.2.18/vagrant_2.2.18_x86_64.dmg][23]
+
+`brew install --cask vagrant`
+
+Install [vagrant-bindfs][18]:
+
+`vagrant plugin install vagrant-bindfs`
+
+Install [vagrant-hostmanager][19]:
+
+`vagrant plugin install vagrant-hostmanager`
+
 ### Intel/x86_64 hardware only
 
 On Apple systems running Intel CPUs Virtualbox is a free and open source virtualization platform:
@@ -128,25 +144,10 @@ For machines running on Apple silicon, virtualbox is not an option, as it it x86
 Edit vagrant.default.yml and comment out the Intel lines, uncomment the M1 lines (so that the Ubuntu image uses the correct archictecture). For M1 these line should be:
 
  `vagrant_box: 'jeffnoxon/ubuntu-20.04-arm64'`
+
  `vagrant_box_version: '>= 1.0.0'`
 
 ### Intel and Apple Silicon (continued)
-
-Install [Vagrant][17]:
-
-There is currently a problem with vagrant 2.2.19 on MacOS, which is what is also packaged with Brew. Until this is resolved, fetch it directly from Hashicorp here:
-
-[https://releases.hashicorp.com/vagrant/2.2.18/vagrant_2.2.18_x86_64.dmg][23]
-
-`brew install --cask vagrant`
-
-Install [vagrant-bindfs][18]:
-
-`vagrant plugin install vagrant-bindfs`
-
-Install [vagrant-hostmanager][19]:
-
-`vagrant plugin install vagrant-hostmanager`
 
 Install [Composer][20]:
 
