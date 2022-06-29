@@ -11,7 +11,7 @@ Pressbooks is a book content management system that allows users to publish book
 
 Pressbooks is used by educational institutions, academic presses, small publishers, as well as individual authors. There are three ways to use it:
 
-1. **Create an individual book on our self-service [Pressbooks instance](https://pressbooks.com/self-publishers/)**. This is ideal for individual authors.
+1. **Create an individual book on our self-service [Pressbooks instance](https://pressbooks.pub/auth/)**. This is ideal for individual authors.
 1. **Let us host and maintain a Pressbooks network for you.** [Pressbooks plans](https://pressbooks.com/for-educational-institutions/) include managed hosting, security updates, tech support and training, and will save your IT/development team countless hours. This is ideal for educational institutions and publishers of all sizes.
 1. **Host and maintain Pressbooks yourself.** Those who pursue this option will need to have access to developers and sysadmins capable of hosting and maintaining a network and troubleshooting technical issues. If you plan to self-host, see our [user](/user-docs/) and [developer guides](/dev-docs/).
 
