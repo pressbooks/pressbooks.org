@@ -6,7 +6,7 @@ permalink: /dev-docs/local-development/
 **Table of contents**
 
 - [Ubuntu](#ubuntu)
-- [macOS](#mac-os)
+- [macOS](#macOS Intel and Apple Silicon)
 - [Windows](#windows)
 - [Development Tools](#development-tools)
 
@@ -116,6 +116,8 @@ Install [Vagrant][17]:
 There is currently a problem with vagrant 2.2.19 on MacOS, which is what is also packaged with Brew. Until this is resolved, fetch it directly from Hashicorp here:
 
 [https://releases.hashicorp.com/vagrant/2.2.18/vagrant_2.2.18_x86_64.dmg][23]
+
+Once the above issue with 2.2.19 is resolved (likely in a later version), then the following command should work:
 
 `brew install --cask vagrant`
 
