@@ -6,7 +6,7 @@ permalink: /dev-docs/local-development/
 **Table of contents**
 
 - [Ubuntu](#ubuntu)
-- [macOS](#macos-intel-and-apple-silicon)
+- [macOS](#mac-os-intel-and-apple-silicon)
 - [Windows](#windows)
 - [Development Tools](#development-tools)
 
