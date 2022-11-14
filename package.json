@@ -27,7 +27,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
     "concurrently": "^6.0.2",
     "markdown-it-footnote": "^3.0.3",
-    "moment": "^2.29.2"
+    "moment": "^2.29.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
