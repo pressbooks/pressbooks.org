@@ -18,9 +18,9 @@ Pressbooks is used by educational institutions, academic presses, small publishe
 1. **Let us host and maintain a Pressbooks network for you.** [Pressbooks plans](https://pressbooks.com/for-educational-institutions/) include managed hosting, security updates, tech support and training, and will save your IT/development team countless hours. This is ideal for educational institutions and publishers of all sizes.
 1. **Host and maintain Pressbooks yourself.** Those who pursue this option will need to have access to developers and sysadmins capable of hosting and maintaining a network and troubleshooting technical issues. If you plan to self-host, see our [user](/user-docs/) and [developer guides](/dev-docs/).
 
-## How can I support Pressbooks development?
+## How can I support Pressbooks?
 
-While Pressbooks is free & open source software, maintaining this project takes time, effort, and money. As a result, we ask our open source usersto contribute to the project's sustainability in various ways. Our favourite kinds of support are:
+While Pressbooks is free & open source software, maintaining this project takes time, effort, and money. As a result, we ask our open source users to contribute to the project's sustainability in various ways. Our favourite kinds of support are:
 
 * financial contributions
 * code contributions and testing
