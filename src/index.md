@@ -4,7 +4,7 @@ metaDesc: "Open publishing. Open web. Open source."
 layout: "layouts/home.njk"
 ---
 
-Welcome to the home of the Pressbooks Open Source project, where you can learn about running Pressbooks on your own server. To learn more about using Pressbooks for your institution or as an individual, please visit https://pressbooks.com or see the section below.
+Welcome to the home of the Pressbooks Open Source project, where you can learn about running Pressbooks on your own server. To learn more about using Pressbooks for your institution or as an individual, please visit [https://pressbooks.com](https://pressbooks.com).
 
 ## What is Pressbooks?
 
@@ -20,10 +20,12 @@ Pressbooks is used by educational institutions, academic presses, small publishe
 
 ## How can I support Pressbooks development?
 
-While Pressbooks is free & open source software, creating, improving, and maintaining this project takes time, effort, and money. As a result, we ask our open source users, who depend on the long-term sustainability of the software, to contribute to the project in various ways. Our favourite kinds of support are:
+While Pressbooks is free & open source software, maintaining this project takes time, effort, and money. As a result, we ask our open source usersto contribute to the project's sustainability in various ways. Our favourite kinds of support are:
 
 * financial contributions
 * code contributions and testing
 * support for open source users
 
-If you or your instituion would like to help sustain Pressbooks financially, please consider hiring us to provide enterprise hosting and support or simply [contact us](https://pressbooks.com/for-educational-institutions/) to discuss other sponsorship arrangements. No matter how you choose to use Pressbooks, we encourage you to [get involved](/get-involved/) with the project!
+If you or your instituion would like to help sustain Pressbooks financially, please consider hiring us to provide enterprise hosting and support or simply [contact us](https://pressbooks.com/for-educational-institutions/) to discuss other sponsorship arrangements. 
+
+No matter how you choose to use Pressbooks, we encourage you to [get involved](/get-involved/) with the project!
