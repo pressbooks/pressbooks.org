@@ -35,8 +35,10 @@ Pressbooks requires some third-party libraries to be installed on your server to
 - For XML validation install xmllint: `sudo apt-get install libxml2-utils`
 - For ODT export install [Saxon-HE][saxon] 9.7.0-10
 - For export of LaTeX expressions (i.e. mathematical formula), install and network activate the third party WordPress plugin {WP QuickLaTeX](https://wordpress.org/plugins/wp-quicklatex/) or install and host the production branch of [pb-mathjax][pb-mathjax].
-- Certain GNU/Linux distributions do not ship with the `php-xsl` and/or `php-exif` libraries enabled by default. If you attempt to export an EPUB file and get either a white screen with minimal text, or an error, you may need install one or both of these libraries: (e.g. `sudo apt install php-xsl` or `sudo apt install php-exif` )
-- GNU/Linux distributions do not include Microsoft fonts, which can be useful when producing PDF exports. See https://itsfoss.com/install-microsoft-fonts-ubuntu/ or similar for instructions on installing.
+
+Note: Certain GNU/Linux distributions do not ship with the `php-xsl` and/or `php-exif` libraries enabled by default. If you attempt to export an EPUB file and get either a white screen with minimal text, or an error, you may need install one or both of these libraries: (e.g. `sudo apt install php-xsl` or `sudo apt install php-exif` )
+
+Note: GNU/Linux distributions do not include Microsoft fonts, which can be useful when producing PDF exports. See https://itsfoss.com/install-microsoft-fonts-ubuntu/ or similar for instructions on installing.
 
 Once the desired dependencies have been installed on your server, define the following `wp-config.php` variables (make sure to update the paths to correspond to your specific installation). The defaults are:
 
