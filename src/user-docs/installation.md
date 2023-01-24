@@ -3,18 +3,16 @@ title: Installation
 permalink: /user-docs/installation/
 ---
 
-## Downloads
-
-Download the latest releases of [Pressbooks][pressbooks], [McLuhan][mcluhan], and [Aldine][aldine], as well as the latest releases of any other [book themes][book-themes] you wish to install. Check the [latest release of Pressbooks](https://github.com/pressbooks/pressbooks/blob/4e79e21333b3ca0df257057c06b92c94b73a6d9b/pressbooks.php#L9-L10) for the required versions of PHP and WordPress. Lower versions are not supported.
-
 ## Installation (Manual)
 
 1. Follow the instructions provided by WordPress to [install WordPress][wp-install] and [create a WordPress multisite network][create-a-network]
+1. Download the latest releases of [Pressbooks][pressbooks], [McLuhan][mcluhan], and [Aldine][aldine], as well as the latest releases of any other [book themes][book-themes] you wish to install. Check the [latest release of Pressbooks](https://github.com/pressbooks/pressbooks/blob/4e79e21333b3ca0df257057c06b92c94b73a6d9b/pressbooks.php#L9-L10) for the required versions of PHP and WordPress. Lower versions are not supported.
 1. Copy the Pressbooks plugin folder to: `/path/to/your/site/wp-content/plugins/*`.
 1. Copy Pressbooks' autoloader file from `/path/to/your/site/wp-content/plugins/pressbooks/hm-autoloader.php` to `/path/to/your/site/wp-content/mu-plugins/hm-autoloader.php`. You may need to create the `wp-content/mu-plugins/` directory if it doesn't yet exist.
 1. Copy the Pressbooks Book, Pressbooks Aldine and other theme folders to: `/path/to/your/site/wp-content/themes/*` (**NOTE**: theme folders must not have version numbers on the end. **GOOD**: `pressbooks-aldine`. **BAD**: `pressbooks-aldine-3.1.0`. Make sure that you rename the folders appropriately.)
+   Prefer a wp-cli deploy? Start here: https://github.com/pressbooks/snippets/blob/master/deploying/wp-cli-example.md
 
-### Activate Plugins & Themes
+## Activate Plugins & Themes
 
 1. Log out, log in, navigate to: **My Sites** → **Network Admin** → **Dashboard**.
 1. Navigate to **Plugins** → **Installed Plugins**.
@@ -23,7 +21,7 @@ Download the latest releases of [Pressbooks][pressbooks], [McLuhan][mcluhan], an
 1. Network Enable "Aldine", "McLuhan", and any other Pressbooks theme you want to use.
 1. Navigate to **Your Network Title** → **Dashboard** → **Appearance** and activate "Aldine".
 
-### Server Dependencies
+## Server Dependencies
 
 Pressbooks requires some third-party libraries to be installed on your server to enable export capabilities.
 
@@ -113,7 +111,7 @@ Example config files for a dev site hosted at `http://localhost/~example/textopr
     RewriteRule  ^[_0-9a-zA-Z-]+/(.*.php)$ $1 [L]
     RewriteRule . index.php [L]
 
-### Configure Network Settings & Create Your First Book
+## Configure Network Settings & Create Your First Book
 
 1. Navigate to **Network Admin** → **Dashboard** → Settings** → **Network Settings\*\* and select the most appropriate Registration setting:
    - User accounts may be registered. (User accounts can be registered, but these users will not be able to create their own books)
@@ -123,8 +121,6 @@ Example config files for a dev site hosted at `http://localhost/~example/textopr
 1. Fill in the form and click 'Create Book' to create your first book
 
 Consult [our user guide](https://guide.pressbooks.com/) for more details on how to use Pressbooks to create and publish books.
-
-Prefer a wp-cli deploy? Start here: https://github.com/pressbooks/snippets/blob/master/deploying/wp-cli-example.md
 
 [pressbooks]: https://github.com/pressbooks/pressbooks
 [mcluhan]: https://github.com/pressbooks/pressbooks-book
