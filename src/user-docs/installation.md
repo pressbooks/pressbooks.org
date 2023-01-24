@@ -3,14 +3,13 @@ title: Installation
 permalink: /user-docs/installation/
 ---
 
-## Installation (Manual)
+## Manual Installation
 
-1. Follow the instructions provided by WordPress to [install WordPress][wp-install] and [create a WordPress multisite network][create-a-network]
 1. Download the latest releases of [Pressbooks][pressbooks], [McLuhan][mcluhan], and [Aldine][aldine], as well as the latest releases of any other [book themes][book-themes] you wish to install. Check the [latest release of Pressbooks](https://github.com/pressbooks/pressbooks/blob/4e79e21333b3ca0df257057c06b92c94b73a6d9b/pressbooks.php#L9-L10) for the required versions of PHP and WordPress. Lower versions are not supported.
+1. Follow the instructions provided by WordPress to [install WordPress][wp-install] and [create a WordPress multisite network][create-a-network]
 1. Copy the Pressbooks plugin folder to: `/path/to/your/site/wp-content/plugins/*`.
 1. Copy Pressbooks' autoloader file from `/path/to/your/site/wp-content/plugins/pressbooks/hm-autoloader.php` to `/path/to/your/site/wp-content/mu-plugins/hm-autoloader.php`. You may need to create the `wp-content/mu-plugins/` directory if it doesn't yet exist.
 1. Copy the Pressbooks Book, Pressbooks Aldine and other theme folders to: `/path/to/your/site/wp-content/themes/*` (**NOTE**: theme folders must not have version numbers on the end. **GOOD**: `pressbooks-aldine`. **BAD**: `pressbooks-aldine-3.1.0`. Make sure that you rename the folders appropriately.)
-   Prefer a wp-cli deploy? Start here: https://github.com/pressbooks/snippets/blob/master/deploying/wp-cli-example.md
 
 ## Activate Plugins & Themes
 
