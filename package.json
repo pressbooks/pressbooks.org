@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
-    "cssnano": "^5.1.7",
+    "cssnano": "^6.0.0",
     "husky": "^7.0.4",
     "markdown-it-anchor": "^8.6.2",
     "modern-css-reset": "^1.4.0",
