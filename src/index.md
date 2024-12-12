@@ -15,7 +15,7 @@ Pressbooks is a book content management system that allows users to publish book
 Pressbooks is used by educational institutions, academic presses, small publishers, as well as individual authors. There are three ways to use it:
 
 1. **Create an individual book on our self-service [Pressbooks instance](https://pressbooks.pub/auth/)**. This is ideal for individual authors.
-1. **Let us host and maintain a Pressbooks network for you.** [Pressbooks plans](https://pressbooks.com/for-educational-institutions/) include managed hosting, security updates, tech support and training, and will save your IT/development team countless hours. This is ideal for educational institutions and publishers of all sizes.
+1. **Let us host and maintain a Pressbooks network for you.** [Pressbooks plans](https://pressbooks.com/enterprise/) include managed hosting, security updates, tech support and training, and will save your IT/development team countless hours. This is ideal for educational institutions and publishers of all sizes.
 1. **Host and maintain Pressbooks yourself.** Those who pursue this option will need to have access to developers and sysadmins capable of hosting and maintaining a network and troubleshooting technical issues. If you plan to self-host, see our [user](/user-docs/) and [developer guides](/dev-docs/).
 
 ## How can I support Pressbooks?
@@ -26,6 +26,6 @@ While Pressbooks is free & open source software, maintaining this project takes 
 * code contributions and testing
 * support for open source users
 
-If you or your instituion would like to help sustain Pressbooks financially, please consider hiring us to provide enterprise hosting and support or simply [contact us](https://pressbooks.com/for-educational-institutions/) to discuss other sponsorship arrangements. 
+If you or your institution would like to help sustain Pressbooks financially, please consider hiring us to provide enterprise hosting and support or simply [contact us](mailto:sales@pressbooks.com) to discuss other sponsorship arrangements. 
 
 No matter how you choose to use Pressbooks, we encourage you to [get involved](/get-involved/) with the project!
