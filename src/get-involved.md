@@ -11,7 +11,7 @@ If you are an institution using Pressbooks and would like to help sustain Pressb
 
 ## Contribute via GitHub
 
-You can always report bugs, open pull requests, and follow our development [on GitHub](https://github.com/pressbooks/). We also maintain an [ideas repository](https://github.com/pressbooks/ideas) where we welcome product suggestions and feature improvements from any and all. Our product owner regularly reviews these suggestions and adds them to our product backlog.
+You can always report bugs, open pull requests, and follow our development [on GitHub](https://github.com/pressbooks/). We also maintain an [ideas repository](https://github.com/pressbooks/ideas) where we welcome product suggestions and feature improvements from any and all. We regularly review these suggestions and add them to our product backlog where relevant.
 
 ## Monthly Product Update
 
@@ -99,7 +99,7 @@ Your contributions to our project are always welcome!
 [31]: https://github.com/dcvikl
 [32]: https://github.com/pmfederico
 [33]: https://github.com/masaka222
-[34]: https://pressbooks.com/about/#:~:text=Meet%20our%20team
+[34]: https://pressbooks.com/pressbooks-team/
 [35]: https://github.com/connerbw
 [36]: https://github.com/greatislander
 [37]: https://github.com/cagp-dev-mtl
