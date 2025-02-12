@@ -2,7 +2,7 @@ backend:
   name: github
   branch: production
   repo: pressbooks/pressbooks.org
-  base_url: https://pressbooks-cms-auth.pages.dev
+  base_url: ''
 media_folder: src/images
 public_folder: /images
 
