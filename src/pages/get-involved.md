@@ -1,8 +1,8 @@
 ---
 title: Get Involved with Pressbooks
-layout: "layouts/page.njk"
+slug: get-involved
+metaDesc: ''
 ---
-
 Diverse teams make better software. Creating, improving, and maintaining free and open source software like Pressbooks takes time, effort, and money. As a result, we ask our open source users to get involved with this project. Here are some suggestions for how you can contribute to the long-term sustainability of Pressbooks.
 
 ## Financial Support

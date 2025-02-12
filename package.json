@@ -6,9 +6,8 @@
   "main": ".eleventy.js",
   "type": "module",
   "scripts": {
-    "start": "npx eleventy --serve",
-    "build": "NODE_ENV=production eleventy",
-    "production": "NODE_ENV=production eleventy",
+    "start": "rimraf dist && npx eleventy --serve",
+    "build": "NODE_ENV=production rimraf dist && eleventy",
     "prepare": "husky"
   },
   "repository": {

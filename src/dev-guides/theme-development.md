@@ -1,6 +1,5 @@
 ---
 title: Theme Development
-permalink: /dev-docs/theme-development/
 ---
 
 ## Getting Started

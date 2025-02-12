@@ -108,6 +108,8 @@ export default (eleventyConfig) => {
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   eleventyConfig.setUseGitIgnore(false);
 
+  eleventyConfig.addPassthroughCopy("src/admin/config.yml");
+  eleventyConfig.addPassthroughCopy("src/_redirects");
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/fonts");
   eleventyConfig.addPassthroughCopy({ "src/icons": "/" });

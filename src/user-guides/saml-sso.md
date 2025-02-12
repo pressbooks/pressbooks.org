@@ -1,8 +1,8 @@
 ---
 title: Pressbooks SAML SSO
-permalink: /user-docs/saml-sso/
+metaDesc: ''
+slug: saml-sso
 ---
-
 **Table of Contents**
 
 - [Installation / Activation](#installation-activation)
@@ -47,9 +47,9 @@ Decide the response if the SAML2 user does not have a Pressbooks account: **Refu
 ## Optional settings:
 
 - **SingleLogoutService**: URL Location of the IdP where SLO Request will be sent.
-- **[Bypass](#bypass-domains-behaviour)**: Bypass the "Limited Email Registrations" and "Banned Email Domains" lists under Network Settings.
-- **[Forced redirection](#forced-redirection-behaviour)**: Hide the Pressbooks login page and go directly to the insitutions's SAML2 login page.
-- **[Customize Button Text](#customize-button-text)**: Customize the label of the "Connect via SAML2" button in the Pressbooks login page. If Forced Redirection is checked, then this field is disabled.
+- [**Bypass**](#bypass-domains-behaviour): Bypass the "Limited Email Registrations" and "Banned Email Domains" lists under Network Settings.
+- [**Forced redirection**](#forced-redirection-behaviour): Hide the Pressbooks login page and go directly to the insitutions's SAML2 login page.
+- [**Customize Button Text**](#customize-button-text): Customize the label of the "Connect via SAML2" button in the Pressbooks login page. If Forced Redirection is checked, then this field is disabled.
 
 By default, this plugin requires the Assertion elements of the Response sent by the Identity Provider (IdP) to be both encrypted and signed. If you are self-hosting a Pressbooks network, you can change [these settings](<(https://github.com/onelogin/php-saml/#settings)>) with a filter, for example:
 
@@ -80,10 +80,10 @@ If Forced Redirection is **ON**, the "Sign In" link will bring the user directly
 1. If no Pressbooks user exists for this SAML2 user
 
 - If SAML2 is configured to "Add New User" AND SAML2 login is successful
-  - a Pressbooks user is created with username = uid and email = mail
-  - user logs into Pressbooks successfully
+- a Pressbooks user is created with username = uid and email = mail
+- user logs into Pressbooks successfully
 - If SAML2 is configured to "Refuse Access" AND SAML2 login is successful
-  - an "Unable to log in" error message appears in the Pressbooks login form (if Forced Redirection is OFF) or in its own page (if Forced Redirection is ON) **NOTE**: Once the user has had this error, any subsequent clicks on "Connect via SAML2" directly in the login form will generate this error message again, as the user is already authenticated in SAML2. Each time they click "Connect via SAML2", the SAML2 service will recognize them as authenticated, but Pressbooks will refuse access. To log out, the user must either go to the SAML2 logout page or close the browser, terminating the SAML2 session.
+- an "Unable to log in" error message appears in the Pressbooks login form (if Forced Redirection is OFF) or in its own page (if Forced Redirection is ON) **NOTE**: Once the user has had this error, any subsequent clicks on "Connect via SAML2" directly in the login form will generate this error message again, as the user is already authenticated in SAML2. Each time they click "Connect via SAML2", the SAML2 service will recognize them as authenticated, but Pressbooks will refuse access. To log out, the user must either go to the SAML2 logout page or close the browser, terminating the SAML2 session.
 
 2. If there is an existing Pressbooks user for this SAML2 user
 
@@ -108,11 +108,14 @@ When a user logs into Pressbooks via SAML2, the SAML2 plugin will attempt to fin
 The user matching mechanism is as follows:
 
 1. Plugin tries to find a user `where wp_usermeta.meta_key = pressbooks_saml_identity and wp_usermeta.meta_value = uid`
-   - Where `uid` is the unique ID sent by the Identity Provider with the required attribute name `urn:oid:0.9.2342.19200300.100.1.1`
+
+- Where `uid` is the unique ID sent by the Identity Provider with the required attribute name `urn:oid:0.9.2342.19200300.100.1.1`
+
 2. If `uid` is not found, try to find a matching user by comparing the recommended `urn:oid:0.9.2342.19200300.100.1.3` (email) attribute to existing users' email address.
 3. If no match is found, try to find a matching user by comparing the optional `eurn:oid:0.9.2342.19200300.100.1.3` (ePPN) attribute to existing users' email addresses.
 4. If no matching user is found through any of these methods, create a new user.
-   - `wp_usermeta.meta_key` and `wp_usermeta.meta_value` are set by the SAML2 plugin upon user matching or new user creation to ensure that subsequent logins by this user will follow case #1 above even if the user changes their email address.
+
+- `wp_usermeta.meta_key` and `wp_usermeta.meta_value` are set by the SAML2 plugin upon user matching or new user creation to ensure that subsequent logins by this user will follow case #1 above even if the user changes their email address.
 
 Network admins who have manually created or plan to manually create new users in Pressbooks should take care to use the correct user email address for these manually created accounts so that the SAML2 plugin can properly match this user if they subsequently attempt to log in via SAML2.
 

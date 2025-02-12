@@ -1,8 +1,8 @@
 ---
 title: Pressbooks LTI Provider
-permalink: /user-docs/lti/
+metaDesc: ''
+slug: lti
 ---
-
 **This plugin is deprecated and will not receive ongoing support. See [our forum](https://pressbooks.community/t/planned-deprecation-notice-pressbooks-lti-provider-plugin/1715) for details.**
 
 **Table of contents**
@@ -45,10 +45,10 @@ The table containing the list of LTI configurations is based on the IMS Global e
 - **Version**: LTI protocol version (automatic configuration only)
 - **Last access**: date the LTI consumer last accessed the content
 - **Available:** Shows whether the content can be accessed via LTI
-  - Unavailable content will be shown with an "X"
-  - Cases where content is unavailable:
-  - It is not marked as "Enabled"
-  - It is marked as "Enabled" but is currently outside of the Enabled date range.
+- Unavailable content will be shown with an "X"
+- Cases where content is unavailable:
+- It is not marked as "Enabled"
+- It is marked as "Enabled" but is currently outside of the Enabled date range.
 - **Protected**: When turned on, the code will bail with 'A tool consumer GUID must be included in the launch request.' if one is not provided by the LMS.
 
 The "**Add New**" button leads to a form where the network manager can create a new configuration manually. See "[Manually Set Up a LTI Configuration](#manually-set-up-a-lti-configuration)" below for instructions.
@@ -59,9 +59,9 @@ The LTI Settings link (on the network admin level) leads to the general, network
 
 - **LTI2 Registration Whitelist**: whitelisted domains for automatic registration
 - **Sensible defaults:** default configuration for book-level settings. These defaults can be overridden at the book level:
-  - **Allow books to override...**: option to enable or disable book settings to override the network defaults
-  - **Map [Administrator/Staff/Learner] to the following Pressbooks role**: default mapping of LMS user role to Pressbooks user role when the LMS triggers the creation of a new user. (These can be overridden at the book level.)
-  - **Appearance**: whether or not to include navigation elements when embedding Pressbooks content in the LMS.
+- **Allow books to override...**: option to enable or disable book settings to override the network defaults
+- **Map [Administrator/Staff/Learner] to the following Pressbooks role**: default mapping of LMS user role to Pressbooks user role when the LMS triggers the creation of a new user. (These can be overridden at the book level.)
+- **Appearance**: whether or not to include navigation elements when embedding Pressbooks content in the LMS.
 - **Common Cartridge version**: Default Common Cartridge version shown in the exports page for CC exports. Can be overridden at the book level.
 
 ![Screenshot of LTI network settings page](/images/lti-network-settings.png)
@@ -78,7 +78,6 @@ The LTI Settings link (at the book admin level) leads to a configuration page th
 
 - Each book has an LTI URL in the following format: **https://site/book/format/lti/launch**
   (ex: https:&#x200d;//university.pressbooks.pub/testbook/**format/lti/launch**)
-
 - LTI URLs to specific chapters are in the following format: **https://site/book/format/lti/launch/part/chapter**
   (ex: https:&#x200d;//university.pressbooks.pub/testbook/**format/lti/launch**/chapter/chapter-1/)
 
@@ -113,9 +112,9 @@ By default, all mappings at the network and book levels are set to Anonymous Gue
 Newly-created books inherit the default network-level mappings
 
 - IF the network defaults are modified AFTER a book has been created
-  - And IF the book mappings have never been changed from the default
+- And IF the book mappings have never been changed from the default
     - The book mappings will be updated according to the new network defaults
-  - Otherwise (if the book mappings have been changed)
+- Otherwise (if the book mappings have been changed)
     - The book mappings will not be updated.
 
 **Mapping effects on users/access to Pressbooks content:**
@@ -123,14 +122,14 @@ Newly-created books inherit the default network-level mappings
 If the mapping is set to:
 
 - "**Anonymous Guest"**, no user will be created in Pressbooks and the LMS will display the web page as it appears on the open Web
-  - If the book is set to Private, the LMS will display the "Access denied" message
+- If the book is set to Private, the LMS will display the "Access denied" message
 - **any other role**,
-  - a first-time LMS visitor will have a new user automatically created on Pressbooks and added to the book they are trying to access with the specified role
-  - a returning LMS visitor will be logged into Pressbooks; the incoming user will be matched to the existing Pressbooks user based on the email address.
+- a first-time LMS visitor will have a new user automatically created on Pressbooks and added to the book they are trying to access with the specified role
+- a returning LMS visitor will be logged into Pressbooks; the incoming user will be matched to the existing Pressbooks user based on the email address.
     - if the user does not exist at the book level, they will be added to the book
     - at every login, the user role will be verified and updated according to the mapping.
-      - Note: If the user is a super admin, the book role assignment will not impact their super admin privileges.
-      - since the user is now logged in, the LMS will be able to display contents of books set to "private"
+    - Note: If the user is a super admin, the book role assignment will not impact their super admin privileges.
+    - since the user is now logged in, the LMS will be able to display contents of books set to "private"
 
 **User mapping mechanism**
 
@@ -178,5 +177,4 @@ The Pressbooks LTI Provider plugin allows authors to product Common Cartridge ("
 Common Cartridge Exports follow the same pattern as regular book exports. There is one export setting, which can be accessed on the LTI Settings page.
 
 1. In the book admin interface, under **Integrations > LTI Settings**, select the Common Cartridge version you would like to export, according to your LMS's specifications, and click the **Save Changes** button.
-
 2. On your book's Export page, select **Common Cartridge with LTI links**, then click the **Export your book** button. Your CC export will appear on the page once it is ready and can be downloaded and imported into your desired LMS.
