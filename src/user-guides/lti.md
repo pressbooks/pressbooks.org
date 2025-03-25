@@ -3,7 +3,7 @@ title: Pressbooks LTI Provider
 slug: lti
 metaDesc: ''
 ---
-**This plugin is deprecated and will not receive ongoing support. See [our forum](https://pressbooks.community/t/planned-deprecation-notice-pressbooks-lti-provider-plugin/1715) for details.** 
+**This plugin is deprecated and will not receive ongoing support. See [our forum](https://pressbooks.community/t/planned-deprecation-notice-pressbooks-lti-provider-plugin/1715) for details.**
 
 **Table of contents**
 
