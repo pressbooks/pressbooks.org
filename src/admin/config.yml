@@ -2,7 +2,7 @@ backend:
   name: github
   branch: production
   repo: pressbooks/pressbooks.org
-  base_url: ''
+  base_url: 'https://sveltia-cms-auth.ops-956.workers.dev/'
 media_folder: src/images
 public_folder: /images
 
