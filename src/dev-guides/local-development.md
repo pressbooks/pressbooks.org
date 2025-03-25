@@ -23,7 +23,7 @@ This document describes how to set up a local development environment for Pressb
 ### Dependencies
 
 - Install Git: <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>
-- Install PHP8.1: <https://computingforgeeks.com/how-to-install-php-on-ubuntu/>
+- Install PHP7.4: <https://computingforgeeks.com/how-to-install-php-on-ubuntu/>
 - Install Composer v2: <https://getcomposer.org/doc/00-intro.md#installation-linux-unix-macos>
 - Install Node.js LTS with NPM: <https://nodejs.org/en/download/>
 - Install Virtual Box: <https://www.virtualbox.org/>
