@@ -1,6 +1,5 @@
 ---
 title: Local Development
-permalink: /dev-docs/local-development/
 ---
 
 **Table of contents**
@@ -90,7 +89,7 @@ vagrant up
 
 Fully provisioning your development environment will take several minutes.
 
-## macOS Intel and Apple Silicon 
+## macOS Intel and Apple Silicon
 
 Big Sur or later is strongly recommended. Earlier versions of MacOS may or may not work with the instructions below.
 
@@ -157,7 +156,7 @@ Install [Composer][20]:
 
 **NOTE**: This will pull in the most current version of PHP that Brew has available, which might not be desirable if you want to run composer on the MacOS side. To install an earlier version of PHP, such as PHP 7.4 exectute the following:
 
-`brew install php@7.4` 
+`brew install php@7.4`
 
 You will also need to change your $PATH in your .bashrc or .zshrc files, depending on what shell you're running.
 

@@ -1,8 +1,8 @@
 ---
 title: Pressbooks CAS Single Sign-On
-permalink: /user-docs/cas-sso/
+metaDesc: ''
+slug: cas-sso
 ---
-
 **Table of Contents**
 
 - [Installation / Activation](#installation-activation)
@@ -40,8 +40,8 @@ Decide the response if the CAS user does not have a Pressbooks account:
 ## Optional settings:
 
 - **Email Domain**: If user emails correspond to `NetID@university.edu`, the network manager can specify the email domain used in order to generate accurate user emails. If this field is empty, the server hostname is used to generate placeholder email addresses (`username@127.0.0.1`).
-- **[Bypass](#bypass-domains-behaviour)**: Bypass the "Limited Email Registrations" and "Banned Email Domains" lists under Network Settings.
-- **[Forced redirection](#forced-redirection-behaviour)**: hide the Pressbooks login page and go directly to the insitutions's CAS login page.
+- [**Bypass**](#bypass-domains-behaviour): Bypass the "Limited Email Registrations" and "Banned Email Domains" lists under Network Settings.
+- [**Forced redirection**](#forced-redirection-behaviour): hide the Pressbooks login page and go directly to the insitutions's CAS login page.
 - [**Customize Button Text**:](#customize-button-text) This field allows network managers to customize the label of the "Connect via CAS" button in the Pressbooks login page. If Forced Redirection is checked, then this field is disabled.
 
 ## Details of settings behaviours:
@@ -61,13 +61,16 @@ If Forced Redirection is **ON**, the "Sign In" link brings the user directly to 
 ### Add New User / Refuse Access behaviour:
 
 1. IF no Pressbooks user exists for this CAS user
-   - IF CAS is configured to "Add New User" AND CAS login is successful
-     - a Pressbooks user is created with username = NetID and email = NetID@emailDomain
-     - user logs into Pressbooks successfully
-   - IF CAS is configured to "Refuse Access" AND CAS login is successful
-     - an "Unable to log in" error message appears in the Pressbooks login form (if Forced Redirection is OFF) or in its own page (if Forced Redirection is ON) **NOTE**: Once the user has had this error, subsequent clicks on "Connect via CAS" in the login form directly generates the error message, as the user here is already authenticated in CAS. Every time they click "Connect via CAS", CAS will recognize them as authenticated, but Pressbooks will refuse access. To log out, the user must either go to the CAS logout page or close the browser, terminating the CAS session.
+
+- IF CAS is configured to "Add New User" AND CAS login is successful
+    - a Pressbooks user is created with username = NetID and email = NetID@emailDomain
+    - user logs into Pressbooks successfully
+- IF CAS is configured to "Refuse Access" AND CAS login is successful
+    - an "Unable to log in" error message appears in the Pressbooks login form (if Forced Redirection is OFF) or in its own page (if Forced Redirection is ON) **NOTE**: Once the user has had this error, subsequent clicks on "Connect via CAS" in the login form directly generates the error message, as the user here is already authenticated in CAS. Every time they click "Connect via CAS", CAS will recognize them as authenticated, but Pressbooks will refuse access. To log out, the user must either go to the CAS logout page or close the browser, terminating the CAS session.
+
 2. IF there is an existing Pressbooks user for this CAS user
-   - User logs into Pressbooks successfully (no matter whethre CAS is configured to 'Add New User' or 'Refuse Access')
+
+- User logs into Pressbooks successfully (no matter whethre CAS is configured to 'Add New User' or 'Refuse Access')
 
 ### Customize Button Text
 
@@ -80,11 +83,16 @@ When a user logs into Pressbooks via CAS, the CAS plugin will attempt to find an
 The mechanism to match the CAS user with the Pressbooks user is the following:
 
 1.  Plugin tries to find a user `where wp_usermeta.meta_key = pressbooks_cas_identity and wp_usermeta.meta_value = NETID`
+
     - Where `NETID` is unique key sent by CAS
+
 2.  If NETID is not found, try to match a user by their email.
+
     - Because CAS doesn't send us the user email, it only sends a `NETID`, we make up an email using either: `NETID@CAS-OPTIONS-{Email Domain}`, or if that Admin Option is empty: `NETID@{noreply.}CAS-OPTIONS-{Server Hostname}`
     - wp_usermeta.meta_key and wp_usermeta.meta_value are set by the CAS plugin upon first user matching; subsequent logins follow case #1 above.
+
 3.  If neither #1 or #2 are found, create a new user.
+
     - `wp_usermeta.meta_key` and `wp_usermeta.meta_value` are set by the CAS plugin upon user creation; subsequent logins follow case #1 above.
 
 Network admins creating new users in Pressbooks should use the same email address provided by the CAS identity provider when registering the user so that the CAS plugin will be able to reliably match users logging in via CAS with their manually-created Pressbooks user accounts.

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   /**
    * Returns back some attributes based on wether the
    * link is active or a parent of an active item
@@ -38,11 +38,11 @@ module.exports = {
 
       while (counter > 0) {
         // Pick a random index
-        let index = Math.floor(Math.random() * counter);
+        const index = Math.floor(Math.random() * counter);
 
         counter--;
 
-        let temp = filteredItems[counter];
+        const temp = filteredItems[counter];
 
         // Swap the last element with the random one
         filteredItems[counter] = filteredItems[index];

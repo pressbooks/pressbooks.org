@@ -1,6 +1,5 @@
 ---
 title: Coding Standards
-permalink: /dev-docs/coding-standards/
 ---
 
 ## Validating with PHP Code Sniffer

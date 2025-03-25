@@ -1,6 +1,5 @@
 ---
 title: Unit Testing
-permalink: /dev-docs/unit-testing/
 ---
 
 The Pressbooks unit testing framework was built with [WP-CLI][1]. The tests run automatically on commit via [GitHub Actions][2], with more in-depth reporting via [Codecov][3].

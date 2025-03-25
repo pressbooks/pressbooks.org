@@ -1,6 +1,6 @@
-const moment = require('moment');
+import moment from "moment";
 
-module.exports = value => {
+export default (value) => {
   const dateObject = moment(value);
-  return dateObject.format('MMMM Do, YYYY');
+  return dateObject.format("MMMM Do, YYYY");
 };

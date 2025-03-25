@@ -1,0 +1,102 @@
+backend:
+  name: github
+  branch: production
+  repo: pressbooks/pressbooks.org
+  base_url: ''
+media_folder: src/images
+public_folder: /images
+
+editor:
+  preview: true
+collections:
+  - label: Pages
+    label_singular: Page
+    name: pages
+    icon: draft
+    folder: src/pages/
+    extension: md
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Layout, name: layout, widget: hidden }
+      - {
+          label: Slug,
+          name: slug,
+          widget: string,
+          hint: "Use this field to customize the URL slug for this page.",
+          required: false,
+        }
+      - {
+          label: Meta Description,
+          name: metaDesc,
+          widget: text,
+          required: false,
+        }
+      - { label: Body, name: body, widget: markdown }
+  - label: Posts
+    label_singular: Post
+    name: posts
+    icon: news
+    folder: src/posts/
+    extension: md
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Author, name: author, widget: string }
+      - {
+          label: Meta Description,
+          name: metaDesc,
+          widget: text,
+          required: false,
+        }
+      - { label: Date, name: date, widget: datetime }
+      - { label: Tags, name: tags, widget: list }
+      - { label: Body, name: body, widget: markdown }
+  - label: User Guides
+    label_singular: User Guide
+    name: user-guides
+    icon: help_center
+    folder: src/user-guides/
+    extension: md
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - {
+          label: Slug,
+          name: slug,
+          widget: string,
+          before_input: "/user-guides/",
+          hint: "Use this field to customize the URL slug for this guide.",
+          required: false,
+        }
+      - {
+          label: Meta Description,
+          name: metaDesc,
+          widget: text,
+          required: false,
+        }
+      - { label: Body, name: body, widget: markdown }
+  - label: Developer Guides
+    label_singular: Developer Guide
+    name: dev-guides
+    icon: developer_guide
+    folder: src/dev-guides/
+    extension: md
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - {
+          label: Slug,
+          name: slug,
+          widget: string,
+          before_input: "/dev-guides/",
+          hint: "Use this field to customize the URL slug for this guide.",
+          required: false,
+        }
+      - {
+          label: Meta Description,
+          name: metaDesc,
+          widget: text,
+          required: false,
+        }
+      - { label: Body, name: body, widget: markdown }

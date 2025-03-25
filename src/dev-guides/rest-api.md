@@ -1,6 +1,5 @@
 ---
 title: REST API
-permalink: /dev-docs/rest-api/
 ---
 
 ## Recommended Tools

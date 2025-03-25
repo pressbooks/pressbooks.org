@@ -1,36 +1,37 @@
 ---
 title: Installation
-permalink: /user-docs/installation/
+metaDesc: ''
 ---
-
 ## Manual Installation
 
 1. Download the latest releases of [Pressbooks][pressbooks], [McLuhan][mcluhan], and [Aldine][aldine], as well as the latest releases of any other [book themes][book-themes] you wish to install. Check the [latest release of Pressbooks](https://github.com/pressbooks/pressbooks/blob/4e79e21333b3ca0df257057c06b92c94b73a6d9b/pressbooks.php#L9-L10) for the required versions of PHP and WordPress. Lower versions are not supported.
-1. Follow the instructions provided by WordPress to [install WordPress][wp-install] and [create a WordPress multisite network][create-a-network]
-1. Copy the Pressbooks plugin folder to: `/path/to/your/site/wp-content/plugins/*`.
-1. Copy Pressbooks' autoloader file from `/path/to/your/site/wp-content/plugins/pressbooks/hm-autoloader.php` to `/path/to/your/site/wp-content/mu-plugins/hm-autoloader.php`. You may need to create the `wp-content/mu-plugins/` directory if it doesn't yet exist.
-1. Copy the Pressbooks Book, Pressbooks Aldine and other theme folders to: `/path/to/your/site/wp-content/themes/*` (**NOTE**: theme folders must not have version numbers on the end. **GOOD**: `pressbooks-aldine`. **BAD**: `pressbooks-aldine-3.1.0`. Make sure that you rename the folders appropriately.)
+2. Follow the instructions provided by WordPress to [install WordPress][wp-install] and [create a WordPress multisite network][create-a-network]
+3. Copy the Pressbooks plugin folder to: `/path/to/your/site/wp-content/plugins/*`.
+4. Copy Pressbooks' autoloader file from `/path/to/your/site/wp-content/plugins/pressbooks/hm-autoloader.php` to `/path/to/your/site/wp-content/mu-plugins/hm-autoloader.php`. You may need to create the `wp-content/mu-plugins/` directory if it doesn't yet exist.
+5. Copy the Pressbooks Book, Pressbooks Aldine and other theme folders to: `/path/to/your/site/wp-content/themes/*` (**NOTE**: theme folders must not have version numbers on the end. **GOOD**: `pressbooks-aldine`. **BAD**: `pressbooks-aldine-3.1.0`. Make sure that you rename the folders appropriately.)
 
 ## Activate Plugins & Themes
 
 1. Log out, log in, navigate to: **My Sites** → **Network Admin** → **Dashboard**.
-1. Navigate to **Plugins** → **Installed Plugins**.
-1. Network Enable "Pressbooks".
-1. Navigate to **Themes** → **Installed Themes**.
-1. Network Enable "Aldine", "McLuhan", and any other Pressbooks theme you want to use.
-1. Navigate to **Your Network Title** → **Dashboard** → **Appearance** and activate "Aldine".
+2. Navigate to **Plugins** → **Installed Plugins**.
+3. Network Enable "Pressbooks".
+4. Navigate to **Themes** → **Installed Themes**.
+5. Network Enable "Aldine", "McLuhan", and any other Pressbooks theme you want to use.
+6. Navigate to **Your Network Title** → **Dashboard** → **Appearance** and activate "Aldine".
 
 ## Server Dependencies
 
 Pressbooks requires some third-party libraries to be installed on your server to enable export capabilities.
 
 - For PDF export, you have two supported options:
-  1. Download and install [PrinceXML][prince] on your server. Note: Prince is not free software; see their [license agreement](https://www.princexml.com/license/). If you intend to use Prince for commercial purposes, you should [purchase a license](https://www.princexml.com/purchase/).
-  2. Configure [DocRaptor](https://docraptor.com), a software as a service version of PrinceXML. To do this, obtain and add a DocRaptor API key to `wp-config.php`: `define( 'DOCRAPTOR_API_KEY', 'YOUR_API_KEY_HERE' );` Note: the free and open source [mPDF for Pressbooks plugin](https://github.com/BCcampus/pressbooks-mpdf) uses the open source mPDF library to generate PDFs, but is [no longer being maintained](https://github.com/pressbooks/docs/issues/32#issuecomment-503255424). Use it at your own risk.
+
+1. Download and install [PrinceXML][prince] on your server. Note: Prince is not free software; see their [license agreement](https://www.princexml.com/license/). If you intend to use Prince for commercial purposes, you should [purchase a license](https://www.princexml.com/purchase/).
+2. Configure [DocRaptor](https://docraptor.com), a software as a service version of PrinceXML. To do this, obtain and add a DocRaptor API key to `wp-config.php`: `define( 'DOCRAPTOR_API_KEY', 'YOUR_API_KEY_HERE' );` Note: the free and open source [mPDF for Pressbooks plugin](https://github.com/BCcampus/pressbooks-mpdf) uses the open source mPDF library to generate PDFs, but is [no longer being maintained](https://github.com/pressbooks/docs/issues/32#issuecomment-503255424). Use it at your own risk.
+
 - For the Cover Generator feature, install:
-  - Ghostscript: `sudo apt-get install ghostscript`
-  - ImageMagick: `sudo apt-get install imagemagick`
-  - PdfToPpm and PdfInfo: `sudo apt-get install poppler-utils`
+- Ghostscript: `sudo apt-get install ghostscript`
+- ImageMagick: `sudo apt-get install imagemagick`
+- PdfToPpm and PdfInfo: `sudo apt-get install poppler-utils`
 - For EPUB validation install [EPUBCheck][epub-check]
 - For XML validation install xmllint: `sudo apt-get install libxml2-utils`
 - For ODT export install [Saxon-HE][saxon] 9.7.0-10
@@ -53,22 +54,25 @@ Example config files for a dev site hosted at `http://localhost/~example/textopr
 ### wp-config.php file [snippet]:
 
     /**
-     * For developers: WordPress debugging mode.
+
+    - For developers: WordPress debugging mode.
      *
-     * Change this to true to enable the display of notices during development.
-     * It is strongly recommended that plugin and theme developers use WP_DEBUG
-     * in their development environments.
+    - Change this to true to enable the display of notices during development.
+    - It is strongly recommended that plugin and theme developers use WP_DEBUG
+    - in their development environments.
      */
     define('WP_DEBUG', true);
     define('WP_DEBUG_LOG', true);
 
     /**
-     * Multi-site support, Part 1
+
+    - Multi-site support, Part 1
      */
     define('WP_ALLOW_MULTISITE', true);
 
     /**
-     * Multi-site support, Part 2
+
+    - Multi-site support, Part 2
      */
     define('MULTISITE', true);
     define('SUBDOMAIN_INSTALL', false);
@@ -79,7 +83,8 @@ Example config files for a dev site hosted at `http://localhost/~example/textopr
     define('BLOG_ID_CURRENT_SITE', 1);
 
     /**
-     * Pressbooks
+
+    - Pressbooks
      */
     define( 'PB_PRINCE_COMMAND', '/usr/bin/prince' );
     define( 'PB_EPUBCHECK_COMMAND', '/usr/bin/java -jar /home/example/bin/epubcheck/epubcheck.jar' );
@@ -88,7 +93,8 @@ Example config files for a dev site hosted at `http://localhost/~example/textopr
     define( 'PB_MATHJAX_URL', 'http://localhost:3000/' );
 
     /**
-     * Optional definitions
+
+    - Optional definitions
      */
     // define( 'AUTOSAVE_INTERVAL', 60 ); // Autosave every N seconds
     // define( 'WP_POST_REVISIONS', 5 ); // Limit post revisions: int or false
@@ -115,11 +121,13 @@ Example config files for a dev site hosted at `http://localhost/~example/textopr
 ## Configure Network Settings & Create Your First Book
 
 1. Navigate to **Network Admin** → **Dashboard** → Settings** → **Network Settings\*\* and select the most appropriate Registration setting:
-   - User accounts may be registered. (User accounts can be registered, but these users will not be able to create their own books)
-   - Logged in users may register new sites. (Network administrators can add new users, who can then create their own books (i.e. sites)
-   - Both sites and user accounts can be registered. (Allows visitors to your network to create their own accounts and then create their own books without central moderation. If you choose this option, you will likely need to have good account and content moderation practices to avoid your network being flooded with spam.)
+
+- User accounts may be registered. (User accounts can be registered, but these users will not be able to create their own books)
+- Logged in users may register new sites. (Network administrators can add new users, who can then create their own books (i.e. sites)
+- Both sites and user accounts can be registered. (Allows visitors to your network to create their own accounts and then create their own books without central moderation. If you choose this option, you will likely need to have good account and content moderation practices to avoid your network being flooded with spam.)
+
 1. Navigate to **My Books** → **Create a New Book**
-1. Fill in the form and click 'Create Book' to create your first book
+2. Fill in the form and click 'Create Book' to create your first book
 
 Consult [our user guide](https://guide.pressbooks.com/) for more details on how to use Pressbooks to create and publish books.
 

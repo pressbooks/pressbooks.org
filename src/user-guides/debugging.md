@@ -1,8 +1,7 @@
 ---
 title: Debugging
-permalink: /user-docs/debugging/
+metaDesc: ''
 ---
-
 A few things you can try:
 
 1. Network disable all plugins other than Pressbooks to see if the problem persists.
