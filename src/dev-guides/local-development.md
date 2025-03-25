@@ -1,7 +1,8 @@
 ---
 title: Local Development
+slug: ''
+metaDesc: ''
 ---
-
 **Table of contents**
 
 - [Ubuntu](#ubuntu)
@@ -22,7 +23,7 @@ This document describes how to set up a local development environment for Pressb
 ### Dependencies
 
 - Install Git: <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>
-- Install PHP7.4: <https://computingforgeeks.com/how-to-install-php-on-ubuntu/>
+- Install PHP8.1: <https://computingforgeeks.com/how-to-install-php-on-ubuntu/>
 - Install Composer v2: <https://getcomposer.org/doc/00-intro.md#installation-linux-unix-macos>
 - Install Node.js LTS with NPM: <https://nodejs.org/en/download/>
 - Install Virtual Box: <https://www.virtualbox.org/>
@@ -138,7 +139,7 @@ Install [Virtualbox][16]:
 
 ### Apple Silicon (M1/M2)
 
-For machines running on Apple silicon, virtualbox is not an option, as it it x86 only. Parallels is an option that is known to work (but is not free or open source). Purchase a subscription license for *Parallels Desktop Pro Edition*, and install it as per their instructions. This also requires the [Vagrant Parallels Provider][24]. After Parallels is installed run:
+For machines running on Apple silicon, virtualbox is not an option, as it it x86 only. Parallels is an option that is known to work (but is not free or open source). Purchase a subscription license for _Parallels Desktop Pro Edition_, and install it as per their instructions. This also requires the [Vagrant Parallels Provider][24]. After Parallels is installed run:
 
 `vagrant plugin install vagrant-parallels`
 
@@ -178,7 +179,6 @@ On recent versionf of MacOS (Catalina and later), the NFS file sharing between t
 8. Go to folder '/sbin'
 9. Add the nfsd application
 10. Reboot your Mac
-
 
 ### Setup
 
