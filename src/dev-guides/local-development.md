@@ -405,7 +405,7 @@ git checkout master
 git merge upstream
 ```
 
-You may need to regenerate your composer.lock file to resolve merge conflicts before committing changes.
+You may need to regenerate your composer.lock file to resolve merge conflicts before committing changes
 
 [1]: https://roots.io/bedrock
 [2]: https://roots.io/trellis
