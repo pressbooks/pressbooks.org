@@ -1,6 +1,7 @@
 ---
 title: Installation
-metaDesc: ''
+slug: ''
+metaDesc: Instructions for manually installing Pressbooks on your own server.
 ---
 ## Manual Installation
 
@@ -26,54 +27,44 @@ Pressbooks requires some third-party libraries to be installed on your server to
 - For PDF export, you have two supported options:
 
 1. Download and install [PrinceXML][prince] on your server. Note: Prince is not free software; see their [license agreement](https://www.princexml.com/license/). If you intend to use Prince for commercial purposes, you should [purchase a license](https://www.princexml.com/purchase/).
-2. Configure [DocRaptor](https://docraptor.com), a software as a service version of PrinceXML. To do this, obtain and add a DocRaptor API key to `wp-config.php`: `define( 'DOCRAPTOR_API_KEY', 'YOUR_API_KEY_HERE' );` Note: the free and open source [mPDF for Pressbooks plugin](https://github.com/BCcampus/pressbooks-mpdf) uses the open source mPDF library to generate PDFs, but is [no longer being maintained](https://github.com/pressbooks/docs/issues/32#issuecomment-503255424). Use it at your own risk.
+2. Configure [DocRaptor](https://docraptor.com), a software as a service version of PrinceXML. To do this, obtain and add a DocRaptor API key to `wp-config.php`: `define( 'DOCRAPTOR_API_KEY', 'YOUR_API_KEY_HERE' );` 
 
 - For the Cover Generator feature, install:
-- Ghostscript: `sudo apt-get install ghostscript`
-- ImageMagick: `sudo apt-get install imagemagick`
-- PdfToPpm and PdfInfo: `sudo apt-get install poppler-utils`
-- For EPUB validation install [EPUBCheck][epub-check]
-- For XML validation install xmllint: `sudo apt-get install libxml2-utils`
-- For ODT export install [Saxon-HE][saxon] 9.7.0-10
-- For export of LaTeX expressions (i.e. mathematical formula), install and network activate the third party WordPress plugin {WP QuickLaTeX](https://wordpress.org/plugins/wp-quicklatex/) or install and host the production branch of [pb-mathjax][pb-mathjax].
+    - Ghostscript: `sudo apt-get install ghostscript`
+    - ImageMagick: `sudo apt-get install imagemagick`
+    - PdfToPpm and PdfInfo: `sudo apt-get install poppler-utils`
+- To produce EPUB exports, install  [EPUBCheck][epub-check], an EPUB validation utility used in the export process.
+- To produce XML exports, install xmllint: `sudo apt-get install libxml2-utils`
+- To include LaTeX expressions in your export files, install install and host the [pb-mathjax][pb-mathjax] service or install and network activate the third party WordPress plugin [WP QuickLaTeX](https://wordpress.org/plugins/wp-quicklatex/).
 
-Note: Certain GNU/Linux distributions do not ship with the `php-xsl` and/or `php-exif` libraries enabled by default. If you attempt to export an EPUB file and get either a white screen with minimal text, or an error, you may need install one or both of these libraries: (e.g. `sudo apt install php-xsl` or `sudo apt install php-exif` )
+Note: Certain GNU/Linux distributions do not ship with the `php-xsl` and/or `php-exif` libraries enabled by default. If you attempt to export an EPUB file and see a white screen with minimal text or an error, you may need install one or both of these libraries: (e.g. `sudo apt install php-xsl` or `sudo apt install php-exif` )
 
 Note: GNU/Linux distributions do not include Microsoft fonts, which can be useful when producing PDF exports. See https://itsfoss.com/install-microsoft-fonts-ubuntu/ or similar for instructions on installing.
 
 Once the desired dependencies have been installed on your server, define the following `wp-config.php` variables (make sure to update the paths to correspond to your specific installation). The defaults are:
 
-    define( 'PB_PRINCE_COMMAND', '/usr/bin/prince' ); // Only required if you are using Prince on your server
-    define( 'PB_EPUBCHECK_COMMAND', '/usr/bin/java -jar /opt/epubcheck/epubcheck.jar' );
-    define( 'PB_XMLLINT_COMMAND', '/usr/bin/xmllint' );
-    define( 'PB_SAXON_COMMAND', '/usr/bin/java -jar /opt/saxon-he/saxon-he.jar' );
-    define( 'PB_MATHJAX_URL', 'http://localhost:3000/' );
+```
+define( 'PB_PRINCE_COMMAND', '/usr/bin/prince' ); // Only required if you are using Prince on your server
+define( 'PB_EPUBCHECK_COMMAND', '/usr/bin/java -jar /opt/epubcheck/epubcheck.jar' );
+define( 'PB_XMLLINT_COMMAND', '/usr/bin/xmllint' );
+define( 'PB_MATHJAX_URL', 'http://localhost:3000/' ); 
+```
 
-Example config files for a dev site hosted at `http://localhost/~example/textopress/`
+Example config files for a dev site hosted at `http://localhost/~example/textopress/` are provided below:
 
 ### wp-config.php file [snippet]:
-
+```
     /**
-
-    - For developers: WordPress debugging mode.
-     *
-    - Change this to true to enable the display of notices during development.
-    - It is strongly recommended that plugin and theme developers use WP_DEBUG
-    - in their development environments.
+    * - For developers: WordPress debugging mode.
+    * - Change this to true to enable the display of notices during development.
+    * - We recommend plugin and theme developers use WP_DEBUG in dev environments.
      */
+
     define('WP_DEBUG', true);
     define('WP_DEBUG_LOG', true);
 
-    /**
-
-    - Multi-site support, Part 1
-     */
-    define('WP_ALLOW_MULTISITE', true);
-
-    /**
-
-    - Multi-site support, Part 2
-     */
+    // Multi-site support
+    define('WP_ALLOW\MULTISITE', true);
     define('MULTISITE', true);
     define('SUBDOMAIN_INSTALL', false);
     $base = '/~example/textopress/';
@@ -82,28 +73,20 @@ Example config files for a dev site hosted at `http://localhost/~example/textopr
     define('SITE_ID_CURRENT_SITE', 1);
     define('BLOG_ID_CURRENT_SITE', 1);
 
-    /**
-
-    - Pressbooks
-     */
+    // Pressbooks
     define( 'PB_PRINCE_COMMAND', '/usr/bin/prince' );
     define( 'PB_EPUBCHECK_COMMAND', '/usr/bin/java -jar /home/example/bin/epubcheck/epubcheck.jar' );
     define( 'PB_XMLLINT_COMMAND', '/usr/bin/xmllint' );
-    define( 'PB_SAXON_COMMAND', '/usr/bin/java -jar home/example/bin/saxon-he/saxon-he.jar' );
     define( 'PB_MATHJAX_URL', 'http://localhost:3000/' );
 
-    /**
-
-    - Optional definitions
-     */
+    // Optional definitions
     // define( 'AUTOSAVE_INTERVAL', 60 ); // Autosave every N seconds
-    // define( 'WP_POST_REVISIONS', 5 ); // Limit post revisions: int or false
+    // define( 'WP_POST_REVISIONS', 50 ); // Limit post revisions: int or false
     // define( 'EMPTY_TRASH_DAYS', 1 ); // Purge trash interval. PB default is after 30 days.
-
     /* That's all, stop editing! Happy blogging. */
-
-### .htaccess file:
-
+```
+### Sample .htaccess file:
+```
     RewriteEngine On
     RewriteBase /~example/textopress/
     RewriteRule ^index.php$ - [L]
@@ -114,17 +97,17 @@ Example config files for a dev site hosted at `http://localhost/~example/textopr
     RewriteCond %{REQUEST_FILENAME} -f [OR]
     RewriteCond %{REQUEST_FILENAME} -d
     RewriteRule ^ - [L]
-    RewriteRule  ^[_0-9a-zA-Z-]+/(wp-(content|admin|includes).*) $1 [L]
-    RewriteRule  ^[_0-9a-zA-Z-]+/(.*.php)$ $1 [L]
+    RewriteRule  ^[_0-9a-zA-Z-]+/(wp-(content|admin|includes).\*) $1 [L]
+    RewriteRule  ^[_0-9a-zA-Z-]+/(.\*.php)$ $1 [L]
     RewriteRule . index.php [L]
-
+```
 ## Configure Network Settings & Create Your First Book
 
-1. Navigate to **Network Admin** → **Dashboard** → Settings** → **Network Settings\*\* and select the most appropriate Registration setting:
+1. Navigate to **Network Admin** → **Dashboard** → **Settings** → **Network Settings** and select the most appropriate Registration setting:
 
 - User accounts may be registered. (User accounts can be registered, but these users will not be able to create their own books)
 - Logged in users may register new sites. (Network administrators can add new users, who can then create their own books (i.e. sites)
-- Both sites and user accounts can be registered. (Allows visitors to your network to create their own accounts and then create their own books without central moderation. If you choose this option, you will likely need to have good account and content moderation practices to avoid your network being flooded with spam.)
+- Both sites and user accounts can be registered. (Allows visitors to your network to create their own accounts and then create their own books without central moderation. If you choose this option, you will want to ensure you have good account and content moderation practices to avoid your network being flooded with spam.)
 
 1. Navigate to **My Books** → **Create a New Book**
 2. Fill in the form and click 'Create Book' to create your first book
