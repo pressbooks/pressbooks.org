@@ -1,5 +1,6 @@
 ---
 title: Debugging
+slug: ''
 metaDesc: ''
 ---
 A few things you can try:
@@ -11,5 +12,5 @@ A few things you can try:
 ## Other helpful tools:
 
 - [Xdebug](https://xdebug.org/) is an excellent tool to help with debugging PHP issues in your IDE.
-- [BrowserStack](https://www.browserstack.com/open-source) can help you test the appearance of various changes you've made across multiple devices, operating systems, and browsers. We especially appreciate its ability to set up an 'OS + Browser' combination and quickly test changes on local or test environments without having to set up and run a virtual machine.
+- [BrowserStack](https://www.browserstack.com/open-source) can help you test the appearance of various changes you've made across multiple devices, operating systems, and browsers. The ability is provides to set up an 'OS + Browser' combination and quickly test changes on local or test environments without runing a virtual machine is particularly useful.
   ![Browserstack logo](https://www.browserstack.com/images/layout/browserstack-logo-600x315.png)
