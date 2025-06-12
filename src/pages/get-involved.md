@@ -64,7 +64,7 @@ Pressbooks is maintained by developers working for [Pressbooks][34] (aka Book Ov
 - Ashlee Zhang ([@BakingSoda][29])
 - Ned Zimmerman ([@greatislander][36])
 
-Your contributions to our project are always welcome!
+Your contributions to Pressbooks are always welcome!
 
 [1]: https://github.com/indiamos
 [2]: https://github.com/monkecheese
