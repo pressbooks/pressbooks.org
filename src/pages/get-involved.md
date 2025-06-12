@@ -1,7 +1,7 @@
 ---
 title: Get Involved with Pressbooks
 slug: get-involved
-metaDesc: ''
+metaDesc: How to get involved with and support the Pressbooks open source software project
 ---
 Diverse teams make better software. Creating, improving, and maintaining free and open source software like Pressbooks takes time, effort, and money. As a result, we ask our open source users to get involved with this project. Here are some suggestions for how you can contribute to the long-term sustainability of Pressbooks.
 
@@ -11,7 +11,7 @@ If you are an institution using Pressbooks and would like to help sustain Pressb
 
 ## Contribute via GitHub
 
-You can always report bugs, open pull requests, and follow our development [on GitHub](https://github.com/pressbooks/). We also maintain an [ideas repository](https://github.com/pressbooks/ideas) where we welcome product suggestions and feature improvements from any and all. We regularly review these suggestions and add them to our product backlog where relevant.
+You can always report bugs, open pull requests, and follow our development [on GitHub](https://github.com/pressbooks/). We maintain an [ideas repository](https://github.com/pressbooks/ideas) where we welcome product suggestions and feature improvements.
 
 ## Monthly Product Update
 
@@ -19,7 +19,7 @@ We hold an open meeting at 2pm EST on the last Thursday of each month to discuss
 
 ## Pressbooks Forum
 
-[Our forum](https://pressbooks.community/) is a place for developers and Open Source users to discuss issues of interest and ask others in the community for help. If you use Pressbooks, we invite you to help others in the community who may be encountering issues.
+The [Pressbooks forum](https://pressbooks.community/) is a place where developers and Open Source users can discuss issues of interest and ask others in the community for help. We invite all Pressbooks users to help others in the community who may be encountering issues.
 
 ### Contributors
 
