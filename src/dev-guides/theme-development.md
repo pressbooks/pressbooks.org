@@ -1,7 +1,7 @@
 ---
 title: Theme Development
 slug: ''
-metaDesc: ''
+metaDesc: How to get started developing a new Pressbooks theme
 ---
 ## Getting Started
 
