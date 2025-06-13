@@ -1,7 +1,7 @@
 ---
 title: Pressbooks CAS Single Sign-On
 slug: cas-sso
-metaDesc: ''
+metaDesc: Instructions for activating and using the Pressbooks CAS SSO plugin.
 ---
 **Table of Contents**
 
