@@ -9,7 +9,9 @@ Welcome to the home of the Pressbooks Open Source project, where you can learn a
 
 ## What is Pressbooks?
 
-Pressbooks is a book content management system that allows users to publish books to the public web and produce exports in multiple formats, including EPUB, PDF, and various XML flavours. Pressbooks is built on top of [WordPress Multisite](https://wordpress.org/support/article/glossary/#multisite) but makes significant changes to the admin interface, web presentation layer and export routines of a standard WordPress installation. Pressbooks is free and open source software, released under the [GPL v3.0](https://opensource.org/licenses/GPL-3.0) license.
+Pressbooks is a book content management system that allows users to publish books to the public web and produce exports in multiple formats, including EPUB, PDF, and various XML flavours.  Pressbooks is built on top of [WordPress Multisite](https://wordpress.org/support/article/glossary/#multisite) but makes significant changes to the admin interface, web presentation layer and export routines of a standard WordPress installation. 
+
+Pressbooks is free and open source software, released under the [GPL v3.0](https://opensource.org/licenses/GPL-3.0) license. The source code for [Pressbooks](https://github.com/pressbooks/pressbooks) and all related plugins and themes are hosted on [GitHub](https://github.com/pressbooks/).
 
 ## How can I use Pressbooks?
 
