@@ -1,7 +1,8 @@
 ---
 title: REST API
+slug: ''
+metaDesc: Guide to working with the Pressbooks and WordPress REST APIs
 ---
-
 ## Recommended Tools
 
 - [JSON Formatter][1]
@@ -43,11 +44,11 @@ WP API items have a `_links` node based on [HAL][7] (Hypertext Application Langu
 
 To reduce the number of HTTP requests use [the \_embed parameter][8] to tell the API that the response should include embeddable resources.
 
-![_embedded](/images/embeded.png)]
+![_embedded](/images/embeded.png)
 
 WP API exposes pagination info in the response header.
 
-![Pagination](/images/pagination.png)]
+![Pagination](/images/pagination.png)
 
 ### PHP to JSON
 
@@ -85,6 +86,6 @@ if ( ! empty( $schema['properties']['content'] ) ) {
 [4]: https://developer.wordpress.org/rest-api/
 [5]: https://developer.wordpress.org/rest-api/using-the-rest-api/authentication/#authentication-plugins
 [6]: https://json-schema.org/
-[7]: https://stateless.group/hal_specification.html
-[8]: https://developer.wordpress.org/rest-api/using-the-rest-api/global-parameters/#_embed
+[7]: https://stateless.group/hal\_specification.html
+[8]: https://developer.wordpress.org/rest-api/using-the-rest-api/global-parameters/#\_embed
 [9]: https://developer.wordpress.org/rest-api/reference/posts/
