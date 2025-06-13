@@ -49,7 +49,7 @@ This will turn on the development compiler, which triggers a recompile of your w
 
 ## Overriding Defaults
 
-If you activate the theme you have just created, you will be able to export your book in all formats thanks to the sensible defaults provided by Buckram and McLuhan. Each file in `assets/styles/components` is set up to allow you to override the default values of all theme variables. Components are as follows:
+If you activate the theme you have just created, you will be able to export your book in all formats thanks to the sensible defaults provided by [Buckram](https://pressbooks.org/blog/2018/07/03/book-themes-part-2-what-s-buckram/) and [McLuhan](https://pressbooks.org/blog/2018/04/09/book-themes-part-1-frames-and-pictures/). Each file in `assets/styles/components` is set up to allow you to override the default values of all theme variables. Components are as follows:
 
 ### \_accessiblity.scss
 
