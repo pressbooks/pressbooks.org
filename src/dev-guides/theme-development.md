@@ -83,7 +83,7 @@ Contains rules for book, front matter, part, chapter and back matter titles.
 
 Contains rules for the book's table of contents.
 
-Let's take a look at `assets/styles/components/_elements.scss&#32;`in [Buckram](https://github.com/pressbooks/buckram/blob/dev/assets/styles/components/_elements.scss): 
+Let's take a look at `assets/styles/components/_elements.scss`in [Buckram](https://github.com/pressbooks/buckram/blob/dev/assets/styles/components/_elements.scss): 
 
 ```scss
 ////
@@ -100,7 +100,7 @@ Let's take a look at `assets/styles/components/_elements.scss&#32;`in [Buckram](
 @import 'elements/tables';
 ```
 
-As you can see, this file imports several individual component files (all of which can be found elsewhere within Buckram). Let's examine the rules found in [`components/elements/_blockquotes.scss`][8]:
+As you can see, this file imports several individual component files (all of which can be found elsewhere within Buckram). Let's examine the rules found in `components/elements/_blockquotes.scss`:
 
 ```scss
 @if $type != 'web' {
