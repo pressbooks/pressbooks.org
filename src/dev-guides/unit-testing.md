@@ -1,7 +1,7 @@
 ---
 title: Unit Testing
 slug: ''
-metaDesc: ''
+metaDesc: How to install and run the Pressbooks unit testing framework when developing locally.
 ---
 The Pressbooks unit testing framework was built with [WP-CLI](https://make.wordpress.org/cli/handbook/plugin-unit-tests/). The tests run automatically on commit via [GitHub Actions](https://github.com/pressbooks/pressbooks/blob/production/.github/workflows/tests.yml), with more in-depth reporting via [Codecov](https://app.codecov.io/gh/pressbooks/pressbooks).
 
