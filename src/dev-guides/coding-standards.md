@@ -1,7 +1,7 @@
 ---
 title: Coding Standards
 slug: ''
-metaDesc: ''
+metaDesc: Description of Pressbooks Coding Standards and how to use them when contributing code to Pressbooks open source repositories.
 ---
 ## Validating with PHP Code Sniffer
 
