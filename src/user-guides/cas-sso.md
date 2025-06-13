@@ -10,8 +10,6 @@ metaDesc: ''
 - [Details of settings behaviours](#details-of-settings-behaviours)
 - [User identification mechanism](#user-identification-mechanism)
 
-This documentation is up to date as of version 2.5.0 of the Pressbooks CAS Single Sign-on plugin.
-
 ## Installation / Activation
 
 Get the plugin here: https://github.com/pressbooks/pressbooks-cas-sso/releases. The Pressbooks CAS SSO plugin should be installed and activated on the network level.
