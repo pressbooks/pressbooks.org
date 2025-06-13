@@ -2,7 +2,7 @@
 title: Welcome
 layout: layouts/home.njk
 slug: ''
-metaDesc: More information about the Pressbooks Open Source project. Pressbooks is a open-source book content management system built on WordPress Multisite.
+metaDesc: Information about the Pressbooks Open Source project. Pressbooks is a open-source book content management system built on WordPress Multisite.
 permalink: /
 ---
 Welcome to the home of the Pressbooks Open Source project, where you can learn about contributing to Pressbooks, setting up a local instance of Pressbooks for development, or hosting an instance of Pressbooks on your own server. 
@@ -30,6 +30,6 @@ Pressbooks is free & open source software, but maintaining this project takes ti
 - financial contributions
 - [code contributions](https://github.com/pressbooks/) and testing
 - [community-provided translations](https://explore.transifex.com/pressbooks)
-- answers to questions posed by other users [on our forum](https://pressbooks.community/)
+- answers to questions posed [on our forum](https://pressbooks.community/)
 
 If you or your institution would like to help sustain Pressbooks financially, please consider hiring us to host your Pressbooks Enterprise Network or simply [contact us](mailto:sales@pressbooks.com) to discuss other sponsorship arrangements.
