@@ -1,7 +1,7 @@
 ---
-title: Debugging
-slug: ''
-metaDesc: Debugging and troubleshooting recommendations for self-hosted network administrators
+title: Troubleshooting Self-Hosted Pressbooks Networks
+slug: troubleshooting
+metaDesc: Troubleshooting and debugging recommendations for self-hosted network administrators
 ---
 If you are running into issues on your self-hosted Pressbooks network, here are a few suggestions:
 
