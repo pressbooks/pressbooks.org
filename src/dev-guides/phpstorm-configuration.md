@@ -1,8 +1,8 @@
 ---
 title: PhpStorm Configuration
 slug: phpstorm
+metaDesc: Tips for configuring JetBrains' PhpStorm IDE for use when developing for Pressbooks
 ---
-
 ## Enable WordPress Integration
 
 Go to Settings → PHP → Frameworks → WordPress, click enable and set installation path to `~/Code/pressbooks-dev/site/web/wp`:
@@ -41,7 +41,9 @@ In the SSH/SSL tab:
 Open Settings → PHP and find the CLI Interpreter option. Click the three dots [...], click the plus symbol, select "From Docker, Vagrant, VM, WSL, Remote" and set "Vagrant Instance File" to your Trellis directory.
 
 ![PHP Interpreter settings step 1](/images/php-interpreter-settings-1.png)
+
 ![PHP Interpreter settings step 2](/images/php-interpreter-settings-2.png)
+
 ![PHP Interpreter completed](/images/php-interpreter-done.png)
 
 ## XDebug
