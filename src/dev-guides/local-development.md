@@ -19,7 +19,6 @@ This repo already includes [pressbooks/pressbooks][5], [pressbooks/pressbooks-al
 composer require wpackagist-plugin/h5p
 ```
 
-
 ## Development Tools
 
 ### Login:
