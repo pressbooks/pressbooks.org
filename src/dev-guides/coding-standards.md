@@ -16,7 +16,7 @@ Bonus: You can sometimes automatically fix errors by running:
 
 ## Pressbooks Coding Standards (Mandatory)
 
-We enforce [Human Made Coding Standards](https://github.com/humanmade/coding-standards) with the following small tweaks.
+We enforce [Human Made Coding Standards](https://github.com/humanmade/coding-standards) with the following small tweaks:
 
 - Use `camelCase` for class methods & properties, `UPPERCASE` for class constants, `snake_case` everywhere else.
 - We do not strictly enforce commenting requirements.
