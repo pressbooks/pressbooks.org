@@ -6,8 +6,9 @@ metaDesc: How to get involved with and support the Pressbooks open source softwa
 Diverse teams make better software. Creating, improving, and maintaining free and open source software like Pressbooks takes time, effort, and money. As a result, we ask our open source users to get involved with this project. Here are some suggestions for how you can contribute to the long-term sustainability of Pressbooks.
 
 ## Financial Support
+You can also make a one-time or recurring donation to [sponsor our work](https://github.com/sponsors/pressbooks) on GitHub.
 
-If you are an institution using Pressbooks and would like to help sustain Pressbooks financially at any level, please consider [hosting Pressbooks with us](https://pressbooks.com/educational-institutions/) or [contacting us](mailto:sales@pressbooks.com) to discuss how best to work together.
+If you are an institution using Pressbooks and would like to help sustain Pressbooks financially at any level, please consider [hosting Pressbooks with us](https://pressbooks.com/educational-institutions/) or [contacting us](mailto:sales@pressbooks.com) to discuss how best to work together. 
 
 ## Contribute via GitHub
 
