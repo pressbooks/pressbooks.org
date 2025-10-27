@@ -14,8 +14,7 @@ PressbooksBot is an automated web crawler that visits publicly accessible Pressb
 
 - Index and catalog open educational resources (OER)
 - Monitor the health and availability of Pressbooks networks
-- Analyze content trends in open publishing
-- Improve our platform based on real-world usage patterns
+- Validate links in Pressbooks books using HEAD requests for external links
 
 ## Good Bot Netiquette
 
@@ -92,7 +91,6 @@ You can also block it at the server or firewall level by filtering the User-Agen
 ## Technical Specifications
 
 - **User-Agent:** `PressbooksBot/1.0 (+https://pressbooks.org/bot-info)`
-- **Crawl Rate:** Typically 1-2 requests per second per domain
 - **Respects:** robots.txt, meta robots tags, crawl-delay directives
 - **Protocol Support:** HTTP/1.1, HTTPS
 - **Follows Redirects:** Yes (3xx status codes)
